@@ -1,0 +1,41 @@
+
+:root {
+
+    /* Color palette */
+
+    --color-light: #ffffff;
+    --color-dark: #080808;
+
+    --foreground: var(--color-dark);
+    --background: var(--color-light);
+
+    --color-primary: #e6e6e6;
+    --color-secondary: #252970;
+    --color-tertiary: #4b4687; 
+
+    /* For font sizing */
+
+    /* Source: Galante, A. (2020, April 23). Accessible Font Sizing, Explained. 
+    CSS-TRICKS. https://css-tricks.com/accessible-font-sizing-explained/ */
+
+    font-size: 62.5%; /* 10px */
+    --font-size--small: 1.4rem; /* 14px */
+    --font-size--default: 1.6rem; /* 16px */
+    --font-size--large: 2.4rem; /* 24px */
+
+    /* For line-height, letter- and word-spacing */
+
+    --line-height--small: 2.1rem; /* 1.5 times the font-size */
+    --line-height--default: 2.4rem; 
+    --line-height--large: 3.6rem;
+
+    --letter-spacing--small: 0.2rem; /* 0.12 times the font-size */
+    --word-spacing--small: 0.22rem; /* 0.16 times the font-size */
+
+    --letter-spacing--default: 0.2rem;
+    --word-spacing--default: 0.3rem;
+
+    --letter-spacing-l-arge: 0.3rem;
+    --word-spacing--large: 0.4rem;
+
+}

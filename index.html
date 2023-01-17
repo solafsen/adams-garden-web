@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head> 
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title> Adam's Garden </title>
+        <link rel="icon" type="image/x-icon" href="images/adams-garden-logo.ico" />
+        <meta name="description" content="Adam's Garden - the best restaurant in town!" /> 
+
+        <!-- Fonts from Google Fonts. (https://fonts.google.com) -->
+
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Archivo+Black" />
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Judson?query=judson" />
+
+        <!-- Stylesheets -->
+        
+        <link rel="stylesheet" href="code/css/common/variables.css" />
+        <link rel="stylesheet" href="code/css/common/global.css" />
+        <link rel="stylesheet" href="code/css/index.css" />
+
+    </head>
+
+    <body>
+
+        <a href="#main" class="skip"> Skip to main content </a>
+
+        <header id="hero-image">
+            
+            <!-- Code for top-navbar is from youtube -->
+
+            <nav id="navbar" aria-label="top navigation bar">
+
+                <div class="nav-logo-container"> 
+                    <a href="index.html" class="nav-logo"> 
+                        <span aria-hidden="true">
+                        <img src="images/adams-garden-logo.png" alt="Adam's Garden logo" height="104" width="110" /></span>
+                        <span class="sr-only"> Home </span>
+                    </a>
+                    <button type="button" id="mobileMenuTrigger" 
+                    aria-expanded="false" 
+                    aria-controls="navigationLinks" 
+                    aria-label="Open and close navigation"
+                    >
+
+                        <!-- Error on HTML validator - but need it for hamburger bar, hence why it is still here -->
+
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+
+                    </button>
+                </div>
+                <div id="navigationLinks" class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html" id="home" class="topnav-a"> Home </a></li>
+                        <li><a href="code/html/menu.html" class="topnav-a"> Menu </a></li>
+                        <li><a href="code/html/booking.html" class="topnav-a"> Booking </a></li>
+                        <li><a href="code/html/topical.html" class="topnav-a"> Story </a></li>
+                        <li><a href="code/html/accessibility.html" class="topnav-a"> Accessibility </a></li>
+                        <li><a href="#contact-us" class="topnav-a"> Contact us </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <script src="script/navbar.js"></script>
+
+        </header>
+
+        <aside>
+            <nav class="aside-navbar" aria-label="aside navigation bar">
+                <a href="code/html/menu.html" id="L1"> Menu </a>
+                <a href="code/html/booking.html" id="L2"> Booking </a>
+                <a href="code/html/topical.html" id="L3"> Story </a>
+                <a href="code/html/accessibility.html" id="L4"> Coding </a>
+            </nav>
+        </aside>
+
+        <main class="main">
+         
+            <section>
+                <h1 id="main" class="text"> Welcome to Adam's Garden </h1>
+                <p class="text paragraph-spacing">
+                    Adam's Garden is a place for friends, family and loved ones to meet and share 
+                    good mememories and delicious food. On this website, you can 
+                    <a href="#L1" class="hyperlinks"> read our menu</a> and 
+                    <a href="#L2" class="hyperlinks"> reserve a table </a> for casual 
+                    dining or for special occasions. 
+                </p>
+                <p class="text paragraph-spacing">
+                    We also have <a href="#L3" class="hyperlinks"> a page with a short story </a> - visit our page
+                    for a fun reading. If you wish to know about our coding choices, please 
+                    <a href="#L4" class="hyperlinks"> check out our accessibility page. </a>
+                </p>
+            </section>
+            
+        </main>
+
+        <footer>
+            <section class="footer-styling">
+                <h2 class="h2-styling"> Address </h2>
+                <address class="footer-text">
+                    Adam's Garden <br>
+                    Edensgata 2 <br> 
+                    7022, Elven
+                </address>
+            </section>
+            <section class="footer-styling">
+                <h2 class="h2-styling"> Opening hours </h2>
+                <p class="footer-text">   
+                    Monday-Friday <br> (12.00 - 21.00) <br>
+                    Saturdag <br> (14.00 - 22.00) <br>
+                    Sunday <br> (14.00 - 22.00)
+                </p>
+            </section>
+            <section class="footer-styling">
+                <h2 id="contact-us" class="h2-styling"> Contact us </h2>
+                <address class="footer-text">
+                    <a href="tel:+4701010011" class="style-links"> Telephone number: <br> <span class="footer-links">  +47 010 10 011 </span></a> <br><br>
+                    <a href="mailto:reservation@adamsgarden.no" class="style-links"> For other inquiries, <br>
+                     <span class="footer-links"> please send us an e-mail </span></a>
+                </address>
+            </section>
+        </footer>
+
+    </body>
+
+</html>
