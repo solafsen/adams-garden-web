@@ -39,14 +39,14 @@ h1 { text-align: center; }
 
 /* Media queries */
 
-@media only screen and (min-width: 48.875em) and (max-width: 57.5625em) {
+@media only screen and (max-width: 57.5625em) and (min-width: 48.875em) {
     
     #hero-image { height: 50rem; }
 
     .main .text { padding: 1rem 4rem; }
 }
 
-@media only screen and (min-width: 57.625em) and (max-width: 64em) {
+@media only screen and (max-width: 64em) and (min-width: 57.625em) {
 
     #hero-image { height: 50rem; }
 

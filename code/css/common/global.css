@@ -232,7 +232,7 @@ address .style-links .footer-links { text-decoration: underline; color:var(--col
 
 /* Media queries */
 
-@media only screen and (min-width: 23em) and (max-width: 41.5em) {  /* Mobile devices ( 368px- 664px) */ 
+@media only screen and (max-width: 41.5em) and (min-width: 23em) {  /* Mobile devices ( 368px- 664px) */ 
 
     /* Changing values of font size, line-height, letter-spacing and word-spacing */
 
@@ -266,7 +266,7 @@ address .style-links .footer-links { text-decoration: underline; color:var(--col
 
 }
 
-@media only screen and (min-width: 41.5625em) and (max-width: 48.8125em) { /* 665px - 781px*/
+@media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { /* 665px - 781px*/
 
     :root {
         --font-size--small: 1.6rem; /* 16px */
@@ -334,7 +334,7 @@ address .style-links .footer-links { text-decoration: underline; color:var(--col
 
 }
 
-@media only screen and (min-width: 48.875em) and (max-width: 57.5625em) {  /* 782px - 921px */
+@media only screen and (max-width: 57.5625em) and (min-width: 48.875em) {  /* 782px - 921px */
 
     :root { 
         --font-size--small: 1.8rem; /* 18px */
@@ -447,7 +447,7 @@ address .style-links .footer-links { text-decoration: underline; color:var(--col
 
 }
 
-@media only screen and (min-width: 57.625em) and (max-width: 64em) {  /* Small screens, laptops (922px - 1024px) */ 
+@media only screen and (max-width: 64em) and (min-width: 57.625em) {  /* Small screens, laptops (922px - 1024px) */ 
 
     :root {
         --font-size--small: 1.8rem; /* 18px */
