@@ -332,8 +332,6 @@ address .style-links .footer-links { text-decoration: underline; color:var(--col
         --word-spacing--large: 0.448rem;
     }
 
-    .container { max-width: 48.875em;}
-
     body {
         column-gap: 1rem;
         row-gap: 2rem;
@@ -431,8 +429,6 @@ address .style-links .footer-links { text-decoration: underline; color:var(--col
         --letter-spacing--large: 0.336rem;
         --word-spacing--large: 0.448rem;
     }
-
-    .container { max-width: 57.625em;}
 
     body {
         column-gap: 1rem;
@@ -545,8 +541,6 @@ address .style-links .footer-links { text-decoration: underline; color:var(--col
         --letter-spacing--large: 0.36rem;
         --word-spacing--large: 0.48rem;
     }
-
-    .container { max-width: 64.0625em;}
 
     body {
         column-gap: 2rem;
