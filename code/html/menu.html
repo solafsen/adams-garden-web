@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head> 
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title> Adam's Garden </title>
+        <link rel="icon" type="image/x-icon" href="../../images/adams-garden-logo.ico" />
+        <meta name="description" content="Adam's Garden - the best restaurant in town!" /> 
+
+        <!-- Fonts from Google Fonts. (https://fonts.google.com) -->
+
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Archivo+Black" />
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Judson?query=judson" />
+
+        <!-- Stylesheets -->
+        
+        <link rel="stylesheet" href="../../code/css/common/variables.css" />
+        <link rel="stylesheet" href="../../code/css/common/global.css" />
+        <link rel="stylesheet" href="../../code/css/menu.css" />
+
+        <!-- Hamburger menu (bars) icon for navigation bar. From FontAwesome. (https://fontawesome.com/icons)-->
+
+        <script src="https://kit.fontawesome.com/b13c0ae639.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <a href="#main" class="skip"> Skip to main content </a>
+
+        <header id="hero-image">
+            
+            <!-- Code for top-navbar is from youtube -->
+
+            <nav id="navbar" aria-label="top navigation bar">
+
+                <div class="nav-logo-container"> 
+                    <a href="../../index.html" class="nav-logo"> 
+                        <span aria-hidden="true">
+                        <img src="../../images/adams-garden-logo.png" alt="Adam's Garden logo" height="104" width="110" /></span>
+                        <span class="sr-only"> Home </span>
+                    </a>
+                    <button type="button" id="mobileMenuTrigger" 
+                    aria-expanded="false" 
+                    aria-controls="navigationLinks" 
+                    aria-label="Open and close navigation">
+
+                        <!-- Error on HTML validator - but need it for hamburger bar, hence why it is still here -->
+
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+
+                    </button>
+                </div>
+                <div id="navigationLinks" class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="../../index.html" class="topnav-a"> Home </a></li>
+                        <li><a href="../../code/html/menu.html" id="home" class="topnav-a"> Menu </a></li>
+                        <li><a href="../../code/html/booking.html" class="topnav-a"> Booking </a></li>
+                        <li><a href="../../code/html/topical.html" class="topnav-a"> Story </a></li>
+                        <li><a href="../../code/html/accessibility.html" class="topnav-a"> Accessibility </a></li>
+                        <li><a href="#contact-us" class="topnav-a"> Contact us </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <script src="../../script/navbar.js"></script>
+
+        </header>
+
+        <aside>
+            <nav class="aside-navbar" aria-label="aside navigation bar">
+                <a href="#sandwiches" class="aside-a"><i class="fa-solid fa-bread-slice icon-aside"></i> Sandwiches </a>
+                <a href="#pizza" class="aside-a"><i class="fa-solid fa-pizza-slice icon-aside"></i> Pizza </a>
+                <a href="#pasta" class="aside-a"><i class="fa-solid fa-plate-wheat icon-aside"></i> Pasta </a>
+                <a href="#vegan" class="aside-a"><i class="fa-solid fa-seedling icon-aside"></i> Vegan </a>
+                <a href="#desserts" class="aside-a"><i class="fa-solid fa-cake-candles icon-aside"></i> Desserts </a>
+                <a href="#drinks" class="aside-a"><i class="fa-solid fa-mug-saucer icon-aside"></i> Drinks </a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <section>
+                <div>
+                    <h1> Our menu </h1>
+                    <section>
+
+                        <img src="../../#" alt=""/>
+                        <h2 id="sandwiches"> Sandwiches </h2>
+
+                        <div class="menu-group">
+                            <div class="a-dish">
+                                <h3 class="name-and-price"> 
+                                    <span> Sandwich with a grilled patty and remoulade </span>
+                                    <span> 185 kr</span>
+                                </h3>
+                                <p> Bread with grilled patty meat, pickles, lettuce, red onions, cherry tomatoes og remoulade. </p>
+                                <div>
+                                    <span class="allergies"><i class="fa-solid fa-egg fa-lg"></i> - Egg </span>
+                                </div>
+                            </div>
+                            <div class="a-dish">
+                                <h3 class="name-and-price"> 
+                                    <span> Skagen Sandwich with shrimps </span>
+                                    <span> 185 kr</span>
+                                </h3>
+                                <p> Bread with lemon, shrimps, rucola leaves, romaine lettuce, mayonnaise and lettuce. </p>
+                                <div>
+                                    <span class="allergies"><i class="fa-solid fa-egg fa-lg"></i> - Egg </span>
+                                    <span class="allergies"><i class="fa-solid fa-cow fa-lg"></i> - Milk </span> 
+                                    <span class="allergies"><i class="fa-solid fa-shrimp fa-lg"></i> - Shellfish </span>
+                                    <span class="allergies"><i class="fa-solid fa-lemon fa-lg"></i> - Citrus </span>
+                                </div>
+                            </div>
+                            <div class="a-dish">
+                                <h3 class="name-and-price"> 
+                                    <span> Bread with roast beef and remoulade </span>
+                                    <span> 185 kr</span>
+                                </h3>
+                                <p> Bread with grilled slices of steak, romaine lettuce, pickled onions, cherry tomatoes and remoulade. </p>
+                                <div>
+                                    <span class="allergies"><i class="fa-solid fa-egg fa-lg"></i> - Egg </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+
+                        <img src="../../#" alt=""/>
+                        <h2 id="#pizza"> Pizza </h2>
+
+                        <div class="menu-group">
+                            <div class="a-dish">
+                                <h3 class="name-and-price"> 
+                                    <span> Sandwich with a grilled patty and remoulade </span>
+                                    <span> 185 kr</span>
+                                </h3>
+                                <p> Bread with grilled patty meat, pickles, lettuce, red onions, cherry tomatoes og remoulade. </p>
+                                <div>
+                                    <span class="allergies"><i class="fa-solid fa-egg fa-lg"></i> - Egg </span>
+                                </div>
+                            </div>
+                            <div class="a-dish">
+                                <h3 class="name-and-price"> 
+                                    <span> Skagen Sandwich with shrimps </span>
+                                    <span> 185 kr</span>
+                                </h3>
+                                <p> Bread with lemon, shrimps, rucola leaves, romaine lettuce, mayonnaise and lettuce. </p>
+                                <div>
+                                    <span class="allergies"><i class="fa-solid fa-egg fa-lg"></i> - Egg </span>
+                                    <span class="allergies"><i class="fa-solid fa-cow fa-lg"></i> - Milk </span> 
+                                    <span class="allergies"><i class="fa-solid fa-shrimp fa-lg"></i> - Shellfish </span>
+                                    <span class="allergies"><i class="fa-solid fa-lemon fa-lg"></i> - Citrus </span>
+                                </div>
+                            </div>
+                            <div class="a-dish">
+                                <h3 class="name-and-price"> 
+                                    <span> Bread with roast beef and remoulade </span>
+                                    <span> 185 kr</span>
+                                </h3>
+                                <p> Bread with grilled slices of steak, romaine lettuce, pickled onions, cherry tomatoes and remoulade. </p>
+                                <div>
+                                    <span class="allergies"><i class="fa-solid fa-egg fa-lg"></i> - Egg </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>       
+            </section>
+        </main>
+
+        <footer>
+            <section class="footer-styling">
+                <h2 class="h2-styling"> Address </h2>
+                <address class="footer-text">
+                    Adam's Garden <br>
+                    Edensgata 2 <br> 
+                    7022, Elven
+                </address>
+            </section>
+            <section class="footer-styling">
+                <h2 class="h2-styling"> Opening hours </h2>
+                <p class="footer-text">   
+                    Monday-Friday <br> (12.00 - 21.00) <br>
+                    Saturdag <br> (14.00 - 22.00) <br>
+                    Sunday <br> (14.00 - 22.00)
+                </p>
+            </section>
+            <section class="footer-styling">
+                <h2 id="contact-us" class="h2-styling"> Contact us </h2>
+                <address class="footer-text">
+                    <a href="tel:+4701010011" class="style-links"> Telephone number: <br> <span class="footer-links">  +47 010 10 011 </span></a> <br><br>
+                    <a href="mailto:reservation@adamsgarden.no" class="style-links"> For other inquiries, <br>
+                     <span class="footer-links"> please send us an e-mail </span></a>
+                </address>
+            </section>
+        </footer>
+
+    </body>
+
+</html>
