@@ -36,24 +36,25 @@ h3 { font-size: var(--font-size--default);}
 
 .main { padding: 1rem 2rem; }
 
+#grid-menu {display: grid; row-gap: 3rem; grid-template-columns: 1fr;}
+
 .paragraph-spacing { margin-bottom: 3.2rem; }
 
 /* Links inside section */
 
-.main .text .hyperlinks { 
+.main .hyperlinks { 
     text-decoration: none;
     color: var(--foreground);
 }
 
-.main .text .hyperlinks:focus{ 
+.main .hyperlinks:focus{ 
     color: var(--color-secondary); 
     background-color: var(--color-primary);
 }
 
 
-.main .text .hyperlinks:hover {
+.main .hyperlinks:hover {
     color: var(--color-tertiary); 
-    background-color: var(--color-primary); 
     text-decoration: underline;
 }
 
@@ -75,10 +76,8 @@ h3 { font-size: var(--font-size--default);}
     /* Navbar - aside */
 
     aside .aside-navbar {
-        display: flex; 
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(1, auto);
+        justify-content: space-around;
 
         border: 1px solid var(--background);
         padding: 4rem;
