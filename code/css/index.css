@@ -66,8 +66,6 @@ h1 { text-align: center; }
 }
 
 @media only screen and (max-width: 57.5625em) and (min-width: 48.875em) {
-    
-    #hero-image { height: 50rem; }
 
     /* Navbar - aside */
 
@@ -88,8 +86,6 @@ h1 { text-align: center; }
 }
 
 @media only screen and (max-width: 64em) and (min-width: 57.625em) {
-
-    #hero-image { height: 50rem; }
 
     /* Navbar - aside */
 
@@ -115,8 +111,6 @@ h1 { text-align: center; }
 }
 
 @media only screen and (min-width: 64.0625em) {
-
-    #hero-image { height: 60rem; }
 
     /* Navbar - aside */
 
