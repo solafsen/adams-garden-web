@@ -26,19 +26,35 @@ aside .aside-navbar {
     line-height: var(--line-height--small);
 }
 
-aside .aside-navbar .aside-a {padding: 1rem;}
+aside .aside-navbar .aside-a { padding: 0.5rem; }
 
 /* Main */
 
-h1 { text-align: center; }
+h1 { 
+    font-size: var(--font-size--large); 
+    font-weight: 1000; 
+    letter-spacing: var(--letter-spacing--large); 
+    line-height: var(--line-height--large); 
+    word-spacing: var(--word-spacing-large); 
+    text-align: center;
+}
 
-h3 { font-size: var(--font-size--default);}
+h2 {
+    font-size: var(--font-size--small);  
+    letter-spacing: var(--letter-spacing--small); 
+    line-height: var(--line-height--small); 
+    word-spacing: var(--word-spacing--small); 
+    text-align: left;
+} 
 
-.main { padding: 1rem 2rem; }
+h3 { 
+    font-size: var(--font-size--small);
+    letter-spacing: var(--letter-spacing--small); 
+    line-height: var(--line-height--small); 
+    word-spacing: var(--word-spacing--small); 
+    text-align: left;
+} 
 
-#grid-menu {display: grid; row-gap: 3rem; grid-template-columns: 1fr;}
-
-.paragraph-spacing { margin-bottom: 3.2rem; }
 
 /* Links inside section */
 
@@ -86,7 +102,14 @@ h3 { font-size: var(--font-size--default);}
         line-height: 3.5rem;
     }
 
-    .main { padding: 1rem 4rem; }
+    /*h2 {
+        font-size: var(--font-size--default);  
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    } */
+
+    .main { padding: 1rem 4rem; margin-left: 5rem; }
 }
 
 @media only screen and (max-width: 64em) and (min-width: 57.625em) {
@@ -109,6 +132,15 @@ h3 { font-size: var(--font-size--default);}
         margin-left: 3rem;
         line-height: 3.5rem;
     }
+
+    /* Footer */
+
+    /*h2 {
+        font-size: var(--font-size--default);  
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    } */
 
     .main { padding: 1rem 5rem; }
     
@@ -135,5 +167,15 @@ h3 { font-size: var(--font-size--default);}
         line-height: 3.5rem;
     }
 
+    /* Footer */
+    /*
+    h2 {
+        font-size: var(--font-size--default);  
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    } */
+
     .main { padding: 1rem 4rem; }
+
 }

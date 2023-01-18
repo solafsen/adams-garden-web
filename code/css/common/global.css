@@ -44,7 +44,7 @@ aside { grid-area: 2/ 1/ 3/ 7; }
 main { grid-row: 3/ 1/ 4/ 7; }
 footer { grid-area: 4/ 1/ 5/ 7; }
 
-aside, main {padding: 1rem;}
+aside, main {padding: 2rem;}
 
 /* Skip to main content link */
 
@@ -168,25 +168,7 @@ ul { list-style: none; }
 
 /* [4] - Main */
 
-h1, h2, b {font-family: 'Archivo Black', 'Helvetica', 'Aria', sans-serif; }
-
-h1 { 
-    font-size: var(--font-size--large); 
-    font-weight: bold; 
-    letter-spacing: var(--letter-spacing--large); 
-    line-height: var(--line-height--large); 
-    word-spacing: var(--word-spacing-large); 
-}
-
-/* [5] - Footer */
-
-h2 {
-    font-size: var(--font-size--large);  
-    letter-spacing: var(--letter-spacing--large); 
-    line-height: var(--line-height--large); 
-    word-spacing: var(--word-spacing--large); 
-    text-align: left;
-}
+h1, h2, h3, h4, b {font-family: 'Archivo Black', 'Helvetica', 'Aria', sans-serif; }
 
 footer { 
     display: flex; 
@@ -382,13 +364,6 @@ address .style-links .footer-links { text-decoration: underline; color:var(--col
 
     /* Footer */
 
-    h2 {
-        font-size: var(--font-size--default);  
-        letter-spacing: var(--letter-spacing--default); 
-        line-height: var(--line-height--default); 
-        word-spacing: var(--word-spacing--default); 
-    }
-
     footer { 
         display: flex; 
         flex-direction: row; 
@@ -491,15 +466,6 @@ address .style-links .footer-links { text-decoration: underline; color:var(--col
     }
 
     main { padding-left: 5rem;}
-    
-    /* Footer */
-
-    h2 {
-        font-size: var(--font-size--default);  
-        letter-spacing: var(--letter-spacing--default); 
-        line-height: var(--line-height--default); 
-        word-spacing: var(--word-spacing--default); 
-    }
 
     footer { 
         display: flex; 
@@ -602,15 +568,6 @@ address .style-links .footer-links { text-decoration: underline; color:var(--col
     }
 
     main { padding-left: 5rem;}
-    
-    /* Footer */
-
-    h2 {
-        font-size: var(--font-size--default);  
-        letter-spacing: var(--letter-spacing--default); 
-        line-height: var(--line-height--default); 
-        word-spacing: var(--word-spacing--default); 
-    }
 
     footer { 
         display: flex; 
