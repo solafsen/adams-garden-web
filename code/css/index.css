@@ -2,34 +2,64 @@
 /* Header */
 
 #hero-image {
+
     width: 100%;
     height: 40rem;
     background-image:url("../../images/index/restaurant.jpeg");
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover; 
+
+}
+
+/* Top-navbar */
+
+header {
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
 }
 
 /* Aside - navbar */
 
 aside .aside-navbar { 
+
     display: grid; 
     grid-template-columns: repeat(2, auto);
     justify-content: space-around;
     padding: 0.8rem; 
     background-color: var(--color-primary);
 
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
 }
 
 /* Main */
 
+main {
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
+}
+
 h1 { 
+
     font-size: var(--font-size--large); 
     font-weight: bold; 
     letter-spacing: var(--letter-spacing--large); 
     line-height: var(--line-height--large); 
     word-spacing: var(--word-spacing-large);
     text-align: center;
+
 } 
 
 .main .text { padding: 1rem 2rem; }
@@ -38,24 +68,28 @@ h1 {
 
 /* Links inside section */
 
-.main .text .hyperlinks { 
-    text-decoration: none;
-    color: var(--foreground);
-}
+.text .hyperlinks { text-decoration: none; color: var(--foreground); }
 
-.main .text .hyperlinks:focus{ 
+.text .hyperlinks:focus{ 
     color: var(--color-secondary); 
     background-color: var(--color-primary);
 }
 
 
-.main .text .hyperlinks:hover {
+.text .hyperlinks:hover {
     color: var(--color-tertiary); 
     background-color: var(--color-primary); 
     text-decoration: underline;
 }
 
-/* [5] - Footer */
+/* Footer */
+
+footer address, footer p {
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+}
 
 h2 {
     font-size: var(--font-size--large);  
@@ -67,11 +101,10 @@ h2 {
 
 /* Media queries */
 
-@media only screen and (max-width: 41.5em) and (min-width: 23em) {  /* Mobile devices ( 368px- 664px) */ 
-}
-
 @media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) {
+    
     aside .aside-navbar { grid-template-columns: repeat(4, auto); }
+
 }
 
 @media only screen and (max-width: 57.5625em) and (min-width: 48.875em) {
@@ -81,6 +114,7 @@ h2 {
     /* Navbar - aside */
 
     aside .aside-navbar {
+
         grid-template-columns: repeat(1, auto);
         justify-content: space-around;
 
@@ -89,6 +123,7 @@ h2 {
         margin-top: 4rem;
         margin-left: 3rem;
         line-height: 3.5rem;
+
     }
 
     /* Main */
@@ -98,10 +133,12 @@ h2 {
     /* Footer */
 
     h2 { 
+
         font-size: var(--font-size--default);  
         letter-spacing: var(--letter-spacing--default); 
         line-height: var(--line-height--default); 
         word-spacing: var(--word-spacing--default); 
+
     } 
 }
 
@@ -112,6 +149,7 @@ h2 {
     /* Navbar - aside */
 
     aside .aside-navbar {
+
         grid-template-columns: repeat(1, auto);
         justify-content: space-around;
 
@@ -124,6 +162,7 @@ h2 {
         margin-top: 4rem;
         margin-left: 3rem;
         line-height: 3.5rem;
+
     }
 
     /* Main */
@@ -133,10 +172,12 @@ h2 {
     /* Footer */
 
     h2 {
+
         font-size: var(--font-size--default);  
         letter-spacing: var(--letter-spacing--default); 
         line-height: var(--line-height--default); 
         word-spacing: var(--word-spacing--default); 
+
     } 
     
 }
@@ -148,6 +189,7 @@ h2 {
     /* Navbar - aside */
 
     aside .aside-navbar {
+
         grid-template-columns: repeat(1, auto);
         justify-content: space-around;
 
@@ -160,6 +202,7 @@ h2 {
         margin-top: 4rem;
         margin-left: 5rem;
         line-height: 3.5rem;
+
     }
 
     /* Main */
@@ -169,9 +212,11 @@ h2 {
     /* Footer */
     
     h2 {
+
         font-size: var(--font-size--default);  
         letter-spacing: var(--letter-spacing--default); 
         line-height: var(--line-height--default); 
         word-spacing: var(--word-spacing--default); 
+        
     }
 }
