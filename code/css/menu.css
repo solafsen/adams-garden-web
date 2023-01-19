@@ -1,4 +1,5 @@
 
+
 /* Header */
 
 #hero-image {
@@ -8,6 +9,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
+}
+
+/* Top navbar */
+
+nav {
+
+    font-size: var(--font-size--default);
+    letter-spacing: var(--letter-spacing--default); 
+    line-height: var(--line-height--default); 
+    word-spacing: var(--word-spacing--default); 
+
 }
 
 /* Aside - navbar */
@@ -30,7 +42,15 @@ aside .aside-navbar .aside-a { padding: 0.8rem; }
 
 /* Main */
 
-main {margin: 0;}
+main {
+    
+    margin: 0;
+    font-size: var(--font-size--default);
+    letter-spacing: var(--letter-spacing--default); 
+    line-height: var(--line-height--default); 
+    word-spacing: var(--word-spacing--default); 
+
+}
 
 #menu {
     display: grid;
@@ -57,7 +77,14 @@ h1 {
 
 .card:last-child {padding-bottom: 2rem;}
 
-.dish { padding: 0rem 2rem; }
+.dish {
+    
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap:0.3rem; 
+    padding: 0rem 2rem; 
+
+}
 
 h2 {
     border-bottom: 2px solid var(--color-primary);
@@ -107,7 +134,13 @@ h3 {
     color: var(--color-tertiary);
 }
 
+.allergies:hover {
+    color:var(--foreground);
+}
+
 .fa-solid {color: var(--color-secondary);}
+
+.fa-solid:hover {color: var(--foreground);}
 
 .card-beverages {
     display:grid; 
@@ -119,40 +152,41 @@ h3 {
 
 .beverage { padding-left: 1rem; padding-right: 1rem; }
 
-
-
-
-
-
-
-/* 
-h3 { 
-    font-size: var(--font-size--small);
-    letter-spacing: var(--letter-spacing--small); 
-    line-height: var(--line-height--small); 
-    word-spacing: var(--word-spacing--small); 
-    text-align: left;
-} 
-
-h4 { text-align: center;} */
-
 /* Links inside section */
 
-.main .hyperlinks { 
+main .hyperlinks { 
     text-decoration: none;
     color: var(--foreground);
 }
 
-.main .hyperlinks:focus{ 
+main .hyperlinks:focus{ 
     color: var(--color-secondary); 
     background-color: var(--color-primary);
 }
 
 
-.main .hyperlinks:hover {
+main .hyperlinks:hover {
     color: var(--color-tertiary); 
     text-decoration: underline;
 }
+
+/* Footer */
+
+footer address, footer p {
+    font-size: var(--font-size--default);
+    letter-spacing: var(--letter-spacing--default); 
+    line-height: var(--line-height--default); 
+    word-spacing: var(--word-spacing--default); 
+}
+
+h4 {
+
+    font-size: var(--font-size--default);  
+    letter-spacing: var(--letter-spacing--large); 
+    line-height: var(--line-height--large); 
+    word-spacing: var(--word-spacing--large); 
+
+} 
 
 /* Media queries */
 
