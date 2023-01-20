@@ -2,12 +2,14 @@
 /* Header */
 
 #hero-image {
+
     width: 100%;
     height: 40rem;
     background-image:url("../../images/menu/ingredients.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
+
 }
 
 /* Top navbar */
@@ -24,6 +26,7 @@ header nav {
 /* Aside - navbar */
 
 aside .aside-navbar { 
+
     display: grid; 
     grid-template-columns: repeat(2, auto);
     justify-content: space-around;
@@ -35,46 +38,45 @@ aside .aside-navbar {
     letter-spacing: var(--letter-spacing--small); 
     line-height: var(--line-height--small); 
     word-spacing: var(--word-spacing--small); 
+
 }
 
 aside .aside-navbar .aside-a { padding: 0.8rem; }
 
 /* Main */
 
-main {
-    
-    margin: 0;
-    font-size: var(--font-size--default);
-    letter-spacing: var(--letter-spacing--default); 
-    line-height: var(--line-height--default); 
-    word-spacing: var(--word-spacing--default); 
-
-}
+main { margin: 0; }
 
 #menu {
+
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em;
     padding: 0rem 3rem;
+
 }
 
 h1 {
+
     font-size: var(--font-size--large);
     letter-spacing: var(--letter-spacing--large); 
     line-height: var(--line-height--large); 
     word-spacing: var(--word-spacing--large); 
     text-align: center;
+
 }
 
 .card {
+
     display:grid; 
     grid-template-columns: 1fr; 
     gap: 1.5em;
 
     box-shadow: 0 0.4rem 0.8rem 0 rgb(168, 165, 165);
+
 }
 
-.card:last-child {padding-bottom: 2rem;}
+.card:last-child { padding-bottom: 2rem; }
 
 .dish {
     
@@ -86,6 +88,7 @@ h1 {
 }
 
 h2 {
+
     border-bottom: 2px solid var(--color-primary);
     padding-bottom: 0.5em;
 
@@ -93,31 +96,40 @@ h2 {
     letter-spacing: var(--letter-spacing--default); 
     line-height: var(--line-height--default); 
     word-spacing: var(--word-spacing--default); 
+
 }
 
-/* Links - Heading 2 */
+/* Links - h2 */
 
 main .hyperlinks { 
+
     text-decoration: none;
     color: var(--foreground);
+
 }
 
 main .hyperlinks:focus{ 
+
     color: var(--color-secondary); 
     background-color: var(--color-primary);
+
 }
 
 
 main .hyperlinks:hover {
+
     color: var(--color-tertiary); 
     text-decoration: underline;
+
 }
 
 h3 {
+
     font-size: var(--font-size--small);
     letter-spacing: var(--letter-spacing--small); 
     line-height: var(--line-height--small); 
     word-spacing: var(--word-spacing--small); 
+
 }
 
 .price-container { display: flex; justify-content: space-between; }
@@ -125,20 +137,27 @@ h3 {
 .price { margin-left: 3em; }
 
 .description {
+
     font-size: var(--font-size--small);
     letter-spacing: var(--letter-spacing--small); 
     line-height: var(--line-height--small); 
     word-spacing: var(--word-spacing--small); 
+
 }
 
+/* Allergies */
+
 .box-like-btn {
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     justify-content: space-evenly;
+
 }
 
 .allergies {
+
     font-size: var(--font-size--small);
     letter-spacing: var(--letter-spacing--small); 
     line-height: var(--line-height--small); 
@@ -149,22 +168,27 @@ h3 {
     border-radius: 1rem;
     background-color: var(--color-primary);
     color: var(--color-tertiary);
+
 }
 
-.allergies:hover {
-    color:var(--foreground);
-}
+.allergies:hover { color:var(--foreground); }
 
-.fa-solid {color: var(--color-secondary);}
+/* Icons for allergies */
 
-.fa-solid:hover {color: var(--foreground);}
+.fa-solid { color: var(--color-secondary); }
+
+.fa-solid:hover { color: var(--foreground); }
+
+/* Beverages */
 
 .card-beverages {
+
     display:grid; 
     grid-template-columns: 1fr; 
     gap: 0.1em;
 
     box-shadow: 0 0.4rem 0.8rem 0 rgb(168, 165, 165);
+
 }
 
 .beverage { padding-left: 1rem; padding-right: 1rem; }
@@ -172,10 +196,12 @@ h3 {
 /* Footer */
 
 .footer-styling .footer-text {
+
     font-size: var(--font-size--default);
     letter-spacing: var(--letter-spacing--default); 
     line-height: var(--line-height--default); 
     word-spacing: var(--word-spacing--default); 
+
 }
 
 h4 {
@@ -191,6 +217,67 @@ h4 {
 
 @media only screen and (max-width: 41.5em) and (min-width: 23em) {  /* Mobile devices ( 368px- 664px) */ 
 
+    /* Aside - navbar */
+
+    aside .aside-navbar { 
+
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+
+    }
+    aside .aside-navbar .aside-a { padding: 1rem; } 
+
+    /* Main */
+
+    #menu { gap: 5em; }
+
+    .card { gap: 3em; }
+
+    .card:last-child { padding-bottom: 4rem; }
+
+    .dish { gap:0rem; }
+
+    h2 {
+
+        font-size: var(--font-size--large);
+        letter-spacing: var(--letter-spacing--large); 
+        line-height: var(--line-height--large); 
+        word-spacing: var(--word-spacing--large); 
+
+    }
+
+    h3 {
+
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+
+    }
+
+    .description {
+
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+
+    }
+
+    /* Allergies */
+
+    .box-like-btn { gap: 2rem; }
+
+    .allergies {
+
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default);
+
+    }
 
 }
 
