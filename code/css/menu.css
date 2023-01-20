@@ -1,5 +1,4 @@
 
-
 /* Header */
 
 #hero-image {
@@ -96,6 +95,24 @@ h2 {
     word-spacing: var(--word-spacing--default); 
 }
 
+/* Links - Heading 2 */
+
+main .hyperlinks { 
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+main .hyperlinks:focus{ 
+    color: var(--color-secondary); 
+    background-color: var(--color-primary);
+}
+
+
+main .hyperlinks:hover {
+    color: var(--color-tertiary); 
+    text-decoration: underline;
+}
+
 h3 {
     font-size: var(--font-size--small);
     letter-spacing: var(--letter-spacing--small); 
@@ -152,24 +169,6 @@ h3 {
 
 .beverage { padding-left: 1rem; padding-right: 1rem; }
 
-/* Links inside section */
-
-main .hyperlinks { 
-    text-decoration: none;
-    color: var(--foreground);
-}
-
-main .hyperlinks:focus{ 
-    color: var(--color-secondary); 
-    background-color: var(--color-primary);
-}
-
-
-main .hyperlinks:hover {
-    color: var(--color-tertiary); 
-    text-decoration: underline;
-}
-
 /* Footer */
 
 footer address, footer p {
@@ -182,9 +181,9 @@ footer address, footer p {
 h4 {
 
     font-size: var(--font-size--default);  
-    letter-spacing: var(--letter-spacing--large); 
-    line-height: var(--line-height--large); 
-    word-spacing: var(--word-spacing--large); 
+    letter-spacing: var(--letter-spacing--default); 
+    line-height: var(--line-height--default); 
+    word-spacing: var(--word-spacing--default); 
 
 } 
 
