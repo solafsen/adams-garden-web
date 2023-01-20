@@ -14,7 +14,7 @@
 
 /* Top-navbar */
 
-header {
+header nav {
 
     font-size: var(--font-size--default);
     line-height: var(--line-height--default);
@@ -140,6 +140,13 @@ h2 {
         word-spacing: var(--word-spacing--default); 
 
     } 
+
+    .footer-styling .footer-text { 
+        font-size: var(--font-size--small);
+        line-height: var(--line-height--small);
+        letter-spacing: var(--letter-spacing--small);
+        word-spacing: var(--word-spacing--small);
+    }
 }
 
 @media only screen and (max-width: 64em) and (min-width: 57.625em) {
@@ -179,6 +186,13 @@ h2 {
         word-spacing: var(--word-spacing--default); 
 
     } 
+
+    .footer-styling .footer-text { 
+        font-size: var(--font-size--small);
+        line-height: var(--line-height--small);
+        letter-spacing: var(--letter-spacing--small);
+        word-spacing: var(--word-spacing--small);
+    }
     
 }
 
@@ -218,5 +232,12 @@ h2 {
         line-height: var(--line-height--default); 
         word-spacing: var(--word-spacing--default); 
         
+    }
+
+    .footer-styling .footer-text { 
+        font-size: var(--font-size--small);
+        line-height: var(--line-height--small);
+        letter-spacing: var(--letter-spacing--small);
+        word-spacing: var(--word-spacing--small);
     }
 }
