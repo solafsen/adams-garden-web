@@ -187,8 +187,6 @@ footer {
     color: var(--foreground);
 }
 
-.footer-styling .footer-text { text-align: left; }
-
 /* Remove the default value */
 
 address { display: inline; font-style: normal; }
@@ -453,6 +451,7 @@ address .style-links .footer-links { color:var(--color-secondary);}
         flex-direction: row;
         justify-content: flex-end;
         margin: 0;
+        gap: 0.4rem;
         right: 3rem;
         padding: 0rem;
     }
@@ -467,7 +466,7 @@ address .style-links .footer-links { color:var(--color-secondary);}
     footer { 
         display: flex; 
         flex-direction: row; 
-        justify-content: space-around;
+        justify-content:space-around;
         background-color: var(--color-primary); 
     }
     
@@ -549,6 +548,7 @@ address .style-links .footer-links { color:var(--color-secondary);}
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        gap: 1rem;
         margin: 0;
         padding: 0rem;
     }

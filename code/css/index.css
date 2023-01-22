@@ -141,7 +141,7 @@ h2 {
 
     } 
 
-    .footer-styling .footer-text { 
+    footer address, footer p { 
         font-size: var(--font-size--small);
         line-height: var(--line-height--small);
         letter-spacing: var(--letter-spacing--small);
@@ -187,7 +187,7 @@ h2 {
 
     } 
 
-    .footer-styling .footer-text { 
+    footer address, footer p { 
         font-size: var(--font-size--small);
         line-height: var(--line-height--small);
         letter-spacing: var(--letter-spacing--small);
@@ -234,7 +234,7 @@ h2 {
         
     }
 
-    .footer-styling .footer-text { 
+    footer address, footer p { 
         font-size: var(--font-size--small);
         line-height: var(--line-height--small);
         letter-spacing: var(--letter-spacing--small);
