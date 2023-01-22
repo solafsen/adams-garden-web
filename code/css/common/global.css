@@ -203,7 +203,7 @@ address .style-links .footer-links { color:var(--color-secondary);}
 
 /* Media queries */
 
-@media only screen and (max-width: 41.5em) and (min-width: 23em) {  /* Mobile devices ( 368px- 664px) */ 
+@media only screen and (max-width: 41.5em) and (min-width: 23em) {  /* 368px - 664px */ 
 
     /* Changing values of font size, line-height, letter-spacing and word-spacing */
 
@@ -235,7 +235,7 @@ address .style-links .footer-links { color:var(--color-secondary);}
 
 }
 
-@media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { /* 665px - 781px*/
+@media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { /* 665px - 781px */
 
     :root {
         --font-size--small: 1.6rem; /* 16px */
