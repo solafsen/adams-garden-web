@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head> 
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title> Adam's Garden </title>
+        <link rel="icon" type="image/x-icon" href="../../images/adams-garden-logo.ico" />
+        <meta name="description" content="Adam's Garden - the best restaurant in town!" /> 
+
+        <!-- Fonts from Google Fonts. (https://fonts.google.com) -->
+
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Archivo+Black" />
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Judson?query=judson" />
+
+        <!-- Stylesheets -->
+        
+        <link rel="stylesheet" href="../../code/css/common/variables.css" />
+        <link rel="stylesheet" href="../../code/css/common/global.css" />
+        <link rel="stylesheet" href="../../code/css/booking.css" />
+
+        <!-- Hamburger menu (bars) icon for navigation bar. From FontAwesome. (https://fontawesome.com/icons)-->
+
+        <script src="https://kit.fontawesome.com/b13c0ae639.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body> 
+
+        <!-- Skip to main content link -->
+
+        <a href="#main" class="skip"> Skip to main content </a>
+
+        <header id="hero-image">
+
+            <!-- Ladd, A. [alstudiowebdev] (2022, June 14). 
+            Responsive and Accessible Navigation (HTML, CSS, Vanilla JS) [Video]. 
+            Youtube. https://youtu.be/IdZ-ZHLyEHs with some adjustment - in css. -->
+
+            <nav id="navbar" aria-label="top navigation bar">
+
+                <div class="nav-logo-container"> 
+
+                    <a href="../../index.html" class="nav-logo">  
+                        <span aria-hidden="true"> <!-- Logo from Adobe Express -->
+                        <img src="../../images/adams-garden-logo.png" alt="Adam's Garden logo" height="104" width="110" /></span>
+                        <span class="sr-only"> Home </span>
+                    </a>
+
+                    <button type="button" id="mobileMenuTrigger" 
+                    aria-expanded="false" 
+                    aria-controls="navigationLinks" 
+                    aria-label="Open and close navigation">
+
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+
+                    </button>
+
+                </div>
+
+                <div id="navigationLinks" class="nav-links-container">
+
+                    <ul class="nav-links">
+                        <li><a href="../../index.html" class="topnav-a"> Home </a></li>
+                        <li><a href="../../code/html/menu.html" class="topnav-a"> Menu </a></li>
+                        <li><a href="../../code/html/booking.html" id="home" class="topnav-a"> Booking </a></li>
+                        <li><a href="../../code/html/topical.html" class="topnav-a"> Story </a></li>
+                        <li><a href="../../code/html/accessibility.html" class="topnav-a"> Accessibility </a></li>
+                        <li><a href="#contact-us" class="topnav-a"> Contact us </a></li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <script src="../../script/navbar.js"></script>
+
+        </header>
+
+        
+        <aside>
+
+            <nav class="aside-navbar" aria-label="aside navigation bar">
+                <a href="#about-us" class="aside-a"> About us </a>
+                <a href="#booking" class="aside-a"> Booking </a>
+                <a href="#testimonials" class="aside-a"> Reviews </a>
+            </nav>
+
+        </aside>
+        
+        <main id="main">
+
+            <section>
+
+
+
+            </section>
+
+            <section>
+                <form>
+
+
+
+                </form>
+            </section>
+
+            <section>
+
+            </section>
+
+            <section>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <section class="footer-styling">
+                <h4> Address </h4>
+                <address>
+                    Adam's Garden <br>
+                    Edensgata 2 <br> 
+                    7022, Elven
+                </address>
+            </section>
+
+            <section class="footer-styling">
+                <h4> Opening hours </h4>
+                <p>   
+                    Monday-Friday <br> (12.00 - 21.00) <br>
+                    Saturdag <br> (14.00 - 22.00) <br>
+                    Sunday <br> (14.00 - 22.00)
+                </p>
+            </section>
+
+            <section class="footer-styling">
+                <h4 id="contact-us"> Contact us </h4>
+                <address>
+                    <a href="tel:+4701010011" class="style-links"> Telephone number: <br> <span class="footer-links">  +47 010 10 011 </span></a> <br><br>
+                    <a href="mailto:reservation@adamsgarden.no" class="style-links"> For other inquiries, <br>
+                     <span class="footer-links"> please send us an e-mail </span></a>
+                </address>
+            </section>
+            
+        </footer>
+    </body>
+
+
+</html>
