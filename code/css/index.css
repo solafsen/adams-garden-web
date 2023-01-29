@@ -17,7 +17,9 @@
 
 }
 
-/* Top-navbar */
+/* Top navbar */
+
+.navbar-padding { padding: 1.5rem; } /* change */
 
 header nav {
 
@@ -29,6 +31,8 @@ header nav {
 }
 
 /* Aside - navbar */
+
+aside { padding: 1.5rem; } /* change s*/
 
 aside .aside-navbar { 
 
@@ -44,6 +48,8 @@ aside .aside-navbar {
     word-spacing: var(--word-spacing--default);
 
 }
+
+.aside-navbar .aside-a { padding: 0.8rem; } /* change */
 
 /* Main */
 
@@ -67,7 +73,7 @@ h1 {
 
 } 
 
-.main .text { padding: 1rem 2rem; }
+.main .text { padding: 1rem 2rem; } /* change */
 
 .paragraph-spacing { margin-bottom: 3.2rem; }
 
@@ -75,174 +81,238 @@ h1 {
 
 .text .hyperlinks { text-decoration: none; color: var(--foreground); }
 
-.text .hyperlinks:focus{ 
-    color: var(--color-secondary); 
-    background-color: var(--color-primary);
-}
+.text .hyperlinks:focus{ color: var(--color-secondary); background-color: var(--color-primary); }
 
 
 .text .hyperlinks:hover {
+
     color: var(--color-tertiary); 
     background-color: var(--color-primary); 
     text-decoration: underline;
+
 }
 
 /* Footer */
 
-footer address, footer p {
-    font-size: var(--font-size--default);
-    line-height: var(--line-height--default);
-    letter-spacing: var(--letter-spacing--default);
-    word-spacing: var(--word-spacing--default);
-}
+footer { padding: 2rem; } /* change */
+
+footer div { gap: 2rem; } /* change */
 
 h2 {
+
     font-size: var(--font-size--large);  
     letter-spacing: var(--letter-spacing--large); 
     line-height: var(--line-height--large); 
     word-spacing: var(--word-spacing--large); 
     text-align: left;
-} 
-
-/* Media queries */
-
-@media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) {
-    
-    aside .aside-navbar { grid-template-columns: repeat(4, auto); }
 
 }
 
-@media only screen and (max-width: 57.5625em) and (min-width: 48.875em) {
+footer address, footer p {
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
+}
+
+/* Media queries */
+
+/* 368px - 481px */
+
+@media only screen and (max-width: 30.06em) and (min-width: 23em) { 
+
+    .navbar-padding { padding: 2rem; }
+
+    aside { padding: 2rem; }
+
+    .aside-navbar .aside-a { padding: 1rem; }
+
+    .main .text { padding: 1rem 4rem; } 
+}
+
+/* 481px - 664px */
+
+@media only screen and (max-width: 41.5em) and (min-width: 30.06em) {
     
+    .navbar-padding { padding: 2rem; }
+
+    aside { padding: 2rem; }
+
+    aside .aside-navbar { 
+
+        grid-template-columns: repeat(4, auto);
+        gap: 0.5rem;
+        padding: 1rem;
+    
+    }
+
+    .aside-navbar .aside-a { padding: 1rem; }
+
+    .main .text { padding: 1rem 5rem; } 
+
+    footer { padding: 3rem; }
+
+    footer .container { margin: 1.5rem;}
+
+}
+
+/* 665px - 781px */
+
+@media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { 
+
+    #hero-image { height: 45rem; }
+
+    .navbar-padding { padding: 2rem; }
+
+    aside { padding: 1rem 4rem; }
+
+    aside .aside-navbar { grid-template-columns: repeat(4, auto); }
+
+    .aside-navbar .aside-a { padding: 1rem; }
+
+    .main .text { padding: 1rem 5rem; }
+
+    footer { padding: 3rem; }
+
+    footer .container { margin: 1.5rem; }
+}
+
+/* 782px - 921px */
+
+@media only screen and (max-width: 57.5625em) and (min-width: 48.875em) {
+
     #hero-image { height: 50rem; }
 
-    /* Navbar - aside */
+    aside { padding: 4rem 4em;}
 
-    aside .aside-navbar {
+    aside .aside-navbar { 
 
         grid-template-columns: repeat(1, auto);
         justify-content: space-around;
-
-        border: 1px solid var(--background);
-        padding: 4rem;
-        margin-top: 4rem;
-        margin-left: 3rem;
         line-height: 3.5rem;
 
     }
 
-    /* Main */
+    .aside-navbar .aside-a { padding: 1rem; }
+    
+    .main .text { padding: 2rem 6rem; }
 
-    .main .text { padding: 1rem 4rem; }
+    h2 {
 
-    /* Footer */
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default);
+        line-height: var(--line-height--default);
+        word-spacing: var(--word-spacing--default);
 
-    h2 { 
+    }
 
-        font-size: var(--font-size--default);  
-        letter-spacing: var(--letter-spacing--default); 
-        line-height: var(--line-height--default); 
-        word-spacing: var(--word-spacing--default); 
+    footer address, footer p {
 
-    } 
-
-    footer address, footer p { 
         font-size: var(--font-size--small);
-        line-height: var(--line-height--small);
+        list-style: var(--line-height--small);
         letter-spacing: var(--letter-spacing--small);
         word-spacing: var(--word-spacing--small);
+    
     }
+
+    footer { padding: 3rem; }
+
+    footer div { gap: 1.5rem; }
+
+    footer .container { margin: 0; }
+
 }
+
+/* 922px - 1024px */
 
 @media only screen and (max-width: 64em) and (min-width: 57.625em) {
 
     #hero-image { height: 50rem; }
 
-    /* Navbar - aside */
+    aside { padding: 4rem 6rem; }
 
-    aside .aside-navbar {
+    aside .aside-navbar { 
 
         grid-template-columns: repeat(1, auto);
         justify-content: space-around;
-
-        font-size: var(--font-size--small); 
-        letter-spacing: var(--letter-spacing--small);
-        word-spacing: var(--word-spacing--small);
-        
-        border: 1px solid var(--background);
-        padding: 4rem;
-        margin-top: 4rem;
-        margin-left: 3rem;
-        line-height: 3.5rem;
+        line-height: 4.5rem;
 
     }
 
-    /* Main */
-
-    .main .text { padding: 1rem 5rem; }
-
-    /* Footer */
+    .aside-navbar .aside-a { padding: 1rem; }
+    
+    .main .text { padding: 3rem 6rem; }
 
     h2 {
 
-        font-size: var(--font-size--default);  
-        letter-spacing: var(--letter-spacing--default); 
-        line-height: var(--line-height--default); 
-        word-spacing: var(--word-spacing--default); 
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default);
+        line-height: var(--line-height--default);
+        word-spacing: var(--word-spacing--default);
 
-    } 
+    }
 
-    footer address, footer p { 
+    footer address, footer p {
+
         font-size: var(--font-size--small);
-        line-height: var(--line-height--small);
+        list-style: var(--line-height--small);
         letter-spacing: var(--letter-spacing--small);
         word-spacing: var(--word-spacing--small);
-    }
     
+    }
+
+    footer { padding: 2rem 4rem; }
+
+    footer div { gap: 0rem; }
+
+    footer .container { margin: 1rem; }
+
 }
+
+/* 1025 and up */
 
 @media only screen and (min-width: 64.0625em) {
 
     #hero-image { height: 60rem; }
 
-    /* Navbar - aside */
+    aside { padding: 4rem 6rem; }
 
-    aside .aside-navbar {
+    aside .aside-navbar { 
 
         grid-template-columns: repeat(1, auto);
         justify-content: space-around;
+        line-height: 4.5rem;
 
-        font-size: var(--font-size--small); 
-        letter-spacing: var(--letter-spacing--small);
-        word-spacing: var(--word-spacing--small);
-        
-        border: 1px solid var(--background);
-        padding: 4rem;
-        margin-top: 4rem;
-        margin-left: 5rem;
-        line-height: 3.5rem;
-
+        font-weight: lighter;
     }
 
-    /* Main */
-
-    .main .text { padding: 1rem 4rem; }
-
-    /* Footer */
+    .aside-navbar .aside-a { padding: 1rem; }
     
+    .main .text { padding: 3rem 6rem; }
+
     h2 {
 
-        font-size: var(--font-size--default);  
-        letter-spacing: var(--letter-spacing--default); 
-        line-height: var(--line-height--default); 
-        word-spacing: var(--word-spacing--default); 
-        
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default);
+        line-height: var(--line-height--default);
+        word-spacing: var(--word-spacing--default);
+
     }
 
-    footer address, footer p { 
+    footer address, footer p {
+
         font-size: var(--font-size--small);
-        line-height: var(--line-height--small);
+        list-style: var(--line-height--small);
         letter-spacing: var(--letter-spacing--small);
         word-spacing: var(--word-spacing--small);
+    
     }
+
+    footer { padding: 2rem 4rem; }
+
+    footer div { gap: 0rem; }
+
+
 }
