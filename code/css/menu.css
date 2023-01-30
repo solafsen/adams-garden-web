@@ -1,6 +1,4 @@
 
-/* Best - from 320px to 1024px */
-
 /* Header */
 
 #hero-image {
@@ -476,11 +474,11 @@ h4 {
 
 @media only screen and (max-width: 64em) and (min-width: 57.625em) { /* 922px - 1024px */
 
-    #hero-image { height: 50rem; } /* Header */
+    #hero-image { height: 50rem; } 
 
-    aside .aside-navbar { /* Aside navbar */
+    aside .aside-navbar { 
 
-        position: -webkit-sticky; /* Safari */
+        position: -webkit-sticky;
         position: sticky;
         top: 0;
 
@@ -581,7 +579,7 @@ h4 {
 
     aside .aside-navbar {
 
-        position: -webkit-sticky; /* Safari */
+        position: -webkit-sticky; 
         position: sticky;
         top: 0;
 
