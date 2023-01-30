@@ -483,7 +483,7 @@ address .style-links .footer-links { color:var(--color-secondary); }
         display: flex;
         flex-wrap: nowrap;
         max-width: 100%;
-        margin: 0 auto;
+        margin: 0;
         padding: 2rem;
 
     }
@@ -549,6 +549,8 @@ address .style-links .footer-links { color:var(--color-secondary); }
 }
 
 @media only screen and (min-width: 64.0625em) {  /* 1025px and up */ 
+
+    /* Works until 1200px */
     
     :root {
 
@@ -586,7 +588,7 @@ address .style-links .footer-links { color:var(--color-secondary); }
         padding: 3rem;
 
     }
-
+    
     .navbar-padding { padding: 3rem; }
 
     .topnav-a {  
@@ -629,7 +631,7 @@ address .style-links .footer-links { color:var(--color-secondary); }
     aside { grid-area: 1/ 1/ 4 / 4; } 
     main { grid-area: 1/ 4/ 4/ 7; }
 
-    .footer-container { padding: 3rem; } /* Footer */
+    .footer-container { padding: 2.5rem; } /* Footer */
 
     #footer-container { 
 

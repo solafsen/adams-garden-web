@@ -49,8 +49,16 @@ main { margin: 0; }
 
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2em;
-    padding: 0rem 3rem;
+    gap: 2.5em;
+
+}
+
+main {
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
 
 }
 
@@ -81,7 +89,7 @@ h1 {
     
     display: grid; 
     grid-template-columns: 1fr; 
-    gap:0.3rem; 
+    gap:0.5rem; 
     padding: 0rem 2rem; 
 
 }
@@ -98,7 +106,7 @@ h2 {
 
 }
 
-/* Links - h2 */
+/* Hyperlinks - for h2 */
 
 main .hyperlinks { 
 
@@ -150,8 +158,8 @@ h3 {
 
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 0.5rem;
-    justify-content: flex-start;
+    gap: 1rem;
+    justify-content: left;
 
 }
 
@@ -163,7 +171,7 @@ h3 {
     word-spacing: var(--word-spacing--small);
 
     border: 1px solid var(--color-primary);
-    padding: 0.8rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     background-color: var(--color-primary);
     color: var(--color-tertiary);
@@ -175,7 +183,6 @@ h3 {
 /* Icons for allergies */
 
 .fa-solid { color: var(--color-secondary); }
-
 .fa-solid:hover { color: var(--foreground); }
 
 /* Beverages */
@@ -216,9 +223,23 @@ h4 {
 
 /* Media queries */
 
-@media only screen and (max-width: 41.5em) and (min-width: 23em) {  /* 368px - 664px */ 
+@media only screen and (max-width: 30em) and (min-width: 23em) { /* 368px - 480px */
 
-    /* Aside - navbar */
+    .aside-navbar .aside-a { padding: 1rem; }
+
+    #menu { padding: 0rem 1rem; }
+
+    .card { gap: 2em; } 
+
+    .card:last-child { padding-bottom: 3rem; }
+
+    .dish { padding: 0rem 3rem; }
+
+    .beverage { padding: 0rem 3rem; }
+
+}
+
+@media only screen and (max-width: 41.5em) and (min-width: 30.0625em) {  /* 481px - 664px */ 
 
     aside .aside-navbar { 
 
@@ -228,17 +249,16 @@ h4 {
         word-spacing: var(--word-spacing--default); 
 
     }
+
     aside .aside-navbar .aside-a { padding: 1rem; } 
 
-    /* Main */
-
-    #menu { gap: 5em; }
+    #menu { gap: 4em; } 
 
     .card { gap: 3em; }
 
-    .card:last-child { padding-bottom: 4rem; }
+    .card:last-child { padding-bottom: 3rem; }
 
-    .dish { gap:0rem; }
+    .dish { gap: 0; padding: 0rem 3rem; }
 
     h2 {
 
@@ -267,9 +287,12 @@ h4 {
 
     }
 
-    /* Allergies */
+    .box-like-btn { 
+       
+        grid-template-columns: repeat(3, auto);
+        gap: 2rem;
 
-    .box-like-btn { gap: 2rem;}
+    }
 
     .allergies {
 
@@ -281,11 +304,11 @@ h4 {
 
     } 
 
+    .beverage { padding: 0rem 3rem; }
+
 }
 
 @media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { /* 665px - 781px */
-
-    /* Aside - navbar */
 
     aside .aside-navbar { 
 
@@ -299,15 +322,13 @@ h4 {
 
     aside .aside-navbar .aside-a { padding: 1.5rem; } 
 
-    /* Main */
+    #menu { gap: 4em; }
 
-    #menu { gap: 5em; }
-
-    .card { gap: 3em; }
+    .card { gap: 2em; }
 
     .card:last-child { padding-bottom: 4rem; }
 
-    .dish { gap:1rem; }
+    .dish { gap: 1rem; padding: 0rem 3rem; }
 
     h2 {
 
@@ -336,13 +357,10 @@ h4 {
 
     }
 
-    /* Allergies */
-
     .box-like-btn { 
 
         grid-template-columns: repeat(4, auto);
-        gap: 1rem;
-        justify-content: flex-start;
+        gap: 2rem;
 
     }
 
@@ -352,39 +370,35 @@ h4 {
         letter-spacing: var(--letter-spacing--default); 
         line-height: var(--line-height--default); 
         word-spacing: var(--word-spacing--default);
-        padding: 1rem;
+        padding: 0.5rem;
         border-radius: 2rem;
 
     }
+
+    .beverage { padding: 0rem 3rem; }
 
 }
 
 @media only screen and (max-width: 57.5625em) and (min-width: 48.875em) { /* 782px - 921px */
     
-    #hero-image { height: 50rem; } /* Header */
-
-    /* Aside - navbar */
+    #hero-image { height: 50rem; } 
 
     aside .aside-navbar {
+
         position: -webkit-sticky; /* Safari */
-        position: sticky;
-        top: 2rem;
+        position: sticky; 
+        top: 0;
 
         grid-template-columns: repeat(1, auto);
 
         border: 0.1em solid var(--background);
         padding: 2rem;
-        margin-top: 4rem;
-        margin-left: 2rem;
+    
     }
 
-    aside .aside-navbar .aside-a { padding: 1.5rem; }
+    aside .aside-navbar .aside-a { padding: 1rem; }
 
-    /* Main */
-    
-    main { padding: 0rem 2rem;}
-
-    #menu { padding: 5rem; }
+    #menu { padding: 0rem 2.5rem; }
 
     h1 { 
 
@@ -394,9 +408,9 @@ h4 {
     
     }
 
-    .card { gap: 4em; box-shadow: none; }
+    .card { gap: 2em; box-shadow: none; }
 
-    .card:last-child { padding-bottom: 4rem; }
+    .card:last-child { padding-bottom: 2rem; }
 
     .dish { padding: 0rem; }
 
@@ -427,13 +441,10 @@ h4 {
 
     }
 
-    /* Allergies */
-
     .box-like-btn { 
         
         grid-template-columns: repeat(3, auto);
-        gap: 1rem;
-        justify-content: flex-start;
+        gap: 2rem;
 
     }
 
@@ -448,13 +459,9 @@ h4 {
 
     }
 
-    /* Beverages */
-
     .card-beverages { gap: 0.5em; box-shadow: none; }
 
     .beverage { padding: 0rem; }
-
-    /* Footer */
 
     footer address, footer p {
 
@@ -471,41 +478,22 @@ h4 {
 
     #hero-image { height: 50rem; } /* Header */
 
-    /* Top navbar */
-
-    header nav {
-
-        font-size: 1.6rem;
-        letter-spacing: 2.4rem; 
-        line-height: 0.192rem; 
-        word-spacing: 0.256rem; 
-
-    }
-
-    /* Navbar - aside */
-
-    aside .aside-navbar {
+    aside .aside-navbar { /* Aside navbar */
 
         position: -webkit-sticky; /* Safari */
         position: sticky;
-        top: 2rem;
+        top: 0;
 
         grid-template-columns: repeat(1, auto);
 
         border: 0.1em solid var(--background);
         padding: 2rem;
-        margin-top: 4rem;
-        margin-left: 2rem;
 
     }
 
-    aside .aside-navbar .aside-a { padding: 1.5rem; }
+    aside .aside-navbar .aside-a { padding: 1rem; }
 
-    /* Main */
-
-    main { padding: 0rem 5rem; }
-    
-    #menu { padding: 5rem; }
+    #menu { padding: 0rem 2.5rem; }
 
     h1 { 
 
@@ -515,7 +503,7 @@ h4 {
     
     }
 
-    .card { gap: 5em; box-shadow: none; }
+    .card { gap: 2em; box-shadow: none; }
 
     .card:last-child { padding-bottom: 4rem; }
 
@@ -548,12 +536,10 @@ h4 {
 
     }
 
-    /* Allergies */
-
     .box-like-btn { 
         
         grid-template-columns: repeat(4, auto);
-        gap: 1rem;
+        gap: 2rem;
 
     }
 
@@ -568,8 +554,6 @@ h4 {
 
     }
 
-    /* Beverages */
-
     .card-beverages { 
         
         gap: 0.5em; 
@@ -579,8 +563,6 @@ h4 {
     }
 
     .beverage { padding: 0rem; }
-
-    /* Footer */
 
     footer address, footer p {
 
@@ -593,34 +575,26 @@ h4 {
 
 }
 
-@media only screen and (min-width: 64.0625em) { /* 1025px + */ 
+@media only screen and (min-width: 64.0625em) { /* 1025px and up */ 
 
     #hero-image { height: 60rem; }
-
-    /* Navbar - aside */
 
     aside .aside-navbar {
 
         position: -webkit-sticky; /* Safari */
         position: sticky;
-        top: 2rem;
+        top: 0;
 
         grid-template-columns: repeat(1, auto);
 
         border: 0.1em solid var(--background);
-        padding: 4rem;
-        margin-top: 4rem;
-        margin-left: 5rem;
+        padding: 3rem;
 
     }
 
-    aside .aside-navbar .aside-a { padding: 1.5rem; }
+    aside .aside-navbar .aside-a { padding: 1rem; }
 
-    /* Main */
-
-    main { padding: 0rem 5rem; }
-    
-    #menu { padding: 5rem; }
+    #menu { padding: 0rem 2.5rem; }
 
     h1 { 
 
@@ -630,7 +604,7 @@ h4 {
     
     }
 
-    .card { gap: 5em; box-shadow: none; }
+    .card { gap: 2em; box-shadow: none; }
 
     .card:last-child { padding-bottom: 4rem; }
 
@@ -663,12 +637,10 @@ h4 {
 
     }
 
-    /* Allergies */
-
     .box-like-btn { 
         
         grid-template-columns: repeat(4, auto);
-        gap: 1rem;
+        gap: 2rem;
         justify-content: flex-start;
 
     }
@@ -679,12 +651,10 @@ h4 {
         letter-spacing: var(--letter-spacing--default); 
         line-height: var(--line-height--default); 
         word-spacing: var(--word-spacing--default);
-        padding: 0.22rem;
+        padding: 0.5rem;
         border-radius: 1.5rem;
 
     }
-
-    /* Beverages */
 
     .card-beverages { 
         
@@ -695,8 +665,6 @@ h4 {
     }
 
     .beverage { padding: 0rem; }
-
-    /* Footer */
 
     footer address, footer p {
 
