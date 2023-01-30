@@ -34,7 +34,7 @@ aside .aside-navbar {
 
 }
 
-.aside-navbar .aside-a { padding: 0.8rem; } /* change */
+.aside-navbar .aside-a { padding: 0.8rem; } 
 
 /* Main */
 
@@ -58,7 +58,7 @@ h1 {
 
 } 
 
-.main .text { padding: 1rem; } /* change */
+.main .text { padding: 1rem; } 
 
 .paragraph-spacing { margin-bottom: 3.2rem; }
 

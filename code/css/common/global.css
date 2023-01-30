@@ -30,7 +30,7 @@ body {
 
 /* Grid layout for the body */
 
-#grid-container { /* change */
+#grid-container { 
 
     display: grid; 
     grid-template-columns: repeat(6, auto);
@@ -47,7 +47,7 @@ footer { grid-area: 4/ 1/ 5/ 7; }
 
 /* Container - to control the layout */
 
-.container { max-width: 100%; margin: 0 auto; } /* change */
+.container { max-width: 100%; margin: 0 auto; } 
 
 /* Link - Skip to main content */
 
@@ -77,7 +77,7 @@ Youtube. https://youtu.be/IdZ-ZHLyEHs with a some adjustment - mostly in media q
 
 #navbar { background-color: var(--background); }
 
-.navbar-padding { padding: 1.5rem; } /* Change */
+.navbar-padding { padding: 1.5rem; } 
 
 ul { list-style: none; }
 
@@ -183,16 +183,16 @@ ul { list-style: none; }
 
 /* Grid container for the main part */
 
-.main-container { padding: 2rem; } /* change */
+.main-container { padding: 2rem; }
 
-#main-container { /* change */
+#main-container { 
 
     display: grid; 
     grid-template-columns: repeat(6, auto);
     grid-template-rows: repeat(3, auto);
     
     column-gap: 0; 
-    row-gap: 3.2rem; /* change */
+    row-gap: 3.2rem; 
 
 }            
 
@@ -230,7 +230,7 @@ h1, h2, h3, h4, b {font-family: 'Archivo Black', 'Helvetica', 'Aria', sans-serif
 
 /* Footer */
 
-.footer-container { padding: 2.5rem; } /* change */
+.footer-container { padding: 2.5rem; } 
 
 #footer-container { /* Grid container for the footer */
 
@@ -245,7 +245,7 @@ h1, h2, h3, h4, b {font-family: 'Archivo Black', 'Helvetica', 'Aria', sans-serif
 
 #address { grid-area: 1/ 1/ 2/ 7; }
 #opening-hours { grid-area: 2/ 1/ 3/ 7; }
-#contact-us { grid-area: 3/ 1/ 4/ 7; } /* Changes */
+#contact-us { grid-area: 3/ 1/ 4/ 7; } 
 
 footer { /* Styling */
 
@@ -329,7 +329,7 @@ address .style-links .footer-links { color:var(--color-secondary); }
     .skip { left: 5%; }
     .skip:focus { transform: translateY(20%); }
 
-    .topnav-a {  /* Top navigation bar */
+    .topnav-a { 
 
         font-size: var(--font-size--small);
         line-height: var(--line-height--small);
@@ -395,7 +395,7 @@ address .style-links .footer-links { color:var(--color-secondary); }
     .skip { left: 30%; }
     .skip:focus{ transform: translateY(20%); }
 
-    .topnav-a { /* Top navbar */
+    .topnav-a { 
 
         font-size: var(--font-size--small);
         line-height: var(--line-height--small);
@@ -428,11 +428,11 @@ address .style-links .footer-links { color:var(--color-secondary); }
 
     .nav-links li { border:none; padding: 1.5rem; }
 
-    #main-container { column-gap: 7rem; row-gap: 0rem; } /* Grid container - main part */
+    #main-container { column-gap: 7rem; row-gap: 0rem; } 
     aside { grid-area: 1/ 1/ 4 / 4; } 
     main { grid-area: 1/ 4/ 4/ 7; }
 
-    .footer-container { padding: 2.5rem; } /* Footer */
+    .footer-container { padding: 2.5rem; } 
 
     #footer-container { 
 
@@ -478,7 +478,7 @@ address .style-links .footer-links { color:var(--color-secondary); }
     .skip { left: 30%; }
     .skip:focus{ transform: translateY(20%); }
 
-    #navbar { /* Top navbar */
+    #navbar { 
 
         display: flex;
         flex-wrap: nowrap;
@@ -525,12 +525,12 @@ address .style-links .footer-links { color:var(--color-secondary); }
 
     .nav-links li a { position: relative; padding: 1.4922rem; }
 
-    .main-container { padding: 3rem; } /* Grid container - main part */
+    .main-container { padding: 3rem; } 
     #main-container { column-gap: 8.5rem; row-gap: 0rem; }
     aside { grid-area: 1/ 1/ 4 / 4; } 
     main { grid-area: 1/ 4/ 4/ 7; }
 
-    .footer-container { padding: 3rem; } /* Footer */
+    .footer-container { padding: 3rem; } 
 
     #footer-container { 
 
@@ -550,7 +550,7 @@ address .style-links .footer-links { color:var(--color-secondary); }
 
 @media only screen and (min-width: 64.0625em) {  /* 1025px and up */ 
 
-    /* Works until 1200px */
+    /* Works best from 320px to 1200px */
     
     :root {
 
@@ -579,7 +579,7 @@ address .style-links .footer-links { color:var(--color-secondary); }
     .skip { left: 30%; }
     .skip:focus { transform: translateY(20%); }
 
-    #navbar { /* Top navbar */
+    #navbar { 
 
         display: flex;
         flex-wrap: nowrap;

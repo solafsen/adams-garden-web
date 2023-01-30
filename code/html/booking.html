@@ -31,125 +31,136 @@
 
     <body> 
 
-        <!-- Skip to main content link -->
+        <div id="grid-container">
 
-        <a href="#main" class="skip"> Skip to main content </a>
+            <!-- Skip to main content link -->
 
-        <header id="hero-image">
+            <a href="#main" class="skip"> Skip to main content </a>
 
-            <!-- Ladd, A. [alstudiowebdev] (2022, June 14). 
-            Responsive and Accessible Navigation (HTML, CSS, Vanilla JS) [Video]. 
-            Youtube. https://youtu.be/IdZ-ZHLyEHs with some adjustment - in css. -->
+            <header id="hero-image">
 
-            <nav id="navbar" aria-label="top navigation bar">
+                <!-- Ladd, A. [alstudiowebdev] (2022, June 14). 
+                Responsive and Accessible Navigation (HTML, CSS, Vanilla JS) [Video]. 
+                Youtube. https://youtu.be/IdZ-ZHLyEHs with some adjustment - in css. -->
 
-                <div class="nav-logo-container"> 
+                <nav id="navbar" aria-label="top navigation bar">
 
-                    <a href="../../index.html" class="nav-logo">  
-                        <span aria-hidden="true"> <!-- Logo from Adobe Express -->
-                        <img src="../../images/adams-garden-logo.png" alt="Adam's Garden logo" height="104" width="110" /></span>
-                        <span class="sr-only"> Home </span>
-                    </a>
+                    <div class="container">
+                        <div class="nav-logo-container"> 
 
-                    <button type="button" id="mobileMenuTrigger" 
-                    aria-expanded="false" 
-                    aria-controls="navigationLinks" 
-                    aria-label="Open and close navigation">
+                            <a href="../../index.html" class="nav-logo">  
+                                <span aria-hidden="true"> <!-- Logo from Adobe Express -->
+                                <img src="../../images/adams-garden-logo.png" alt="Adam's Garden logo" height="104" width="110" /></span>
+                                <span class="sr-only"> Home </span>
+                            </a>
 
-                        <span class="line1"></span>
-                        <span class="line2"></span>
-                        <span class="line3"></span>
+                            <button type="button" id="mobileMenuTrigger" 
+                            aria-expanded="false" 
+                            aria-controls="navigationLinks" 
+                            aria-label="Open and close navigation">
 
-                    </button>
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                                <span class="line3"></span>
 
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div id="navigationLinks" class="nav-links-container">
+
+                            <ul class="nav-links">
+                                <li><a href="../../index.html" class="topnav-a"> Home </a></li>
+                                <li><a href="../../code/html/menu.html" class="topnav-a"> Menu </a></li>
+                                <li><a href="../../code/html/booking.html" id="home" class="topnav-a"> Booking </a></li>
+                                <li><a href="../../code/html/topical.html" class="topnav-a"> Story </a></li>
+                                <li><a href="../../code/html/accessibility.html" class="topnav-a"> Accessibility </a></li>
+                                <li><a href="#contact-us" class="topnav-a"> Contact us </a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </nav>
+
+                <script src="../../script/navbar.js"></script>
+
+            </header>
+
+            <div id="main-container" class="container main-container">
+
+                <aside>
+
+                    <nav class="aside-navbar" aria-label="aside navigation bar">
+                        <a href="#about-us" class="aside-a"> About us </a>
+                        <a href="#booking" class="aside-a"> Booking </a>
+                        <a href="#testimonials" class="aside-a"> Reviews </a>
+                    </nav>
+
+                </aside>
+                
+                <main id="main">
+
+                    <section>
+
+
+
+                    </section>
+
+                    <section>
+                        <form>
+
+
+
+                        </form>
+                    </section>
+
+                    <section>
+
+                    </section>
+
+                    <section>
+
+                    </section>
+
+                </main>
+            </div>
+
+            <footer>
+                <div id="footer-container" class="container footer-container">
+
+                    <section id="address">
+                        <h4> Address </h4>
+                        <address>
+                            Adam's Garden <br>
+                            Edensgata 2 <br> 
+                            7022, Elven
+                        </address>
+                    </section>
+
+                    <section id="opening-hours">
+                        <h4> Opening hours </h4>
+                        <p>   
+                            Monday-Friday <br> (12.00 - 21.00) <br>
+                            Saturdag <br> (14.00 - 22.00) <br>
+                            Sunday <br> (14.00 - 22.00)
+                        </p>
+                    </section>
+
+                    <section id="contact-us">
+                        <h4> Contact us </h4>
+                        <address>
+                            <a href="tel:+4701010011" class="style-links"> Telephone number: <br> <span class="footer-links">  +47 010 10 011 </span></a> <br><br>
+                            <a href="mailto:reservation@adamsgarden.no" class="style-links"> For other inquiries, <br>
+                            <span class="footer-links"> please send us an e-mail </span></a>
+                        </address>
+                    </section>
+                
                 </div>
+            </footer>
 
-                <div id="navigationLinks" class="nav-links-container">
-
-                    <ul class="nav-links">
-                        <li><a href="../../index.html" class="topnav-a"> Home </a></li>
-                        <li><a href="../../code/html/menu.html" class="topnav-a"> Menu </a></li>
-                        <li><a href="../../code/html/booking.html" id="home" class="topnav-a"> Booking </a></li>
-                        <li><a href="../../code/html/topical.html" class="topnav-a"> Story </a></li>
-                        <li><a href="../../code/html/accessibility.html" class="topnav-a"> Accessibility </a></li>
-                        <li><a href="#contact-us" class="topnav-a"> Contact us </a></li>
-                    </ul>
-
-                </div>
-            </nav>
-
-            <script src="../../script/navbar.js"></script>
-
-        </header>
-
-        
-        <aside>
-
-            <nav class="aside-navbar" aria-label="aside navigation bar">
-                <a href="#about-us" class="aside-a"> About us </a>
-                <a href="#booking" class="aside-a"> Booking </a>
-                <a href="#testimonials" class="aside-a"> Reviews </a>
-            </nav>
-
-        </aside>
-        
-        <main id="main">
-
-            <section>
-
-
-
-            </section>
-
-            <section>
-                <form>
-
-
-
-                </form>
-            </section>
-
-            <section>
-
-            </section>
-
-            <section>
-
-            </section>
-
-        </main>
-
-        <footer>
-
-            <section class="footer-styling">
-                <h4> Address </h4>
-                <address>
-                    Adam's Garden <br>
-                    Edensgata 2 <br> 
-                    7022, Elven
-                </address>
-            </section>
-
-            <section class="footer-styling">
-                <h4> Opening hours </h4>
-                <p>   
-                    Monday-Friday <br> (12.00 - 21.00) <br>
-                    Saturdag <br> (14.00 - 22.00) <br>
-                    Sunday <br> (14.00 - 22.00)
-                </p>
-            </section>
-
-            <section class="footer-styling">
-                <h4 id="contact-us"> Contact us </h4>
-                <address>
-                    <a href="tel:+4701010011" class="style-links"> Telephone number: <br> <span class="footer-links">  +47 010 10 011 </span></a> <br><br>
-                    <a href="mailto:reservation@adamsgarden.no" class="style-links"> For other inquiries, <br>
-                     <span class="footer-links"> please send us an e-mail </span></a>
-                </address>
-            </section>
-            
-        </footer>
+        </div>
     </body>
-
-
 </html>
