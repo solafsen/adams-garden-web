@@ -1,0 +1,319 @@
+/* Header */
+
+#hero-image {
+
+    width: 100%;
+    height: 40rem;
+
+    background-image:url("../../images/booking/wedding-decoration.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover; 
+
+}
+
+/* Aside - navbar */
+
+aside .aside-navbar { 
+
+    display: grid; 
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
+    padding: 0.8rem; 
+    background-color: var(--color-primary);
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
+}
+
+.aside-navbar .aside-a { padding: 0.8rem; } 
+
+/* Main */
+
+main {
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
+}
+
+h1 { 
+
+    font-size: var(--font-size--large); 
+    font-weight: bold; 
+    letter-spacing: var(--letter-spacing--large); 
+    line-height: var(--line-height--large); 
+    word-spacing: var(--word-spacing-large);
+    text-align: center;
+
+} 
+
+.main .main-text { padding: 1rem; } 
+
+.paragraph-spacing { margin-bottom: 3.2rem; }
+
+/* Links inside section */
+
+.main-text .hyperlinks { text-decoration: none; color: var(--foreground); }
+
+.main-text .hyperlinks:focus{ color: var(--color-secondary); background-color: var(--color-primary); }
+
+
+.main-text .hyperlinks:hover {
+
+    color: var(--color-tertiary); 
+    background-color: var(--color-primary); 
+    text-decoration: underline;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.img-size { width: 100%;}
+
+#text-align { text-align: center;}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/* Footer */
+
+h2 {
+
+    font-size: var(--font-size--large);  
+    letter-spacing: var(--letter-spacing--large); 
+    line-height: var(--line-height--large); 
+    word-spacing: var(--word-spacing--large); 
+    text-align: left;
+
+}
+
+footer address, footer p {
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 30em) and (min-width: 23em) { /* 368px - 480px */
+
+    .aside-navbar .aside-a { padding: 1rem; }
+    
+    .main .main-text { padding: 1rem 2rem; }
+
+}
+
+@media only screen and (max-width: 41.5em) and (min-width: 30.06em) { /* 481px - 664px */
+
+    aside .aside-navbar { grid-template-columns: repeat(4, auto); } /* Change layout for aside navbar */
+
+    .aside-navbar .aside-a { padding: 1rem; }
+
+    .main .main-text { padding: 1rem 1.5rem; }
+
+}
+
+@media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { /* 665px - 781px */
+
+    #hero-image { height: 45rem; }
+
+    aside .aside-navbar { grid-template-columns: repeat(4, auto); }
+
+    .aside-navbar .aside-a { padding: 1rem; }
+
+    .main .main-text { padding: 1.5rem 2rem; }
+
+}
+
+@media only screen and (max-width: 57.5625em) and (min-width: 48.875em) { /* 782px - 921px */
+
+    #hero-image { height: 50rem; }
+
+    /* Change layout for aside navbar from 4 colums to 1 column */
+
+    aside .aside-navbar { grid-template-columns: repeat(1, auto); line-height: 3.5rem; }
+    .aside-navbar .aside-a { padding: 1rem; }
+    
+    .main .main-text { padding: 2rem 6rem; }
+
+    h2 { 
+
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default);
+        line-height: var(--line-height--default);
+        word-spacing: var(--word-spacing--default);
+
+    }
+
+    footer address, footer p {
+
+        font-size: var(--font-size--small);
+        list-style: var(--line-height--small);
+        letter-spacing: var(--letter-spacing--small);
+        word-spacing: var(--word-spacing--small);
+    
+    }
+
+}
+
+@media only screen and (max-width: 64em) and (min-width: 57.625em) { /* 922px - 1024px */
+
+    #hero-image { height: 50rem; }
+
+    aside .aside-navbar { 
+
+        grid-template-columns: repeat(1, auto);
+        justify-content: space-around;
+        line-height: 3.5rem;
+
+    }
+
+    .aside-navbar .aside-a { padding: 1rem; }
+    
+    .main .main-text { padding: 1rem 0rem; }
+
+    h2 {
+
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default);
+        line-height: var(--line-height--default);
+        word-spacing: var(--word-spacing--default);
+
+    }
+
+    footer address, footer p {
+
+        font-size: var(--font-size--small);
+        list-style: var(--line-height--small);
+        letter-spacing: var(--letter-spacing--small);
+        word-spacing: var(--word-spacing--small);
+    
+    }
+
+}
+
+@media only screen and (min-width: 64.0625em) { /* 1025 and up */
+
+    #hero-image { height: 60rem; }
+
+    aside .aside-navbar { 
+
+        grid-template-columns: repeat(1, auto);
+        justify-content: space-around;
+        line-height: 4.5rem;
+
+    }
+
+    .aside-navbar .aside-a { padding: 1rem; }
+    
+    .main .main-text { padding: 1rem 0rem; }
+
+    h2 {
+
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default);
+        line-height: var(--line-height--default);
+        word-spacing: var(--word-spacing--default);
+
+    }
+
+    footer address, footer p {
+
+        font-size: var(--font-size--small);
+        list-style: var(--line-height--small);
+        letter-spacing: var(--letter-spacing--small);
+        word-spacing: var(--word-spacing--small);
+    
+    }
+
+}
