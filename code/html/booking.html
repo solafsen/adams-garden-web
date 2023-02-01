@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,21 +38,29 @@
                 Responsive and Accessible Navigation (HTML, CSS, Vanilla JS) [Video]. 
                 Youtube. https://youtu.be/IdZ-ZHLyEHs with some adjustment - in css. -->
 
-                <nav id="navbar" aria-label="top navigation bar">
+                <nav id="navbar" class="navbar-padding" aria-label="top navigation bar">
 
                     <div class="container">
                         <div class="nav-logo-container"> 
 
-                            <a href="../../index.html" class="nav-logo">  
-                                <span aria-hidden="true"> <!-- Logo from Adobe Express -->
+                            <!-- Logo from Adobe Express -->
+
+                            <a href="../../index.html" class="nav-logo"> 
+
+                                <span aria-hidden="true"> 
                                 <img src="../../images/adams-garden-logo.png" alt="Adam's Garden logo" height="104" width="110" /></span>
                                 <span class="sr-only"> Home </span>
+
                             </a>
+
+                            <!-- Create a open and close navigation. -->
 
                             <button type="button" id="mobileMenuTrigger" 
                             aria-expanded="false" 
                             aria-controls="navigationLinks" 
                             aria-label="Open and close navigation">
+
+                                <!-- Create a hamburger icon and a close icon (X). -->
 
                                 <span class="line1"></span>
                                 <span class="line2"></span>
@@ -66,6 +73,8 @@
 
                     <div class="container">
                         <div id="navigationLinks" class="nav-links-container">
+
+                            <!-- Navigation links - hidden on small screen. Visible on large screen. -->
 
                             <ul class="nav-links">
                                 <li><a href="../../index.html" class="topnav-a"> Home </a></li>
@@ -81,16 +90,20 @@
 
                 </nav>
 
+                <!-- Javascript for the open and close navigation -->
+
                 <script src="../../script/navbar.js"></script>
 
             </header>
 
             <div id="main-container" class="container main-container">
 
+                <!-- Navigation bar - aside -->
+
                 <aside>
 
                     <nav class="aside-navbar" aria-label="aside navigation bar">
-                        <a href="#about-us" class="aside-a"> About us </a>
+                        <a href="#about-us" class="aside-a"> About </a>
                         <a href="#booking" class="aside-a"> Booking </a>
                         <a href="#testimonials" class="aside-a"> Reviews </a>
                     </nav>
@@ -99,98 +112,147 @@
                 
                 <main id="main">
 
-                    <!-- Restaurant's description -->
+                    <div id="a-container">
 
-                    <section>
+                        <!-- Restaurant's description -->
 
-                        <h1 class="main-text"> Adam's Garden </h1>
+                        <section>
 
-                        <p class="main-text paragraph-spacing">
-                            A place for friends, family and loved ones to meet and share good
-                            memories and delicious food. As we are situated in the city center near the harbor promenade, our
-                            venue come with a breathtaking ocean view. Imagine enjoying your favorite meal watching the
-                            beautiful sunset over the ocean from our cozy restaurant with your favorite people!
-                        </p>
-                    </section>
+                            <h1 id="about-us" class="main-text hyperlinks"> Adam's Garden </h1>
 
-                    <section>
-
-                        <!-- Slideshow container -->
-
-                        <div class="slideshow-container">
+                            <p class="main-text paragraph-spacing"> 
+                                As we are situated in the city center near the harbor promenade, our
+                                venue come with a breathtaking ocean view.
+                            </p> 
                             
-                            <div class="mySlides fade">
-                                <div class="numbertext"> 1/4 </div>
-                                <img class="img-size" src="../../images/booking/table-arrangement.jpg" alt="">
-                                <div class="text"> Table arrangemnet </div>
+                            <p class="main-text">
+                                Imagine enjoying your favorite meal watching the
+                                beautiful sunset over the ocean from our cozy restaurant with your favorite people! 
+                            </p> 
+
+                        </section>
+
+                        <section class="padding-img"> 
+
+                            <!-- Slideshow container -->
+
+                            <div class="slideshow-container">
+                                
+                                <div class="mySlides fade">
+
+                                    <!--
+                                        Spratt, A. (2016). 
+                                        White and brown flowers on white table photo [photo], 
+                                        https://unsplash.com/photos/TQSB-suJu1k 
+                                    -->
+
+                                    <div class="numbertext"> 1/4 </div>
+                                    <img class="img-size" src="../../images/booking/table-arrangement.jpg" alt="Table decoration with fresh flowers">
+                                    <div class="text"> We always use fresh flowers.  </div>
+
+                                </div>
+
+                                <div class="mySlides fade"> 
+
+                                    <!--  
+                                        Lark, B. (2016). 
+                                        Three round white plates with pasta near two glass cups [photo], 
+                                        https://unsplash.com/photos/-F_5g8EEHYE
+                                    -->
+
+                                    <div class="numbertext"> 2/4 </div>
+                                    <img class="img-size" src="../../images/booking/spaghetti.jpg" alt="Spaghetti with wine">
+                                    <div class="text"> Lovely pairing - spaghetti & wine. </div>
+                                </div>
+                
+                                <div class="mySlides fade"> 
+
+                                    <!--  
+                                        Roosipuu, B. (2020). 
+                                        White table with green chairs and white pendant lamps [photo], 
+                                        https://unsplash.com/photos/5Wb_32CO_kY
+                                    -->
+
+                                    <div class="numbertext"> 3/4 </div>
+                                    <img class="img-size" src="../../images/booking/location-decoration.jpg" alt="Decorate location with white fabric and green chairs">
+                                    <div class="text"> Beautiful location. </div>
+
+                                </div>
+
+                                <div class="mySlides fade"> 
+
+                                    <!--  
+                                        Ferlic, J. (2016). 
+                                        Flat lay photography of pasta platter [photo], 
+                                        https://unsplash.com/photos/nVPfPXc3eis
+                                    -->
+
+                                    <div class="numbertext"> 4/4 </div>
+                                    <img class="img-size" src="../../images/booking/fusilli.jpg" alt="Pasta and wine">
+                                    <div class="text"> Enjoy good food with your favorite people! </div>
+
+                                </div>
+
+                                <!-- Next and previous buttons -->
+
+                                <a class="prev" onclick="plusSlides(-1)"> &#10094; </a>
+                                <a class="next" onclick="plusSlides(1)"> &#10095; </a>
+        
                             </div>
 
-                            <div class="mySlides fade"> 
-                                <div class="numbertext"> 2/4 </div>
-                                <img class="img-size" src="../../images/booking/spaghetti.jpg" alt="">
-                                <div class="text"> Spaghetti </div>
-                            </div>
-            
-                            <div class="mySlides fade"> 
-                                <div class="numbertext"> 3/4 </div>
-                                <img class="img-size" src="../../images/booking/fusilli.jpg" alt="">
-                                <div class="text"> Pasta </div>
-                            </div>
+                            <!-- Indicator to show the photo that are displayed. -->
 
-                            <div class="mySlides fade"> 
-                                <div class="numbertext"> 4/4 </div>
-                                <img class="img-size" src="../../images/booking/location-decoration.jpg" alt="">
-                                <div class="text"> Restaurant arrangement </div>
-                            </div>
+                            <div id="text-align">
+                                <span class="line" onclick="currentSlide(1)"></span>
+                                <span class="line" onclick="currentSlide(2)"></span>
+                                <span class="line" onclick="currentSlide(3)"></span>
+                                <span class="line" onclick="currentSlide(4)"></span>
+                            </div> 
 
-                            <!-- Next and previous buttons -->
+                            <script src="../../script/carousel.js"></script>
 
-                            <a class="prev" onclick="plusSlides(-1)"> &#10094; </a>
-                            <a class="next" onclick="plusSlides(1)"> &#10095; </a>
-    
-                        </div>
+                        </section>
 
-                        <div id="text-align">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                            <span class="dot" onclick="currentSlide(4)"></span>
-                        </div> 
+                        <section>
 
-                        <script src="../../script/carousel.js"></script>
+                            <p class="main-text paragraph-spacing">
+                                Adam's Garden facilities are perfect venues for birthday parties, 
+                                weddings, Christmas parties or any other event.
+                            </p>
 
-                    </section>
+                            <p class="main-text paragraph-spacing">
+                                With a seating capacity of 100 people, a romantic atmosphere with 
+                                a 180-degree amazing ocean view, a dance floor, a bar, delightful cuisine, 
+                                and a helpful and friendly staff, you have all the
+                                ingredients to make your event a night to remember.
+                            </p>  
 
-                    <section>
+                            <p class="main-text">
+                                Read reviews from our guest and book a table for 
+                                an unforgettable experience. 
+                            </p>
 
-                        <p class="main-text paragraph-spacing">
-                            Adam's Garden facilities are perfect venues for birthday parties, weddings, Christmas parties or any other event.
-                            With a seating capacity of 100 people, a romantic atmosphere with a 180-degree amazing ocean
-                            view, a dance floor, a bar, delightful cuisine, and a helpful and friendly staff, you have all the
-                            ingredients to make your event a night to remember. 
-                        </p>
+                        </section>
 
-                    </section>
+                        <!-- Booking form -->
 
-                    <!-- Booking form -->
+                        <section>
 
-                    <section>
+                            <h2 id="booking" class="main-text hyperlinks"> Contact </h2>
 
-                        <h2> Contact </h2>
+                            <p class="main-text"> You can reserve tables in the booking form below, send us an email or call us to arrange your event. </p>
 
-                        <p> You can reserve tables in the booking form below, send us an email or call us to arrange your event. </p>
+                        </section>
 
-                    </section>
+                        <!-- Customers testimonials -->
 
-                    <!-- Customers testimonials -->
+                        <section>
 
-                    <section>
+                            <h2 id="testimonials" class="main-text hyperlinks"> Customers reviews </h2>
 
-                        <h2> Customers reviews </h2>
+                        </section>
 
-                    </section>
-
-
+                    </div>
                 </main>
             </div>
 
@@ -198,7 +260,7 @@
                 <div id="footer-container" class="container footer-container">
 
                     <section id="address">
-                        <h4> Address </h4>
+                        <h3> Address </h3>
                         <address>
                             Adam's Garden <br>
                             Edensgata 2 <br> 
@@ -207,7 +269,7 @@
                     </section>
 
                     <section id="opening-hours">
-                        <h4> Opening hours </h4>
+                        <h3> Opening hours </h3>
                         <p>   
                             Monday-Friday <br> (12.00 - 21.00) <br>
                             Saturdag <br> (14.00 - 22.00) <br>
@@ -216,7 +278,7 @@
                     </section>
 
                     <section id="contact-us">
-                        <h4> Contact us </h4>
+                        <h3> Contact us </h3>
                         <address>
                             <a href="tel:+4701010011" class="style-links"> Telephone number: <br> <span class="footer-links">  +47 010 10 011 </span></a> <br><br>
                             <a href="mailto:reservation@adamsgarden.no" class="style-links"> For other inquiries, <br>

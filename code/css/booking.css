@@ -1,24 +1,31 @@
-/* Header */
+
+/* Header - image */
 
 #hero-image {
 
     width: 100%;
     height: 40rem;
 
+    /* Anonymous [freepic.diller]. (n.d.). 
+    Serving wedding table vintage style [photo], 
+    https://www.freepik.com/free-photo/serving-wedding-table-vintage-style_5698054.htm */
+
     background-image:url("../../images/booking/wedding-decoration.jpg");
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: right;
     background-size: cover; 
 
 }
 
-/* Aside - navbar */
+.navbar-padding {padding: 0rem 1rem;}
+
+/* Navigation bar - aside */
 
 aside .aside-navbar { 
 
     display: grid; 
-    grid-template-columns: repeat(2, auto);
-    justify-content: space-around;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
     padding: 0.8rem; 
     background-color: var(--color-primary);
 
@@ -31,7 +38,17 @@ aside .aside-navbar {
 
 .aside-navbar .aside-a { padding: 0.8rem; } 
 
-/* Main */
+/* Grid container - main section */
+
+#a-container {
+
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+
+}
+
+/* Font sizes - main section */
 
 main {
 
@@ -50,121 +67,147 @@ h1 {
     line-height: var(--line-height--large); 
     word-spacing: var(--word-spacing-large);
     text-align: center;
+    margin-bottom: 4rem; 
 
 } 
 
-.main .main-text { padding: 1rem; } 
+h2 {
+
+    font-size: var(--font-size--large); 
+    font-weight: bold; 
+    letter-spacing: var(--letter-spacing--large); 
+    line-height: var(--line-height--large); 
+    word-spacing: var(--word-spacing-large);
+    text-align: left;
+   
+}
+
+.main-text { padding: 0rem 1rem; } 
 
 .paragraph-spacing { margin-bottom: 3.2rem; }
 
-/* Links inside section */
+/* Hyperlinks - to different part of the main section */
 
-.main-text .hyperlinks { text-decoration: none; color: var(--foreground); }
+main .hyperlinks { text-decoration: none; color: var(--foreground); }
 
-.main-text .hyperlinks:focus{ color: var(--color-secondary); background-color: var(--color-primary); }
+main .hyperlinks:focus{ color: var(--color-secondary); background-color: var(--color-primary); }
 
+main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underline; }
 
-.main-text .hyperlinks:hover {
+/* Images carousel - container */
 
-    color: var(--color-tertiary); 
-    background-color: var(--color-primary); 
-    text-decoration: underline;
+.padding-img { padding: 0rem 1rem; }
 
-}
+.padding-img .slideshow-container {
 
-/* Slideshow container */
-.slideshow-container {
     max-width: 100%;
     position: relative;
     margin: auto;
+
 }
 
-.img-size { width: 100%;}
+.img-size { width: 100%; aspect-ratio: 1/1; }
 
-#text-align { text-align: center;}
+#text-align { text-align: center; }
 
 /* Hide the images by default */
-.mySlides {
-display: none;
-}
+
+.mySlides { display: none; }
 
 /* Next & previous buttons */
+
 .prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-margin-top: -22px;
-padding: 16px;
-color: white;
-font-weight: bold;
-font-size: 18px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
+
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
+    transition: 0.6s ease;
+    border-radius: 0 0.3rem 0.3rem 0;
+    user-select: none;
+
 }
 
 /* Position the "next button" to the right */
-.next {
-right: 0;
-border-radius: 3px 0 0 3px;
-}
+
+.next { right: 0; border-radius: 0.3rem 0 0 0.3rem; }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
-}
+
+.prev:hover, .next:hover { background-color: #e6e6e6; }
 
 /* Caption text */
+
 .text {
-color: #f2f2f2;
-font-size: 15px;
-padding: 8px 12px;
-position: absolute;
-bottom: 8px;
-width: 100%;
-text-align: center;
+
+    color: var(--foreground);
+    background-color: var(--color-primary);
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
+    padding: 0.8rem 1.2rem;
+    position: absolute;
+    bottom: 0.2rem;
+    width: 100%;
+    text-align: center;
+
 }
 
-/* Number text (1/3 etc) */
+/* Text to show which photo is currently displayed. */
+
 .numbertext {
-color: #f2f2f2;
-font-size: 12px;
-padding: 8px 12px;
-position: absolute;
-top: 0;
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
+    color: var(--background);
+    padding: 0.8rem 1.2rem;
+    position: absolute;
+    top: 0;
+
 }
 
-/* The dots/bullets/indicators */
-.dot {
-cursor: pointer;
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
+/* The indicators */
+
+.line {
+
+    cursor: pointer;
+    height: 0.5rem;
+    width: 4rem;
+    margin-top: 1.5rem;
+    background-color: var(--color-primary);
+    border-radius: 10%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
 }
 
-.active, .dot:hover {
-background-color: #717171;
-}
+.active, .line:hover { background-color: var(--foreground); }
 
 /* Fading animation */
-.fade {
-animation-name: fade;
-animation-duration: 1.5s;
-}
 
-@keyframes fade {
-from {opacity: .4}
-to {opacity: 1}
-}
+.fade { animation-name: fade; animation-duration: 1.5s; }
+
+@keyframes fade { from {opacity: .4} to {opacity: 1} }
 
 /* Footer */
 
-h2 {
+h3 {
 
     font-size: var(--font-size--large);  
     letter-spacing: var(--letter-spacing--large); 
@@ -189,17 +232,19 @@ footer address, footer p {
 
     .aside-navbar .aside-a { padding: 1rem; }
     
-    .main .main-text { padding: 1rem 2rem; }
+    main .main-text { padding: 0rem 2rem; }
+
+    .padding-img { padding: 0rem 2rem; }
 
 }
 
 @media only screen and (max-width: 41.5em) and (min-width: 30.06em) { /* 481px - 664px */
 
-    aside .aside-navbar { grid-template-columns: repeat(4, auto); } /* Change layout for aside navbar */
-
     .aside-navbar .aside-a { padding: 1rem; }
 
-    .main .main-text { padding: 1rem 1.5rem; }
+    main .main-text { padding: 0rem 1.5rem; }
+
+    .padding-img { padding: 0rem 1.5rem; }
 
 }
 
@@ -207,11 +252,11 @@ footer address, footer p {
 
     #hero-image { height: 45rem; }
 
-    aside .aside-navbar { grid-template-columns: repeat(4, auto); }
-
     .aside-navbar .aside-a { padding: 1rem; }
 
-    .main .main-text { padding: 1.5rem 2rem; }
+    main .main-text { padding: 0rem 2rem; }
+
+    .padding-img { padding: 0rem 2rem; }
 
 }
 
@@ -219,28 +264,22 @@ footer address, footer p {
 
     #hero-image { height: 50rem; }
 
-    /* Change layout for aside navbar from 4 colums to 1 column */
+    /* Change layout for aside navbar from 3 colums to 1 column */
 
     aside .aside-navbar { grid-template-columns: repeat(1, auto); line-height: 3.5rem; }
+
     .aside-navbar .aside-a { padding: 1rem; }
     
-    .main .main-text { padding: 2rem 6rem; }
+    main .main-text { padding: 0rem; }
 
-    h2 { 
+    .padding-img { padding: 0rem; }
 
-        font-size: var(--font-size--default);
-        letter-spacing: var(--letter-spacing--default);
-        line-height: var(--line-height--default);
-        word-spacing: var(--word-spacing--default);
+    h3 {
 
-    }
-
-    footer address, footer p {
-
-        font-size: var(--font-size--small);
-        list-style: var(--line-height--small);
-        letter-spacing: var(--letter-spacing--small);
-        word-spacing: var(--word-spacing--small);
+        font-size: var(--font-size--default);  
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
     
     }
 
@@ -260,23 +299,16 @@ footer address, footer p {
 
     .aside-navbar .aside-a { padding: 1rem; }
     
-    .main .main-text { padding: 1rem 0rem; }
+    main .main-text { padding: 0rem; }
 
-    h2 {
+    .padding-img { padding: 0rem; }
 
-        font-size: var(--font-size--default);
-        letter-spacing: var(--letter-spacing--default);
-        line-height: var(--line-height--default);
-        word-spacing: var(--word-spacing--default);
+    h3 {
 
-    }
-
-    footer address, footer p {
-
-        font-size: var(--font-size--small);
-        list-style: var(--line-height--small);
-        letter-spacing: var(--letter-spacing--small);
-        word-spacing: var(--word-spacing--small);
+        font-size: var(--font-size--default);  
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
     
     }
 
@@ -296,23 +328,16 @@ footer address, footer p {
 
     .aside-navbar .aside-a { padding: 1rem; }
     
-    .main .main-text { padding: 1rem 0rem; }
+    main .main-text { padding: 0rem; }
 
-    h2 {
+    .padding-img { padding: 0rem; }
 
-        font-size: var(--font-size--default);
-        letter-spacing: var(--letter-spacing--default);
-        line-height: var(--line-height--default);
-        word-spacing: var(--word-spacing--default);
+    h3 {
 
-    }
-
-    footer address, footer p {
-
-        font-size: var(--font-size--small);
-        list-style: var(--line-height--small);
-        letter-spacing: var(--letter-spacing--small);
-        word-spacing: var(--word-spacing--small);
+        font-size: var(--font-size--default);  
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
     
     }
 

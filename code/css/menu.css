@@ -106,27 +106,11 @@ h2 {
 
 /* Hyperlinks - for h2 */
 
-main .hyperlinks { 
+main .hyperlinks {  text-decoration: none; color: var(--foreground); }
 
-    text-decoration: none;
-    color: var(--foreground);
+main .hyperlinks:focus{ color: var(--color-secondary); background-color: var(--color-primary); }
 
-}
-
-main .hyperlinks:focus{ 
-
-    color: var(--color-secondary); 
-    background-color: var(--color-primary);
-
-}
-
-
-main .hyperlinks:hover {
-
-    color: var(--color-tertiary); 
-    text-decoration: underline;
-
-}
+main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underline; }
 
 h3 {
 
