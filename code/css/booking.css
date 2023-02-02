@@ -153,10 +153,10 @@ main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underlin
     color: var(--foreground);
     background-color: var(--color-primary);
 
-    font-size: var(--font-size--default);
-    line-height: var(--line-height--default);
-    letter-spacing: var(--letter-spacing--default);
-    word-spacing: var(--word-spacing--default);
+    font-size: var(--font-size--small);
+    line-height: var(--line-height--small);
+    letter-spacing: var(--letter-spacing--small);
+    word-spacing: var(--word-spacing--small);
 
     padding: 0.8rem 1.2rem;
     position: absolute;
@@ -204,6 +204,77 @@ main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underlin
 .fade { animation-name: fade; animation-duration: 1.5s; }
 
 @keyframes fade { from {opacity: .4} to {opacity: 1} }
+
+/* Booking form */
+
+/* Add a background color and some padding around the form */
+
+.form-styling { padding: 0rem 1rem;}
+
+#booking-container {
+
+    border-radius: 0.5rem;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    
+}
+
+fieldset { background-color: #f2f2f2; border: 1px solid #f2f2f2; } 
+
+#booking-form { 
+    
+    display: grid; 
+    grid-template-columns: repeat(1, auto); 
+    row-gap: 2rem;
+
+}
+
+fieldset button { 
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.a-gap {display: grid; grid-template-columns: repeat (1, auto); row-gap: 1rem;}
+
+/* Style inputs */
+
+input[type=text], input[type=tel], input[type=email], input[type=number], input[type=datetime-local], select, textarea {
+
+    width: 100%; 
+    padding: 1.2rem; 
+    border: 1px solid rgb(204, 204, 204); 
+    border-radius: 0.4rem; 
+    box-sizing: border-box; 
+    margin-top: 0.6rem; 
+    margin-bottom: 0.6rem; 
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+
+    background-color: var(--color-tertiary);
+    color: #fff;
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    
+}
+
+/* When moving the mouse over the submit button, add a darker puple color*/
+
+input[type=submit]:hover {
+    background-color: var(--color-secondary);
+}
+
+/* Testimonals */
+
+
 
 /* Footer */
 
