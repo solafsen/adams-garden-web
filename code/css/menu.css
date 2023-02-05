@@ -1,5 +1,5 @@
 
-/* Header */
+/* Header - Hero image */
 
 #hero-image {
 
@@ -19,7 +19,7 @@
 
 }
 
-/* Aside - navbar */
+/* Aside - navigation bar */
 
 aside .aside-navbar { 
 
@@ -39,7 +39,7 @@ aside .aside-navbar {
 
 aside .aside-navbar .aside-a { padding: 0.8rem; }
 
-/* Main */
+/* Main section */
 
 main { margin: 0; }
 
@@ -51,7 +51,9 @@ main { margin: 0; }
 
 }
 
-main {
+/* Declare font sizes for main section */
+
+main { 
 
     font-size: var(--font-size--default);
     line-height: var(--line-height--default);
@@ -70,6 +72,8 @@ h1 {
 
 }
 
+/* Group and style a food catergory as a card */
+
 .card {
 
     display:grid; 
@@ -80,8 +84,9 @@ h1 {
 
 }
 
-
 .card:last-child { padding-bottom: 2rem; }
+
+/* Just make text more cleaner with padding and gap */
 
 .dish {
     
@@ -104,7 +109,7 @@ h2 {
 
 }
 
-/* Hyperlinks - for h2 */
+/* Hyperlinks */
 
 main .hyperlinks {  text-decoration: none; color: var(--foreground); }
 
@@ -112,7 +117,7 @@ main .hyperlinks:focus{ color: var(--color-secondary); background-color: var(--c
 
 main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underline; }
 
-h3 {
+h3 { 
 
     font-size: var(--font-size--small);
     letter-spacing: var(--letter-spacing--small); 
@@ -121,11 +126,13 @@ h3 {
 
 }
 
+/* For dish name and price */
+
 .price-container { display: flex; justify-content: space-between; }
 
 .price { margin-left: 3em; }
 
-.description {
+.description { 
 
     font-size: var(--font-size--small);
     letter-spacing: var(--letter-spacing--small); 
@@ -136,7 +143,7 @@ h3 {
 
 /* Allergies */
 
-.box-like-btn {
+.box-like-btn { /* Mini layout for allergies */
 
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -145,7 +152,9 @@ h3 {
 
 }
 
-.allergies {
+/* Make it look like a button without using <button> tag */
+
+.allergies { 
 
     font-size: var(--font-size--small);
     letter-spacing: var(--letter-spacing--small); 
@@ -183,7 +192,7 @@ h3 {
 
 .beverage-name { font-weight: normal; }
 
-/* Footer */
+/* Footer - declare font sizes */
 
 footer address, footer p {
 
@@ -207,9 +216,11 @@ h4 {
 
 @media only screen and (max-width: 30em) and (min-width: 23em) { /* 368px - 480px */
 
-    .aside-navbar .aside-a { padding: 1rem; }
+    /* Tiny adjustment - mostly padding */
 
-    #menu { padding: 0rem 1rem; }
+    .aside-navbar .aside-a { padding: 1rem; } 
+
+    #menu { padding: 0rem 1rem; } 
 
     .card { gap: 2em; } 
 
@@ -222,6 +233,8 @@ h4 {
 }
 
 @media only screen and (max-width: 41.5em) and (min-width: 30.0625em) {  /* 481px - 664px */ 
+
+    /* Adjustment - font sizes, padding, gap */
 
     aside .aside-navbar { 
 
@@ -269,9 +282,9 @@ h4 {
 
     }
 
-    .box-like-btn { 
+    .box-like-btn { /* Change to 3 buttons on the same line */
        
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, auto); 
         gap: 2rem;
 
     }
@@ -292,9 +305,11 @@ h4 {
 
 @media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { /* 665px - 781px */
 
+    /* Adjustment - font sizes, padding, gap */
+
     aside .aside-navbar { 
 
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, auto); /* Change to 3 columns instead of 2 */
         font-size: var(--font-size--default);
         letter-spacing: var(--letter-spacing--default); 
         line-height: var(--line-height--default); 
@@ -339,9 +354,9 @@ h4 {
 
     }
 
-    .box-like-btn { 
+    .box-like-btn { /* Change to 4 buttons on the same line */
 
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(4, auto); 
         gap: 2rem;
 
     }
@@ -363,15 +378,17 @@ h4 {
 
 @media only screen and (max-width: 57.5625em) and (min-width: 48.875em) { /* 782px - 921px */
     
+    /* Adjustment - font sizes, padding, gap */
+
     #hero-image { height: 50rem; } 
 
-    aside .aside-navbar {
+    aside .aside-navbar { /* Make the navbar sticky - accessible for user since the menu is long. */
 
         position: -webkit-sticky; /* Safari */
         position: sticky; 
-        top: 0;
+        top: 5rem;
 
-        grid-template-columns: repeat(1, auto);
+        grid-template-columns: repeat(1, auto); /* Change from 3 columns to 1 */
 
         border: 0.1em solid var(--background);
         padding: 2rem;
@@ -390,7 +407,7 @@ h4 {
     
     }
 
-    .card { gap: 2em; box-shadow: none; }
+    .card { gap: 2em; box-shadow: none; } /* Remove box-shadow */
 
     .card:last-child { padding-bottom: 2rem; }
 
@@ -423,7 +440,7 @@ h4 {
 
     }
 
-    .box-like-btn { 
+    .box-like-btn { /* Change to 3 again */
         
         grid-template-columns: repeat(3, auto);
         gap: 2rem;
@@ -441,7 +458,7 @@ h4 {
 
     }
 
-    .card-beverages { gap: 0.5em; box-shadow: none; }
+    .card-beverages { gap: 0.5em; box-shadow: none; } /* Remove box-shadow */
 
     .beverage { padding: 0rem; }
 
@@ -458,13 +475,15 @@ h4 {
 
 @media only screen and (max-width: 64em) and (min-width: 57.625em) { /* 922px - 1024px */
 
+    /* Adjustment - font sizes, padding, gap */
+
     #hero-image { height: 50rem; } 
 
     aside .aside-navbar { 
 
-        position: -webkit-sticky;
+        position: -webkit-sticky; /* Sticky navigation bar */
         position: sticky;
-        top: 0;
+        top: 5rem;
 
         grid-template-columns: repeat(1, auto);
 
@@ -485,7 +504,7 @@ h4 {
     
     }
 
-    .card { gap: 2em; box-shadow: none; }
+    .card { gap: 2em; box-shadow: none; } /* Remove box-shadow */
 
     .card:last-child { padding-bottom: 4rem; }
 
@@ -518,9 +537,9 @@ h4 {
 
     }
 
-    .box-like-btn { 
+    .box-like-btn { /* From 3 columns to 4 */
         
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(4, auto); 
         gap: 2rem;
 
     }
@@ -539,7 +558,7 @@ h4 {
     .card-beverages { 
         
         gap: 0.5em; 
-        box-shadow: none; 
+        box-shadow: none; /* Remove box-shadow */
         padding-bottom: 2rem; 
     
     }
@@ -559,13 +578,15 @@ h4 {
 
 @media only screen and (min-width: 64.0625em) { /* 1025px and up */ 
 
+    /* Adjustment - font sizes, padding, gap */
+
     #hero-image { height: 60rem; }
 
-    aside .aside-navbar {
+    aside .aside-navbar { /* Sticky navbar */
 
         position: -webkit-sticky; 
         position: sticky;
-        top: 0;
+        top: 5rem;
 
         grid-template-columns: repeat(1, auto);
 
@@ -586,7 +607,7 @@ h4 {
     
     }
 
-    .card { gap: 2em; box-shadow: none; }
+    .card { gap: 2em; box-shadow: none; } /* Remove box-shadow */
 
     .card:last-child { padding-bottom: 4rem; }
 
@@ -619,7 +640,7 @@ h4 {
 
     }
 
-    .box-like-btn { 
+    .box-like-btn {
         
         grid-template-columns: repeat(4, auto);
         gap: 2rem;
@@ -641,7 +662,7 @@ h4 {
     .card-beverages { 
         
         gap: 0.5em; 
-        box-shadow: none; 
+        box-shadow: none; /* Remove box-shadow */
         padding-bottom: 6rem; 
     
     }

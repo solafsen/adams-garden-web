@@ -1,4 +1,6 @@
+/* SKIP LINK MÅ FIKSES!!!!! */
 
+/* https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/ */
 /* Layout with mobile first - from 320px */
 
 html {
@@ -47,10 +49,12 @@ footer { grid-area: 4/ 1/ 5/ 7; }
 
 /* Container - to control the layout */
 
+.top-navbar-container { max-width: 100%; margin: 0 auto; }
+
 .container { max-width: 100%; margin: 0 auto; } 
 
 /* Link - Skip to main content */
-
+/* 
 .skip {
 
     background: var(--color-primary);
@@ -59,13 +63,51 @@ footer { grid-area: 4/ 1/ 5/ 7; }
     left: 30%;
     padding: 0.8rem;
     position: absolute;
-    transform: translateY(-200%);
+    transform: translateY(-100%);
     transition: transform 0.5s;
     font-size: var(--font-size--default);   
+    overflow: auto;
 
 }
-  
-.skip:focus { transform: translateY(10%); }
+
+.skip:focus { 
+    
+    transform: translateY(0%);
+      
+
+}*/ 
+
+a.skip { /* FIKSER DETTE SENERE */
+
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden !important;
+    z-index:-999 ;
+
+}
+.skip:focus, .skip:active , .skip:hover{
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto !important;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+     
+
+
+
 
 /* Header with a top navigation bar */
 
@@ -294,7 +336,7 @@ address .style-links .footer-links { color:var(--color-secondary); }
 
     #grid-container { row-gap: 4rem; }
 
-    .skip:focus { transform: translateY(20%); } 
+    /*.skip:focus { transform: translateY(20%); } */
 
     .footer-container { padding: 3.5rem; } 
 
@@ -324,10 +366,12 @@ address .style-links .footer-links { color:var(--color-secondary); }
     }
 
     #grid-container { row-gap: 4rem; }
+
     .container { max-width: 66.5em; margin: 0 auto; }
 
+    /*
     .skip { left: 5%; }
-    .skip:focus { transform: translateY(20%); }
+    .skip:focus { transform: translateY(20%); } */
 
     .topnav-a { 
 
@@ -390,10 +434,11 @@ address .style-links .footer-links { color:var(--color-secondary); }
     }
 
     #grid-container { row-gap: 2rem; } 
-    .container { max-width: 78.2em; margin: 0 auto; }
 
+    .container { max-width: 78.2em; margin: 0 auto; }
+    /*
     .skip { left: 30%; }
-    .skip:focus{ transform: translateY(20%); }
+    .skip:focus{ transform: translateY(20%); } */
 
     .topnav-a { 
 
@@ -473,10 +518,23 @@ address .style-links .footer-links { color:var(--color-secondary); }
     }
 
     #grid-container { row-gap: 2rem; }
+
     .container { max-width: 92.2em; margin: 0 auto; }
 
+    .top-navbar-container { 
+        
+        max-width: 92.2em; 
+        margin: 0 auto; 
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 6rem; 
+    
+    }
+    
+    /*
     .skip { left: 30%; }
-    .skip:focus{ transform: translateY(20%); }
+    .skip:focus{ transform: translateY(20%); } */
 
     #navbar { 
 
@@ -574,10 +632,23 @@ address .style-links .footer-links { color:var(--color-secondary); }
     }
 
     #grid-container { row-gap: 2rem; }
+
     .container { max-width: 102.5em; margin: 0 auto; }
 
+    .top-navbar-container { 
+        
+        max-width: 102.5em; 
+        margin: 0 auto; 
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 6rem; 
+    
+    }
+
+    /*
     .skip { left: 30%; }
-    .skip:focus { transform: translateY(20%); }
+    .skip:focus { transform: translateY(20%); } */
 
     #navbar { 
 

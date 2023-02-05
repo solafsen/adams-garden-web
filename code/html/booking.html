@@ -26,21 +26,25 @@
 
     <body> 
 
-        <div id="grid-container">
+        <div id="grid-container"> <!-- Container for the whole body - using Grid. -->
 
-            <!-- Skip to main content link -->
-
-            <a href="#main" class="skip"> Skip to main content </a>
+            <!-- Header with hero image and top navbar -->
 
             <header id="hero-image">
+
+                <!-- Skip to main content link -->
+
+                <a href="#main" class="skip"> Skip to main content </a>
 
                 <!-- Ladd, A. [alstudiowebdev] (2022, June 14). 
                 Responsive and Accessible Navigation (HTML, CSS, Vanilla JS) [Video]. 
                 Youtube. https://youtu.be/IdZ-ZHLyEHs with some adjustment - in css. -->
 
-                <nav id="navbar" class="navbar-padding" aria-label="top navigation bar">
+                <!-- Top navigation bar -->
 
-                    <div class="container">
+                <nav id="navbar" class="navbar-padding" aria-label="top navigation bar">
+                    <div class="top-navbar-container">
+                        
                         <div class="nav-logo-container"> 
 
                             <!-- Logo from Adobe Express -->
@@ -53,7 +57,7 @@
 
                             </a>
 
-                            <!-- Create a open and close navigation. -->
+                            <!-- It works as a button to show or hide navigation links. --> 
 
                             <button type="button" id="mobileMenuTrigger" 
                             aria-expanded="false" 
@@ -69,25 +73,25 @@
                             </button>
 
                         </div>
-                    </div>
 
-                    <div class="container">
+                        <!-- Navigation links - hidden on small screen. Visible on large screen. -->
+
                         <div id="navigationLinks" class="nav-links-container">
 
-                            <!-- Navigation links - hidden on small screen. Visible on large screen. -->
-
                             <ul class="nav-links">
+                                
                                 <li><a href="../../index.html" class="topnav-a"> Home </a></li>
                                 <li><a href="../../code/html/menu.html" class="topnav-a"> Menu </a></li>
                                 <li><a href="../../code/html/booking.html" id="home" class="topnav-a"> Booking </a></li>
                                 <li><a href="../../code/html/topical.html" class="topnav-a"> Story </a></li>
                                 <li><a href="../../code/html/accessibility.html" class="topnav-a"> Accessibility </a></li>
                                 <li><a href="#contact-us" class="topnav-a"> Contact us </a></li>
+                            
                             </ul>
 
                         </div>
-                    </div>
 
+                    </div>
                 </nav>
 
                 <!-- Javascript for the open and close navigation -->
@@ -96,36 +100,44 @@
 
             </header>
 
+            <!-- Main container -->
+
             <div id="main-container" class="container main-container">
 
-                <!-- Navigation bar - aside -->
+                <!-- Aside navigation bar - related to the text inside the main section. -->
 
                 <aside>
 
                     <nav class="aside-navbar" aria-label="aside navigation bar">
+                        
+                        <!-- Works like a hyperlinks that helps to navigate within the page. -->
+
                         <a href="#about-us" class="aside-a"> About </a>
                         <a href="#booking" class="aside-a"> Booking </a>
                         <a href="#testimonials" class="aside-a"> Reviews </a>
+                    
                     </nav>
 
                 </aside>
+
+                <!-- Main content with text description for this website. -->
                 
-                <main id="main">
+                <main>
 
                     <div id="a-container">
 
                         <!-- Restaurant's description -->
 
-                        <section>
+                        <section class="main-text">
 
-                            <h1 id="about-us" class="main-text hyperlinks"> Adam's Garden </h1>
+                            <h1 id="about-us" class="hyperlinks"> Adam's Garden </h1>
 
-                            <p class="main-text paragraph-spacing"> 
+                            <p id="main" class="paragraph-spacing" tabindex="-1"> 
                                 As we are situated in the city center near the harbor promenade, our
                                 venue come with a breathtaking ocean view.
                             </p> 
                             
-                            <p class="main-text">
+                            <p>
                                 Imagine enjoying your favorite meal watching the
                                 beautiful sunset over the ocean from our cozy restaurant with your favorite people! 
                             </p> 
@@ -203,6 +215,7 @@
                             <!-- Indicator to show the photo that are displayed. -->
 
                             <div id="text-align">
+                                
                                 <span class="line" onclick="currentSlide(1)"></span>
                                 <span class="line" onclick="currentSlide(2)"></span>
                                 <span class="line" onclick="currentSlide(3)"></span>
@@ -213,21 +226,16 @@
 
                         </section>
 
-                        <section>
+                        <section class="main-text">
 
-                            <p class="main-text paragraph-spacing">
-                                Adam's Garden facilities are perfect venues for birthday parties, 
-                                weddings, Christmas parties or any other event.
-                            </p>
-
-                            <p class="main-text paragraph-spacing">
+                            <p class="paragraph-spacing">
                                 With a seating capacity of 100 people, a romantic atmosphere with 
                                 a 180-degree amazing ocean view, a dance floor, a bar, delightful cuisine, 
                                 and a helpful and friendly staff, you have all the
                                 ingredients to make your event a night to remember.
                             </p>  
 
-                            <p class="main-text">
+                            <p>
                                 Read reviews from our guest and book a table for 
                                 an unforgettable experience. 
                             </p>
@@ -236,107 +244,118 @@
 
                         <!-- Booking form -->
 
-                        <section>
+                        <section class="main-text">
 
-                            <h2 id="booking" class="main-text hyperlinks"> Contact </h2>
+                            <h2 id="booking" class="hyperlinks"> Contact </h2>
 
-                            <p class="main-text paragraph-spacing"> You can reserve tables in the booking form below, send us an email or call us to arrange your event. </p>
+                            <p class="paragraph-spacing"> You can reserve tables in the booking form below, send us an email or call us to arrange your event. </p>
                             
-                            <div class="form-styling">
+                            <form id="booking-container">
 
-                                <form id="booking-container">
+                                <fieldset id="booking-form"> <!-- Remove fieldset! -->
 
-                                    <fieldset id="booking-form">
+                                    <div class="a-gap">
+                                        <label for="name"> Name: </label>
+                                        <input type="text" id="name" placeholder="e.g. Ola Nordmann" required name="Name">
+                                    </div>
 
-                                        <div class="a-gap">
-                                            <label for="name"> Name: </label>
-                                            <input type="text" id="name" placeholder="e.g. Ola Nordmann" required name="Name">
-                                        </div>
-
-                                        <div class="a-gap">
-                                            <label for="phonenumber"> Telephone number: </label>
-                                            <input type="tel" id="phonenumber" placeholder="e.g. 000 00 000" required name="Phone number">
-                                        </div>
-                                        
-                                        <div class="a-gap">
-                                            <label for="email"> Email address: </label>
-                                            <input type="email" id="email" placeholder="e.g. olanordmann@example.com" required name="Email">
-                                        </div>
-
-                                        <div class="a-gap">
-                                            <label for="numberOfGuests"> Select number of guests: </label>
-                                            <input type="number" placeholder="e.g. 2" required name="People">
-                                        </div>
-
-                                        <div class="a-gap">
-                                            <label for="dateAndTime"> Date and time: </label>
-                                            <input type="datetime-local" placeholder="e.g. 02/03/2023, 12:00 PM" required name="date" value="2023-02-28T18:00">
-                                        </div>
-
-                                        <div class="a-gap">
-                                            <label for="event"> Choose an event: </label>
-                                            <select id="event" required name="event">
-                                                <option value="Special events"> Special events </option>
-                                                <option value="Ceremonies"> Ceremonies </option>
-                                                <option value="Table reservation"> Table reservation </option>
-                                                <option value="Take away"> Take away </option>
-                                                <option value="Other events"> Other events </option>
-                                            </select>
-                                        </div>
-
-                                        <div class="a-gap"> 
-                                            <label for="message"> Message: </label>
-                                            <textarea id="message" placeholder="e.g. Allergies" name="Message" style="height: 200px"></textarea>
-                                        </div>
-                
-                                        <button id="myBtn" onclick="javascript: alert('Booking has been completed. ❤️')" type="submit"> 
-                                            <input type="submit" value="Submit">
-                                        </button>
-
-                                    </fieldset>
+                                    <div class="a-gap">
+                                        <label for="phonenumber"> Telephone number: </label>
+                                        <input type="tel" id="phonenumber" placeholder="e.g. 000 00 000" required name="Phone number">
+                                    </div>
                                     
-                                </form>
+                                    <div class="a-gap">
+                                        <label for="email"> Email address: </label>
+                                        <input type="email" id="email" placeholder="e.g. olanordmann@example.com" required name="Email">
+                                    </div>
 
-                                <script src="../../script/triggerButton.js"></script>
+                                    <div class="a-gap">
+                                        <label for="numberOfGuests"> Select number of guests: </label>
+                                        <input type="number" placeholder="e.g. 2" required name="People">
+                                    </div>
 
-                            </div>
+                                    <div class="a-gap">
+                                        <label for="dateAndTime"> Date and time: </label>
+                                        <input type="datetime-local" placeholder="e.g. 02/03/2023, 12:00 PM" required name="date" value="2023-02-28T18:00">
+                                    </div>
+
+                                    <div class="a-gap">
+                                        <label for="event"> Choose an event: </label>
+                                        <select id="event" required name="event">
+                                            <option value="Special events"> Special events </option>
+                                            <option value="Ceremonies"> Ceremonies </option>
+                                            <option value="Table reservation"> Table reservation </option>
+                                            <option value="Take away"> Take away </option>
+                                            <option value="Other events"> Other events </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="a-gap"> 
+                                        <label for="message"> Message: </label>
+                                        <textarea id="message" placeholder="e.g. Allergies" name="Message" style="height: 200px"></textarea>
+                                    </div>
+            
+                                    <button id="myBtn" onclick="javascript: alert('Booking has been completed. ❤️')" type="submit"> 
+                                        Submit
+                                    </button>
+
+                                </fieldset>
+                                
+                            </form>
+
+                            <script src="../../script/triggerButton.js"></script>
+
                         </section>
 
                         <!-- Customers testimonials -->
 
-                        <section>
+                        <section class="main-text ">
 
-                            <h2 id="testimonials" class="hyperlinks"> Customers reviews </h2>
+                            <h2 id="testimonials" class="hyperlinks"> Customer review </h2>
 
-                            <div class="testimonials-container">
+                            <div class="testimonials-medium-container">
 
-                                <img src="bandmember.jpg" alt="Avatar" style="width:90px">
-                                <p><span> Noah (20) </span> CEO at Mighty Schools.</p>
-                                <p>John Doe saved us from a web disaster.</p>
+                                <div class="testimonials-small-container"> 
+                                    <img src="" alt="Avatar">
+                                    <p> Emma, 25 </p>
+                                </div>
+                        
+                                <p> 
+                                    Loved the pasta, quick service and lovely staff! 
+                                    Pasta was al dente, and there was a good selection of wines. 
+                                    We went there in the evening and the ocean view was breathtaking.
+                                    10 out of 10! 
+                                </p>
+
+                            </div>
+
+                            <div class="testimonials-medium-container">
+
+                                <div class="testimonials-small-container"> 
+                                    <img src="" alt="Avatar">
+                                    <p> Noah (30) </p>
+                                </div>
+                        
+                                <p> 
+                                    I had a romatic dinner with my girlfriend. 
+                                    Everything was perfectly arranged, and the service and the food were really good. 
+                                    My girlfriend said that this was the most romantic dinner she has been to. 
+                                </p>
 
                             </div>
                               
-                            <div class="testimonials-container">
+                            <div class="testimonials-medium-container">
 
-                                <img src="avatar_g2.jpg" alt="Avatar" style="width:90px">
-                                <p><span >Rebecca Flex.</span> CEO at Company.</p>
-                                <p>No one is better than John Doe.</p>
-
-                            </div>
-
-                            <div class="testimonials-container">
-
-                                <img src="avatar_g2.jpg" alt="Avatar" style="width:90px">
-                                <p><span >Rebecca Flex.</span> CEO at Company.</p>
-                                <p>No one is better than John Doe.</p>
-
-                            </div>
-
-                            <div class="testimonials-container">
-
-                                <img src="avatar_g2.jpg" alt="Avatar" style="width:90px">
-                                <p><span >Rebecca Flex.</span> CEO at Company.</p>
-                                <p>No one is better than John Doe.</p>
+                                <div class="testimonials-small-container"> 
+                                    <img src="" alt="Avatar">
+                                    <p> Noah (30) </p>
+                                </div>
+                        
+                                <p> 
+                                    I had a romatic dinner with my girlfriend. 
+                                    Everything was perfectly arranged, and the service and the food were really good. 
+                                    My girlfriend said that this was the most romantic dinner she has been to. 
+                                </p>
 
                             </div>
 
@@ -345,6 +364,8 @@
                     </div>
                 </main>
             </div>
+
+            <!-- Footer with contact informations, address and opening hours. -->
 
             <footer>
                 <div id="footer-container" class="container footer-container">

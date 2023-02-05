@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="../../code/css/common/global.css" />
         <link rel="stylesheet" href="../../code/css/menu.css" />
 
-        <!-- Hamburger menu (bars) icon for navigation bar. From FontAwesome. (https://fontawesome.com/icons)-->
+        <!-- Allergies icons from FontAwesome. (https://fontawesome.com/icons)-->
 
         <script src="https://kit.fontawesome.com/b13c0ae639.js" crossorigin="anonymous"></script>
 
@@ -30,80 +30,101 @@
 
     <body>
 
-        <div id="grid-container">
-
-            <!-- Skip to main content link -->
-
-            <a href="#skip" class="skip"> Skip to main content </a>
-
-            <!-- Header with top navbar-->
+        <div id="grid-container"> <!-- Container for the whole body - using Grid. -->
 
             <header id="hero-image">
-                
+
+                <!-- Skip to main content link -->
+
+                <a href="#main" class="skip"> Skip to main content </a>
+
                 <!-- Ladd, A. [alstudiowebdev] (2022, June 14). 
                 Responsive and Accessible Navigation (HTML, CSS, Vanilla JS) [Video]. 
                 Youtube. https://youtu.be/IdZ-ZHLyEHs with some adjustment - in css. -->
+                
+                <!-- Top navigation bar -->
 
                 <nav id="navbar" class="navbar-padding" aria-label="top navigation bar">
+                    <div class="top-navbar-container">
 
-                    <div class="container">
                         <div class="nav-logo-container"> 
 
                             <a href="../../index.html" class="nav-logo">  
-                                <span aria-hidden="true"> <!-- Logo from Adobe Express -->
+
+                                <!-- Logo from Adobe Express -->
+
+                                <span aria-hidden="true"> 
                                 <img src="../../images/adams-garden-logo.png" alt="Adam's Garden logo" height="104" width="110" /></span> 
                                 <span class="sr-only"> Home </span> 
+                            
                             </a>
+
+                            <!-- It works as a button to show or hide navigation links. -->
 
                             <button type="button" id="mobileMenuTrigger" 
                             aria-expanded="false" 
                             aria-controls="navigationLinks" 
                             aria-label="Open and close navigation">
 
+                                <!-- Create a hamburger bar and an close icon (X). -->
+
                                 <span class="line1"></span>
                                 <span class="line2"></span>
                                 <span class="line3"></span>
 
                             </button>
-
                         </div>
-                    </div>
 
-                    <div class="container">
+                        <!-- Navigation links - hidden on small screen. Visible on large screen. -->
+
                         <div id="navigationLinks" class="nav-links-container">
 
                             <ul class="nav-links">
+
                                 <li><a href="../../index.html" class="topnav-a"> Home </a></li>
                                 <li><a href="../../code/html/menu.html" id="home" class="topnav-a"> Menu </a></li>
                                 <li><a href="../../code/html/booking.html" class="topnav-a"> Booking </a></li>
                                 <li><a href="../../code/html/topical.html" class="topnav-a"> Story </a></li>
                                 <li><a href="../../code/html/accessibility.html" class="topnav-a"> Accessibility </a></li>
                                 <li><a href="#contact-us" class="topnav-a"> Contact us </a></li>
+                            
                             </ul>
 
                         </div>
+                        
                     </div>
-
                 </nav>
+
+                <!-- Javascript for the open and close navigation. -->
 
                 <script src="../../script/navbar.js"></script>
 
             </header>
 
+            <!-- Main container -->
+
             <div id="main-container" class="container main-container">
+
+                <!-- Aside navigation bar - related to the text inside the main section. -->
 
                 <aside>
 
                     <nav class="aside-navbar" aria-label="aside navigation bar">
+                        
+                        <!-- Works like a hyperlinks that helps to navigate within the page. -->
+
                         <a href="#sandwiches" class="aside-a"><i class="fa-solid fa-bread-slice"></i> Sandwiches </a>
                         <a href="#pizza" class="aside-a"><i class="fa-solid fa-pizza-slice"></i> Pizza </a>
                         <a href="#pasta" class="aside-a"><i class="fa-solid fa-plate-wheat"></i> Pasta </a>
                         <a href="#vegan" class="aside-a"><i class="fa-solid fa-seedling"></i> Vegan </a>
                         <a href="#dessert" class="aside-a"><i class="fa-solid fa-cake-candles"></i> Desserts </a>
                         <a href="#drinks" class="aside-a"><i class="fa-solid fa-mug-saucer"></i> Drinks </a>
+                    
                     </nav>
 
                 </aside>
+
+                <!-- Main content - menu -->
 
                 <main id="main"> 
                     <section id="menu">
@@ -114,7 +135,7 @@
 
                         <section> 
 
-                            <div class="card">
+                            <div class="card"> 
 
                                 <!-- TasteAtlas. (n.d.). 
                                 Toast skagen [photo], 
@@ -123,48 +144,48 @@
                                 <img src="../../images/menu/toast-skagen.jpg" 
                                 alt="Skagen sandwich with shrimps" width="100%"/> 
 
-                                    <div class="dish">
-                                        <h2 id="sandwiches" class= "hyperlinks"> Sandwiches </h2>
-                                        <h3 class= "price-container"> 
-                                            <b> Sandwich with a grilled patty </b>
-                                            <span class="price"> 185.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            Bread with grilled patty meat, pickles, lettuce, red onions, cherry tomatoes og remoulade. 
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
-                                        </div>
+                                <div class="dish"> 
+                                    <h2 id="sandwiches" class= "hyperlinks"> Sandwiches </h2>
+                                    <h3 class= "price-container"> 
+                                        <b> Sandwich with a grilled patty </b>
+                                        <span class="price"> 185.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        Bread with grilled patty meat, pickles, lettuce, red onions, cherry tomatoes og remoulade. 
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
                                     </div>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b> Skagen Sandwich with shrimps </b>
-                                            <span class="price"> 185.- </span>
-                                        </h3>
-                                        <p class="description">
-                                            Bread with lemon, shrimps, rucola leaves, romaine lettuce, mayonnaise and lettuce. 
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
-                                            <span class="allergies"><i class="fa-solid fa-cow"></i> Milk </span> 
-                                            <span class="allergies"><i class="fa-solid fa-shrimp"></i> Shrimp </span>
-                                            <span class="allergies"><i class="fa-solid fa-lemon"></i> Citrus </span>
-                                        </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Skagen Sandwich with shrimps </b>
+                                        <span class="price"> 185.- </span>
+                                    </h3>
+                                    <p class="description">
+                                        Bread with lemon, shrimps, rucola leaves, romaine lettuce, mayonnaise and lettuce. 
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-cow"></i> Milk </span> 
+                                        <span class="allergies"><i class="fa-solid fa-shrimp"></i> Shrimp </span>
+                                        <span class="allergies"><i class="fa-solid fa-lemon"></i> Citrus </span>
                                     </div>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b> Bread with roast beef</b>
-                                            <span class="price"> 185.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            Bread with grilled slices of steak, romaine lettuce, pickled onions, cherry tomatoes and remoulade. 
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
-                                        </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Bread with roast beef</b>
+                                        <span class="price"> 185.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        Bread with grilled slices of steak, romaine lettuce, pickled onions, cherry tomatoes and remoulade. 
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
                                     </div>
+                                </div>
 
                             </div>
                         </section>
@@ -181,76 +202,76 @@
                                 <img src="../../images/menu/pizza.jpg" 
                                 alt="Mozarella pizza" width="100%" /> 
 
-                                    <div class="dish">
-                                        <h2 id="pizza" class= "hyperlinks"> Pizza </h2>
-                                        <h3 class= "price-container"> 
-                                            <b> Pizza Margherita </b>
-                                            <span class="price"> 205.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            With tomato sauce, mozzarella cheese and fresh basil. 
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
-                                            <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span> 
-                                        </div>
+                                <div class="dish">
+                                    <h2 id="pizza" class= "hyperlinks"> Pizza </h2>
+                                    <h3 class= "price-container"> 
+                                        <b> Pizza Margherita </b>
+                                        <span class="price"> 205.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        With tomato sauce, mozzarella cheese and fresh basil. 
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span> 
                                     </div>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b> Pizza pepperoni </b>
-                                            <span class="price"> 225.- </span>
-                                        </h3>
-                                        <p class="description">
-                                            With tomato sauce, mozzarella cheese and pepperoni.
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
-                                            <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
-                                        </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Pizza pepperoni </b>
+                                        <span class="price"> 225.- </span>
+                                    </h3>
+                                    <p class="description">
+                                        With tomato sauce, mozzarella cheese and pepperoni.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
                                     </div>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b> Pizza Caprese </b>
-                                            <span class="price"> 185.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            With tomato sauce, mozzarella cheese, fontina cheese, sliced tomatoes, fresh basil and balsamic.
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
-                                            <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
-                                        </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Pizza Caprese </b>
+                                        <span class="price"> 185.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        With tomato sauce, mozzarella cheese, fontina cheese, sliced tomatoes, fresh basil and balsamic.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
                                     </div>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b> Adam's special </b>
-                                            <span class="price"> 185.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            With tomato sauce, mozzarella cheese, mushrooms, olives, and fresh basil.
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
-                                            <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
-                                        </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Adam's special </b>
+                                        <span class="price"> 185.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        With tomato sauce, mozzarella cheese, mushrooms, olives, and fresh basil.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
                                     </div>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b> Pizza calzone </b>
-                                            <span class="price"> 230.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            With tomato sauce, mozzarella cheese, parmesan cheese, ricotta ham and herbs.
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
-                                            <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
-                                        </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Pizza calzone </b>
+                                        <span class="price"> 230.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        With tomato sauce, mozzarella cheese, parmesan cheese, ricotta ham and herbs.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
                                     </div>
+                                </div>
 
                             </div>
                         </section>
@@ -268,59 +289,59 @@
                                 <img src="../../images/menu/pasta.jpg" 
                                 alt="Pasta with green pesto and tomato" width="100%" /> 
 
-                                    <div class="dish">
-                                        <h2 id="pasta" class= "hyperlinks"> Pasta </h2>
-                                        <h3 class= "price-container"> 
-                                            <b> Pasta carbonara </b>
-                                            <span class="price"> 165.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            Pasta with bacon, and white parmesan sauce.
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
-                                            <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span> 
-                                        </div>
+                                <div class="dish">
+                                    <h2 id="pasta" class= "hyperlinks"> Pasta </h2>
+                                    <h3 class= "price-container"> 
+                                        <b> Pasta carbonara </b>
+                                        <span class="price"> 165.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        Pasta with bacon, and white parmesan sauce.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span> 
                                     </div>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b> Spaghetti Bolognese </b>
-                                            <span class="price"> 165.- </span>
-                                        </h3>
-                                        <p class="description">
-                                            Pasta with meat, and tomato sauce.
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
-                                        </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Spaghetti Bolognese </b>
+                                        <span class="price"> 165.- </span>
+                                    </h3>
+                                    <p class="description">
+                                        Pasta with meat, and tomato sauce.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
                                     </div>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b> Lasagna </b>
-                                            <span class="price"> 165.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            Layered pasta with meat, and tomato sauce topped with cheese.
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
-                                        </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Lasagna </b>
+                                        <span class="price"> 165.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        Layered pasta with meat, and tomato sauce topped with cheese.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
                                     </div>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b>  Pasta Cacio e pepe</b>
-                                            <span class="price"> 165.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            Pasta with white sauce topped with pecorino Romano cheese.
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
-                                        </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b>  Pasta Cacio e pepe</b>
+                                        <span class="price"> 165.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        Pasta with white sauce topped with pecorino Romano cheese.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
                                     </div>
+                                </div>
 
                             </div>
                         </section>
@@ -338,39 +359,39 @@
                                 <img src="../../images/menu/ginger-soup.jpg" 
                                 alt="Carrot and ginger soup" width="100%"/> 
 
-                                    <div class="dish">
-                                        <h2 id="vegan" class= "hyperlinks"> Vegetarian </h2>
-                                        <h3 class= "price-container"> 
-                                            <b> Vegan board </b>
-                                            <span class="price"> 205.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            A board served with avocado sandwich and chia pudding with grains and blueberries. Carrot and ginger soup.
-                                        </p>
-                                    </div>
+                                <div class="dish">
+                                    <h2 id="vegan" class= "hyperlinks"> Vegetarian </h2>
+                                    <h3 class= "price-container"> 
+                                        <b> Vegan board </b>
+                                        <span class="price"> 205.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        A board served with avocado sandwich and chia pudding with grains and blueberries. Carrot and ginger soup.
+                                    </p>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b> Carrot and ginger soup </b>
-                                            <span class="price"> 165.- </span>
-                                        </h3>
-                                        <p class="description">
-                                            Soup with chili, ginger, garlic, vegetable broth, red pepper, coconut milk, lime, cilantro, salt and pepper.
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-lemon"></i> Citrus </span>
-                                        </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Carrot and ginger soup </b>
+                                        <span class="price"> 165.- </span>
+                                    </h3>
+                                    <p class="description">
+                                        Soup with chili, ginger, garlic, vegetable broth, red pepper, coconut milk, lime, cilantro, salt and pepper.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-lemon"></i> Citrus </span>
                                     </div>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b> Vegetarian salad </b>
-                                            <span class="price"> 185.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            A lentil salad with salad mixture, pomegranates, baby spinach, plant-based feta cheese and a homemade dressing.
-                                        </p>
-                                    </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Vegetarian salad </b>
+                                        <span class="price"> 185.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        A lentil salad with salad mixture, pomegranates, baby spinach, plant-based feta cheese and a homemade dressing.
+                                    </p>
+                                </div>
 
                             </div>
                         </section>
@@ -388,47 +409,47 @@
                                 <img src="../../images/menu/apple-cake.jpg" 
                                 alt="A piece of cake" width="100%"/> 
 
-                                    <div class="dish">
-                                        <h2 id="dessert" class= "hyperlinks"> Dessert </h2>
-                                        <h3 class= "price-container"> 
-                                            <b> Brownies </b>
-                                            <span class="price"> 55.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            A tasty, gluten-free and crispy slice of cake with the taste of cocoa.
-                                        </p>
-                                    </div>
+                                <div class="dish">
+                                    <h2 id="dessert" class= "hyperlinks"> Dessert </h2>
+                                    <h3 class= "price-container"> 
+                                        <b> Brownies </b>
+                                        <span class="price"> 55.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        A tasty, gluten-free and crispy slice of cake with the taste of cocoa.
+                                    </p>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b> Carrot cake </b>
-                                            <span class="price"> 55.- </span>
-                                        </h3>
-                                        <p class="description">
-                                            A tasty slice of cake with grated carrot, topped with cinnamon and cream cheese.
-                                        </p>
-                                        <div class="box-like-btn">
-                                            <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
-                                            <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span> 
-                                            <span class="allergies"><i class="fa-solid fa-cow"></i> Milk </span>
-                                        </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Carrot cake </b>
+                                        <span class="price"> 55.- </span>
+                                    </h3>
+                                    <p class="description">
+                                        A tasty slice of cake with grated carrot, topped with cinnamon and cream cheese.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span> 
+                                        <span class="allergies"><i class="fa-solid fa-cow"></i> Milk </span>
                                     </div>
+                                </div>
 
-                                    <div class="dish">
-                                        <h3 class= "price-container"> 
-                                            <b> Apple cake </b>
-                                            <span class="price"> 55.- </span>
-                                        </h3>
-                                        <p class="description"> 
-                                            A tasty slice of cake with apples, cinnamon, almonds, and vanilla sugar.
-                                        </p>
-                                        <div class="box-like-btn" >
-                                            <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
-                                            <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span> 
-                                            <span class="allergies"><i class="fa-solid fa-cow"></i> Milk </span>
-                                            <span class="allergies"><i class="fa-solid fa-hand-dots"></i> Nuts </span> 
-                                        </div>
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Apple cake </b>
+                                        <span class="price"> 55.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        A tasty slice of cake with apples, cinnamon, almonds, and vanilla sugar.
+                                    </p>
+                                    <div class="box-like-btn" >
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span> 
+                                        <span class="allergies"><i class="fa-solid fa-cow"></i> Milk </span>
+                                        <span class="allergies"><i class="fa-solid fa-hand-dots"></i> Nuts </span> 
                                     </div>
+                                </div>
 
                             </div>
                         </section>
@@ -446,82 +467,84 @@
                                 <img src="../../images/menu/white-wine.jpeg" 
                                 alt="White wine and green grapes" width="100%"/> 
 
-                                    <div class="beverage">
-                                        <h2 id="drinks" class= "hyperlinks"> Beverages </h2>
-                                        <h3 class= "price-container"> 
-                                            <b class="beverage-name"> Coffee </b>
-                                            <span class="price"> 39.- </span>
-                                        </h3>
-                                    </div>
+                                <div class="beverage">
+                                    <h2 id="drinks" class= "hyperlinks"> Beverages </h2>
+                                    <h3 class= "price-container"> 
+                                        <b class="beverage-name"> Coffee </b>
+                                        <span class="price"> 39.- </span>
+                                    </h3>
+                                </div>
 
-                                    <div class="beverage">
-                                        <h3 class= "price-container"> 
-                                            <b class="beverage-name"> Caffè Latte </b>
-                                            <span class="price"> 55.- </span>
-                                        </h3>
-                                    </div>
+                                <div class="beverage">
+                                    <h3 class= "price-container"> 
+                                        <b class="beverage-name"> Caffè Latte </b>
+                                        <span class="price"> 55.- </span>
+                                    </h3>
+                                </div>
 
-                                    <div class="beverage">
-                                        <h3 class= "price-container"> 
-                                            <b class="beverage-name"> Americano </b>
-                                            <span class="price"> 47.- </span>
-                                        </h3>
-                                    </div>
+                                <div class="beverage">
+                                    <h3 class= "price-container"> 
+                                        <b class="beverage-name"> Americano </b>
+                                        <span class="price"> 47.- </span>
+                                    </h3>
+                                </div>
 
-                                    <div class="beverage">
-                                        <h3 class= "price-container"> 
-                                            <b class="beverage-name"> Espresso </b>
-                                            <span class="price"> 40.- </span>
-                                        </h3>
-                                    </div>
+                                <div class="beverage">
+                                    <h3 class= "price-container"> 
+                                        <b class="beverage-name"> Espresso </b>
+                                        <span class="price"> 40.- </span>
+                                    </h3>
+                                </div>
 
-                                    <div class="beverage">
-                                        <h3 class= "price-container"> 
-                                            <b class="beverage-name"> Mineral water </b>
-                                            <span class="price"> 40.- </span>
-                                        </h3>
-                                    </div>
+                                <div class="beverage">
+                                    <h3 class= "price-container"> 
+                                        <b class="beverage-name"> Mineral water </b>
+                                        <span class="price"> 40.- </span>
+                                    </h3>
+                                </div>
 
-                                    <div class="beverage">
-                                        <h3 class= "price-container"> 
-                                            <b class="beverage-name"> Sparkle apple </b>
-                                            <span class="price"> 40.- </span>
-                                        </h3>
-                                    </div>
+                                <div class="beverage">
+                                    <h3 class= "price-container"> 
+                                        <b class="beverage-name"> Sparkle apple </b>
+                                        <span class="price"> 40.- </span>
+                                    </h3>
+                                </div>
 
-                                    <div class="beverage">
-                                        <h3 class= "price-container"> 
-                                            <b class="beverage-name"> Apple cider </b>
-                                            <span class="price"> 89.- </span>
-                                        </h3>
-                                    </div>
+                                <div class="beverage">
+                                    <h3 class= "price-container"> 
+                                        <b class="beverage-name"> Apple cider </b>
+                                        <span class="price"> 89.- </span>
+                                    </h3>
+                                </div>
 
-                                    <div class="beverage">
-                                        <h3 class= "price-container"> 
-                                            <b class="beverage-name"> Dahls </b>
-                                            <span class="price"> 79.- </span>
-                                        </h3>
-                                    </div>
+                                <div class="beverage">
+                                    <h3 class= "price-container"> 
+                                        <b class="beverage-name"> Dahls </b>
+                                        <span class="price"> 79.- </span>
+                                    </h3>
+                                </div>
 
-                                    <div class="beverage">
-                                        <h3 class= "price-container"> 
-                                            <b class="beverage-name"> Red wine </b>
-                                            <span class="price"> 120.- </span>
-                                        </h3>
-                                    </div>
+                                <div class="beverage">
+                                    <h3 class= "price-container"> 
+                                        <b class="beverage-name"> Red wine </b>
+                                        <span class="price"> 120.- </span>
+                                    </h3>
+                                </div>
 
-                                    <div class="beverage">
-                                        <h3 class= "price-container"> 
-                                            <b class="beverage-name"> White wine </b>
-                                            <span class="price"> 120.- </span>
-                                        </h3>
-                                    </div>
+                                <div class="beverage">
+                                    <h3 class= "price-container"> 
+                                        <b class="beverage-name"> White wine </b>
+                                        <span class="price"> 120.- </span>
+                                    </h3>
+                                </div>
 
                             </div>
                     </section>
 
                 </main>
             </div>
+
+            <!-- Footer with contact informations, address and opening hours. -->
 
             <footer>
                 <div id="footer-container" class="container footer-container">

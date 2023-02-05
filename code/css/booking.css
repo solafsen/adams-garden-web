@@ -38,7 +38,7 @@ aside .aside-navbar {
 
 .aside-navbar .aside-a { padding: 0.8rem; } 
 
-/* Grid container - main section */
+/* Grid container for main section */
 
 #a-container {
 
@@ -78,7 +78,7 @@ h2 {
     letter-spacing: var(--letter-spacing--large); 
     line-height: var(--line-height--large); 
     word-spacing: var(--word-spacing-large);
-    text-align: left;
+    text-align: center;
    
 }
 
@@ -96,7 +96,7 @@ main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underlin
 
 /* Images carousel - container */
 
-.padding-img { padding: 0rem 1rem; }
+.padding-img { padding: 0rem 1rem; /* vertical-align:middle; */} /* A lot to fix! If we wish to have to carousels then we have a lot to do. */
 
 .padding-img .slideshow-container {
 
@@ -209,8 +209,6 @@ main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underlin
 
 /* Add a background color and some padding around the form */
 
-.form-styling { padding: 0rem 1rem;}
-
 #booking-container {
 
     border-radius: 0.5rem;
@@ -255,7 +253,7 @@ input[type=text], input[type=tel], input[type=email], input[type=number], input[
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+button[type=submit] {
 
     background-color: var(--color-tertiary);
     color: #fff;
@@ -263,18 +261,52 @@ input[type=submit] {
     border: none;
     border-radius: 0.4rem;
     cursor: pointer;
-    
+
 }
 
 /* When moving the mouse over the submit button, add a darker puple color*/
 
-input[type=submit]:hover {
+button[type=submit]:hover {
     background-color: var(--color-secondary);
 }
 
 /* Testimonals */
 
+.testimonials-container {
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0
+}
+  
+.testimonials-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
+.testimonials-container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.testimonials-container span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+  
+@media (max-width: 500px) {
+    .testimonials-container {
+        text-align: center;
+    }
+    .testimonials-container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+}
 
 /* Footer */
 
