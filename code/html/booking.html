@@ -214,12 +214,24 @@
 
                             <!-- Indicator to show the photo that are displayed. -->
 
-                            <div id="text-align">
+                            <div id="text-align"> nmouseover, onmouseout
                                 
-                                <span class="line" type="button" onclick="currentSlide(1)"></span>
-                                <span class="line" type="button" onclick="currentSlide(2)"></span>
-                                <span class="line" type="button" onclick="currentSlide(3)"></span>
-                                <span class="line" type="button" onclick="currentSlide(4)"></span>
+                                <span class="line" role="button" 
+                                    onmouseover="currentSlide(1)" onmouseout="currentSlide(1)" 
+                                    ondblclick="currentSlide(1)">
+                                </span>
+                                <span class="line" role="button" 
+                                    onmouseover="currentSlide(2)" onmouseout="currentSlide(2)"
+                                    ondblclick="currentSlide(2)">
+                                </span>
+                                <span class="line" role="button" 
+                                    onmouseover="currentSlide(3)" onmouseout="currentSlide(3)"
+                                    ondblclick="currentSlide(3)">
+                                </span>
+                                <span class="line" role="button" 
+                                    onmouseover="currentSlide(4)" onmouseout="currentSlide(4)"
+                                    ondblclick="currentSlide(4)">
+                                </span>
                             
                             </div> 
 
