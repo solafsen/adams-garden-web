@@ -189,6 +189,10 @@ ul { list-style: none; }
     clip: rect(0,0,0,0);
     border: 0;
 
+    font-size: var(--font-size--default);  
+    letter-spacing: var(--letter-spacing--default); 
+    line-height: var(--line-height--default); 
+    word-spacing: var(--word-spacing--default); 
 }
 
 .nav-links {

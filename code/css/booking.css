@@ -1,5 +1,5 @@
 
-/* Header - image */
+/* Header - Hero image */
 
 #hero-image {
 
@@ -40,7 +40,7 @@ aside .aside-navbar {
 
 /* Grid container for main section */
 
-#a-container {
+#main-part-container {
 
     display: grid; 
     grid-template-columns: 1fr;
