@@ -40,7 +40,7 @@ aside .aside-navbar {
 
 /* Grid container for main section */
 
-#main-part-container {
+#main-section-container {
 
     display: grid; 
     grid-template-columns: 1fr;
@@ -80,6 +80,15 @@ h2 {
     word-spacing: var(--word-spacing-large);
     text-align: center;
    
+}
+
+h3 {
+
+    font-size: var(--font-size--default);  
+    letter-spacing: var(--letter-spacing--default); 
+    line-height: var(--line-height--default); 
+    word-spacing: var(--word-spacing--default); 
+
 }
 
 .main-text { padding: 0rem 1rem; } 
@@ -310,7 +319,7 @@ button[type=submit]:hover {
 
 /* Footer */
 
-h3 {
+h4 {
 
     font-size: var(--font-size--large);  
     letter-spacing: var(--letter-spacing--large); 
@@ -377,7 +386,7 @@ footer address, footer p {
 
     .padding-img { padding: 0rem; }
 
-    h3 {
+    h4 {
 
         font-size: var(--font-size--default);  
         letter-spacing: var(--letter-spacing--default); 
@@ -406,7 +415,7 @@ footer address, footer p {
 
     .padding-img { padding: 0rem; }
 
-    h3 {
+    h4 {
 
         font-size: var(--font-size--default);  
         letter-spacing: var(--letter-spacing--default); 
@@ -435,7 +444,7 @@ footer address, footer p {
 
     .padding-img { padding: 0rem; }
 
-    h3 {
+    h4 {
 
         font-size: var(--font-size--default);  
         letter-spacing: var(--letter-spacing--default); 
