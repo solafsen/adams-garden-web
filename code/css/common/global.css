@@ -189,10 +189,10 @@ ul { list-style: none; }
     clip: rect(0,0,0,0);
     border: 0;
 
-    font-size: var(--font-size--default);  
-    letter-spacing: var(--letter-spacing--default); 
-    line-height: var(--line-height--default); 
-    word-spacing: var(--word-spacing--default); 
+    font-size: var(--font-size--large);  
+    letter-spacing: var(--letter-spacing--large); 
+    line-height: var(--line-height--large); 
+    word-spacing: var(--word-spacing--large); 
 }
 
 .nav-links {
