@@ -12,6 +12,7 @@ mobileMenuTrigger.addEventListener('click', () => {
     mobileMenuTrigger.classList.toggle('active');
 
     // Toggle Aria-Expanded Attribute True / False
+    
     if (mobileMenu.classList.contains('active')) {
         mobileMenuTrigger.setAttribute('aria-expanded', 'true');
     } else {
