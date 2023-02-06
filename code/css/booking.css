@@ -284,7 +284,15 @@ button[type=submit]:hover {
 
 /* Testimonals */
 
-.testimonials-container {
+.img-card .profile-img { 
+
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+
+}
+
+/* .testimonials-container {
     border: 2px solid var(--color-primary);
     background-color: var(--color-primary);
     border-radius: 5px;
@@ -318,7 +326,7 @@ button[type=submit]:hover {
         float: none;
         display: block;
     }
-}
+} */
 
 /* Footer */
 
