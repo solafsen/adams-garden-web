@@ -158,9 +158,9 @@
                                         https://unsplash.com/photos/TQSB-suJu1k 
                                     -->
 
-                                    <div class="numbertext"> 1/4 </div>
+                                    <p class="numbertext"> 1/4 </p>
                                     <img class="img-size" src="../../images/booking/table-arrangement.jpg" alt="Table decoration with fresh flowers">
-                                    <div class="text"> We always use fresh flowers.  </div>
+                                    <p class="text"> We always use fresh flowers.  </p>
 
                                 </div>
 
@@ -172,9 +172,9 @@
                                         https://unsplash.com/photos/-F_5g8EEHYE
                                     -->
 
-                                    <div class="numbertext"> 2/4 </div>
+                                    <p class="numbertext"> 2/4 </p>
                                     <img class="img-size" src="../../images/booking/spaghetti.jpg" alt="Spaghetti with wine">
-                                    <div class="text"> Lovely pairing - spaghetti & wine. </div>
+                                    <p class="text"> Lovely pairing - spaghetti & wine. </p>
                                 </div>
                 
                                 <div class="mySlides fade"> 
@@ -185,9 +185,9 @@
                                         https://unsplash.com/photos/5Wb_32CO_kY
                                     -->
 
-                                    <div class="numbertext"> 3/4 </div>
+                                    <p class="numbertext"> 3/4 </p>
                                     <img class="img-size" src="../../images/booking/location-decoration.jpg" alt="Decorate location with white fabric and green chairs">
-                                    <div class="text"> Beautiful location. </div>
+                                    <p class="text"> Beautiful location. </p>
 
                                 </div>
 
@@ -199,16 +199,16 @@
                                         https://unsplash.com/photos/nVPfPXc3eis
                                     -->
 
-                                    <div class="numbertext"> 4/4 </div>
+                                    <p class="numbertext"> 4/4 </p>
                                     <img class="img-size" src="../../images/booking/fusilli.jpg" alt="Pasta and wine">
-                                    <div class="text"> Enjoy good food with your favorite people! </div>
+                                    <p class="text"> Enjoy good food with your favorite people! </p>
 
                                 </div>
 
                                 <!-- Next and previous buttons -->
 
-                                <a class="prev" role="button" onclick="plusSlides(-1)"> &#10094; </a>
-                                <a class="next" role="button" onclick="plusSlides(1)"> &#10095; </a>
+                                <a class="prev" type="button" onclick="plusSlides(-1)"> &#10094; </a>
+                                <a class="next" type="button" onclick="plusSlides(1)"> &#10095; </a>
         
                             </div>
 
@@ -216,22 +216,18 @@
 
                             <div id="text-align"> 
                                 
-                                <span class="line" role="button" 
-                                    onmouseover="currentSlide(1)" onmouseout="currentSlide(1)" 
-                                    ondblclick="currentSlide(1)">
-                                </span>
-                                <span class="line" role="button" 
-                                    onmouseover="currentSlide(2)" onmouseout="currentSlide(2)"
-                                    ondblclick="currentSlide(2)">
-                                </span>
-                                <span class="line" role="button" 
-                                    onmouseover="currentSlide(3)" onmouseout="currentSlide(3)"
-                                    ondblclick="currentSlide(3)">
-                                </span>
-                                <span class="line" role="button" 
-                                    onmouseover="currentSlide(4)" onmouseout="currentSlide(4)"
-                                    ondblclick="currentSlide(4)">
-                                </span>
+                                <button class="line" role="button" 
+                                    onclick="currentSlide(1)">
+                                </button>
+                                <button class="line" role="button" 
+                                    onclick="currentSlide(2)">
+                                </button>
+                                <button class="line" role="button" 
+                                    onclick="currentSlide(3)">
+                                </button>
+                                <button class="line" role="button" 
+                                    onclick="currentSlide(4)">
+                                </button>
                             
                             </div> 
 
@@ -308,7 +304,7 @@
                                         <textarea id="message" placeholder="e.g. Allergies" name="Message" style="height: 200px"></textarea>
                                     </div>
             
-                                    <button id="myBtn" onclick="javascript: alert('Booking has been completed. ❤️')" type="submit"> 
+                                    <button id="myBtn" class="submit-button" onclick="javascript: alert('Booking has been completed. ❤️')" type="submit"> 
                                         Submit
                                     </button>
 
@@ -332,7 +328,7 @@
 
                                 <div class="testimonials-small-container"> 
                                     <img src="" alt="Avatar">
-                                    <p> Emma, 25 </p>
+                                    <h3> Emma, 25 </h3>
                                 </div>
                         
                                 <p> 
@@ -363,7 +359,7 @@
 
                                 <div class="testimonials-small-container"> 
                                     <img src="" alt="Avatar">
-                                    <p> Noah (30) </p>
+                                    <h3> Noah (30) </h3>
                                 </div>
                         
                                 <p> 
