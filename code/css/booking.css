@@ -284,6 +284,14 @@ button[type=submit]:hover {
 
 /* Testimonals */
 
+main #card-container {
+
+    display: grid; 
+    grid-template-columns: repeat(1, auto);
+    gap: 1.5rem 0rem;
+
+}
+
 .img-card .profile-img { 
 
     width: 10rem;
