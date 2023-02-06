@@ -20,9 +20,8 @@ function showSlides(n) {
     slides[i].style.display = "none";  
     }
     for (i = 0; i < line.length; i++) {
-    line[i].className = line[i].className.replace(" active", "");
+    line[i].className = line[i].className.replace(" active-carousel", "");
     }
     slides[slideIndex-1].style.display = "block";  
-    line[slideIndex-1].className += " active";
+    line[slideIndex-1].className += " active-carousel";
 }
-
