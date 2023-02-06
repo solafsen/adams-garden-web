@@ -240,7 +240,7 @@ main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underlin
     padding: 0.35rem 0.75rem 0.625rem 0.75rem; 
 }
 
-.booking-form .submit-button { 
+.booking-form button { 
 
     border: none;
     background-color: transparent;
