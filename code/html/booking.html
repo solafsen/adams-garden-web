@@ -265,7 +265,7 @@
                             
                             <form id="booking-container">
 
-                                <fieldset id="booking-form"> <!-- Remove fieldset! -->
+                                <div class="booking-form"> 
 
                                     <div class="a-gap">
                                         <label for="name"> Name: </label>
@@ -292,7 +292,7 @@
                                         <input type="datetime-local" id="dateandtime" placeholder="e.g. 02/03/2023, 12:00 PM" required name="Date and time" value="2023-02-28T18:00">
                                     </div>
 
-                                    <div class="a-gap">
+                                    <div id="myInput" class="a-gap">
                                         <label for="event"> Choose an event: </label>
                                         <select id="event" required name="event">
                                             <option value="Special events"> Special events </option>
@@ -312,7 +312,7 @@
                                         Submit
                                     </button>
 
-                                </fieldset>
+                                </div>
                                 
                             </form>
 

@@ -191,6 +191,8 @@ main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underlin
 
 }
 
+.numbertext:hover { background-color: #e6e6e6; }
+
 /* The indicators */
 
 .line {
@@ -228,7 +230,7 @@ main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underlin
 
 fieldset { background-color: #f2f2f2; border: 1px solid #f2f2f2; } 
 
-#booking-form { 
+.booking-form { 
     
     display: grid; 
     grid-template-columns: repeat(1, auto); 
