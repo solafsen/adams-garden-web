@@ -186,13 +186,12 @@ main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underlin
     word-spacing: var(--word-spacing--default);
 
     color: var(--background);
+    background-color: var(--foreground);
     padding: 0.8rem 1.2rem;
     position: absolute;
     top: 0;
 
 }
-
-.numbertext:hover { background-color: var(--foreground); border: 0.1rem solid var(--foreground); }
 
 /* The indicators */
 
