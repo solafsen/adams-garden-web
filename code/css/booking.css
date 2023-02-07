@@ -288,8 +288,7 @@ main #card-container {
 
     display: grid; 
     grid-template-rows: repeat(1, auto);
-    grid-template-columns: repeat(2, auto);
-    gap: 2rem 2rem;
+    gap: 2rem 0rem;
     max-width: 100%;
 
 }
