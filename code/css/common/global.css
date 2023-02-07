@@ -189,6 +189,9 @@ ul { list-style: none; }
     clip: rect(0,0,0,0);
     border: 0;
 
+    color: var(--foreground);
+    background-color: var(--background);
+
     font-size: var(--font-size--large);  
     letter-spacing: var(--letter-spacing--large); 
     line-height: var(--line-height--large); 
