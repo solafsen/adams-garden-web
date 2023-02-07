@@ -531,7 +531,7 @@ address .style-links .footer-links { color:var(--color-secondary); }
         display: flex; 
         flex-direction: row;
         justify-content: space-between;
-        gap: 6rem; 
+        gap: 15rem; 
     
     }
     
@@ -645,7 +645,7 @@ address .style-links .footer-links { color:var(--color-secondary); }
         display: flex; 
         flex-direction: row;
         justify-content: space-between;
-        gap: 6rem; 
+        gap: 20rem; 
     
     }
 

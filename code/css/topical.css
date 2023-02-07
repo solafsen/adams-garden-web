@@ -39,7 +39,8 @@ body {
 
     grid-template-rows: repeat(6,1fr);
 
-    grid-template-areas: "v a a a h"
+    grid-template-areas: 
+    "v a a a h"
 
     "v b b b p"
 
@@ -200,7 +201,7 @@ footer {
 
 /* The responsive version starts when the screen size is 700px */
 
-@media only screen and (min-width: 320px) and (max-width: 699px) {
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
 	
 	header {
 		
@@ -255,13 +256,13 @@ footer {
 
 	h3 { visibility: hidden; }
 	
-	.line1 { margin : 0px; padding :0px; }
+	.line1 { margin : 0 auto; padding :0px; }
 	
 	.line3 {
 
     grid-area: a;
 	margin : 0px;
-	padding :0px;
+	padding :1em;
 	
 	}
 
