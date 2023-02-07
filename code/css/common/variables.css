@@ -46,15 +46,40 @@
 
     /* Booking */
 
+    --color-carousel: rgb(255, 255, 255);
     --bg-color--carousel: rgb(0, 0, 0, 0.8);
     --bg-color--form: rgb(242, 242, 242);
     --box-shadow--one: rgb(0, 0, 0, 0.12); 
     --box-shadow--to: rgb(0, 0, 0, 0.19);
 }
 
+/* Dark color scheme - for user whose preferences color scheme is dark */
+
 @media (prefers-color-scheme: dark) {
     :root { 
 
+        /* Color palette */
+
+        --color-light: rgb(255, 249, 237);
+        --color-dark: rgb(71, 69, 84);
+
+        --foreground: var(--color-light);
+        --background: var(--color-dark);
+
+        --color-primary: rgb(105, 102, 118);
+        --color-secondary: rgb(255, 231, 120);
+        --color-tertiary: rgb(255, 244, 108); 
+
+        /* Menu */
+
+        --box-shadow--menu: rgb(44, 42, 56);
+
+        /* Booking */
+
+        --bg-color--carousel: rgb(0, 0, 0, 0.2);
+        --bg-color--form: rgb(86, 83, 98);
+        --box-shadow--one: rgb(0, 0, 0, 0.12); 
+        --box-shadow--to: rgb(0, 0, 0, 0.19);
 
     }
 }
