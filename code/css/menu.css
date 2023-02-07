@@ -101,6 +101,7 @@ h2 {
 
     border-bottom: 0.2em solid var(--color-primary);
     padding-bottom: 0.5em;
+    margin-top: 0;
 
     font-size: var(--font-size--default);
     letter-spacing: var(--letter-spacing--default); 
