@@ -298,13 +298,17 @@ button[type=submit]:hover { background-color: var(--color-secondary); }
     row-gap: 3rem; 
 
     margin: 0 auto;
-    box-shadow: 0 0.4rem 0.8rem 0 rgb(0, 0, 0, 0.12), 0 0.6rem 2rem 0 rgb(0, 0, 0, 0.19);
+    box-shadow: 0 0.4rem 0.8rem 0 rgb(0, 0, 0, 0.12), 
+    0 0.6rem 2rem 0 rgb(0, 0, 0, 0.19);
+    border-radius: 0.5rem;
     background-color: rgb(242, 242, 242);
     text-align: center;
    
 }
 
-.card .img-card { padding-top: 2rem; } /* Maybe adjust */
+/* Profile avatar */
+
+.card .img-card { padding-top: 2rem; } 
 
 .img-card .profile-img { 
 
@@ -314,9 +318,22 @@ button[type=submit]:hover { background-color: var(--color-secondary); }
 
 }
 
-.stars { color: var(--color-secondary); }
+/* Add colors to star icon */
 
-q { padding: 0rem 1.5rem 3rem 1.5rem; } /* Adjust */
+.stars { color: var(--color-secondary); }
+.stars:hover { color: var(--color-tertiary)}
+
+/* Styling - quote from customers */
+
+q { 
+    
+    padding: 0rem 1.5rem 3rem 1.5rem;
+    font-size: var(--font-size--small);
+    line-height: var(--line-height--small);
+    letter-spacing: var(--letter-spacing--small);
+    word-spacing: var(--word-spacing--small);
+
+}
 
 /* Footer */
 
@@ -345,9 +362,13 @@ footer address, footer p {
 
     .aside-navbar .aside-a { padding: 1rem; }
     
-    main .main-text { padding: 0rem 2rem; }
+    .padding { padding: 0rem 2rem; }
 
-    .padding-img { padding: 0rem 2rem; }
+    .padding-img { padding: 0rem 1.5rem; }
+
+    .card .img-card { padding-top: 3rem; }
+
+    q { padding: 0rem 1.8rem 3rem 1.8rem; } 
 
 }
 
@@ -355,9 +376,13 @@ footer address, footer p {
 
     .aside-navbar .aside-a { padding: 1rem; }
 
-    main .main-text { padding: 0rem 1.5rem; }
+    .padding { padding: 0rem 1.5rem; }
 
     .padding-img { padding: 0rem 1.5rem; }
+
+    .card .img-card { padding-top: 3rem; }
+
+    q { padding: 0rem 1.8rem 3rem 1.8rem; }
 
 }
 
@@ -367,9 +392,25 @@ footer address, footer p {
 
     .aside-navbar .aside-a { padding: 1rem; }
 
-    main .main-text { padding: 0rem 2rem; }
+    .padding { padding: 0rem 2rem; }
 
     .padding-img { padding: 0rem 2rem; }
+
+    #card-container { /* Add columns - 2 cards in 1 row */
+
+        grid-template-columns: repeat(2, auto);
+        column-gap: 1.5rem;
+    }
+
+    #card-container > .card { /* Change the styling of box-shadow */
+
+        box-shadow: 0.5rem 0.5rem rgb(0, 0, 0, 0.19);
+    
+    }
+
+    .card .img-card { padding-top: 3rem; }
+
+    q { padding: 0rem 2rem 3rem 2rem; }
 
 }
 
@@ -379,13 +420,41 @@ footer address, footer p {
 
     /* Change layout for aside navbar from 3 colums to 1 column */
 
-    aside .aside-navbar { grid-template-columns: repeat(1, auto); line-height: 3.5rem; }
+    aside .aside-navbar { 
+        
+        grid-template-columns: repeat(1, auto); 
+        line-height: 3.5rem;
+        position: -webkit-sticky; /* Safari */
+        position: sticky; 
+        top: 10rem;
+
+        border: 0.1em solid var(--background);
+        padding: 2rem;
+    
+    }
 
     .aside-navbar .aside-a { padding: 1rem; }
     
-    main .main-text { padding: 0rem; }
+    .padding { padding: 0rem; }
 
     .padding-img { padding: 0rem; }
+
+    #card-container { /* Add columns - 2 cards in 1 row */
+
+        grid-template-columns: repeat(2, auto);
+        column-gap: 1.5rem;
+
+    }
+
+    #card-container > .card { /* Change the styling of box-shadow */
+
+        box-shadow: 0.5rem 0.5rem rgb(0, 0, 0, 0.19);
+    
+    }
+
+    .card .img-card { padding-top: 3rem; }
+
+    q { padding: 0rem 2rem 3rem 2rem; }
 
     h4 {
 
@@ -405,16 +474,38 @@ footer address, footer p {
     aside .aside-navbar { 
 
         grid-template-columns: repeat(1, auto);
-        justify-content: space-around;
         line-height: 3.5rem;
+        position: -webkit-sticky; /* Safari */
+        position: sticky; 
+        top: 10rem;
+
+        border: 0.1em solid var(--background);
+        padding: 2rem;
 
     }
 
     .aside-navbar .aside-a { padding: 1rem; }
     
-    main .main-text { padding: 0rem; }
+    .padding { padding: 0rem; }
 
     .padding-img { padding: 0rem; }
+
+    #card-container { 
+
+        grid-template-columns: repeat(2, auto);
+        column-gap: 1.5rem;
+
+    }
+
+    #card-container > .card { 
+
+        box-shadow: 0.5rem 0.5rem rgb(0, 0, 0, 0.19);
+    
+    }
+
+    .card .img-card { padding-top: 3rem; }
+
+    q { padding: 0rem 2rem 3rem 2rem; }
 
     h4 {
 
@@ -434,16 +525,39 @@ footer address, footer p {
     aside .aside-navbar { 
 
         grid-template-columns: repeat(1, auto);
-        justify-content: space-around;
         line-height: 4.5rem;
+        line-height: 3.5rem;
+        position: -webkit-sticky; /* Safari */
+        position: sticky; 
+        top: 10rem;
+
+        border: 0.1em solid var(--background);
+        padding: 2rem;
 
     }
 
     .aside-navbar .aside-a { padding: 1rem; }
     
-    main .main-text { padding: 0rem; }
+    .padding { padding: 0rem; }
 
     .padding-img { padding: 0rem; }
+
+    #card-container { 
+
+        grid-template-columns: repeat(2, auto);
+        column-gap: 1.5rem;
+
+    }
+
+    #card-container > .card { 
+
+        box-shadow: 0.5rem 0.5rem rgb(0, 0, 0, 0.19);
+    
+    }
+
+    .card .img-card { padding-top: 3rem; }
+
+    q { padding: 0rem 3rem 3rem 3rem; }
 
     h4 {
 
