@@ -148,7 +148,7 @@ main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underlin
 .numbers {
 
     color: var(--background);
-    background-color: var(--bg-color--form);
+    background-color: var(--bg-color--carousel);
     padding: 0.8rem 1.2rem;
     position: absolute;
     top: 0.5rem;
