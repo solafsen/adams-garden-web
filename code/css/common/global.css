@@ -126,7 +126,7 @@ ul { list-style: none; }
 .topnav-a { 
     
     text-decoration: none; 
-    color: var(--color-secondary); 
+    color: var(--foreground); 
     font-size: var(--font-size--default);  
     letter-spacing: var(--letter-spacing--default); 
     line-height: var(--line-height--default); 
@@ -159,7 +159,7 @@ ul { list-style: none; }
     display:block;
     width: 3rem;
     height: 0.3rem;
-    background-color: #000;
+    background-color: var(--foreground);
     margin: 0.5rem;
     border-radius: 0.5rem;
     transition: transform 0.5s ease;
@@ -296,7 +296,6 @@ h1, h2, h3, h4, b {font-family: 'Archivo Black', 'Helvetica', 'Aria', sans-serif
 footer { /* Styling */
 
     background-color: var(--color-primary);
-    border: 0.1rem solid var(--color-primarys);
     color: var(--foreground);
 
 }

@@ -38,4 +38,23 @@
     --letter-spacing-l-arge: 0.3rem;
     --word-spacing--large: 0.4rem;
 
+    /* Styling - use only in some HTML */
+
+    /* Menu */
+
+    --box-shadow--menu: rgb(168, 165, 165);
+
+    /* Booking */
+
+    --bg-color--carousel: rgb(0, 0, 0, 0.8);
+    --bg-color--form: rgb(242, 242, 242);
+    --box-shadow--one: rgb(0, 0, 0, 0.12); 
+    --box-shadow--to: rgb(0, 0, 0, 0.19);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root { 
+
+
+    }
 }

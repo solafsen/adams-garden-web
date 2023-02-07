@@ -80,7 +80,7 @@ h1 {
     grid-template-columns: 1fr; 
     gap: 1.5em;
 
-    box-shadow: 0 0.4rem 0.8rem 0 rgb(168, 165, 165);
+    box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow--menu);
 
 }
 
@@ -166,16 +166,16 @@ h3 {
     padding: 0.5rem;
     border-radius: 1rem;
     background-color: var(--color-primary);
-    color: var(--color-tertiary);
+    color: var(--foreground);
 
 }
 
-.allergies:hover { color:var(--foreground); }
+.allergies:hover { color:var(--color-tertiary); }
 
 /* Icons for allergies */
 
-.fa-solid { color: var(--color-secondary); }
-.fa-solid:hover { color: var(--foreground); }
+.fa-solid { color: var(--color-tertiary); }
+.fa-solid:hover { color: var(--color-tertiary); }
 
 /* Beverages */
 
@@ -185,7 +185,7 @@ h3 {
     grid-template-columns: 1fr; 
     gap: 0.1em;
 
-    box-shadow: 0 0.4rem 0.8rem 0 rgb(168, 165, 165);
+    box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow--menu);
 
 }
 
