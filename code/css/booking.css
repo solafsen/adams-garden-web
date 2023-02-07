@@ -287,8 +287,35 @@ button[type=submit]:hover {
 main #card-container {
 
     display: grid; 
-    grid-template-columns: repeat(1, auto);
-    gap: 1.5rem 0rem;
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem 2rem;
+    max-width: 100%;
+
+}
+
+#card-container > .card {
+
+    display: grid; 
+    grid-template-rows: repeat(1, auto);
+
+  
+    margin: 0 auto;
+    box-shadow: 0 0.4rem 0.8rem 0 rgb(0, 0, 0, 0.12), 0 0.6rem 2rem 0 rgb(0, 0, 0, 0.19);
+    background-color: #f2f2f2;
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+   
+}
+
+.card .img-card {
+
+    padding-top: 2rem;
+    text-align: center;
+
 
 }
 
@@ -299,6 +326,10 @@ main #card-container {
     border-radius: 50%;
 
 }
+
+.stars { color: var(--color-secondary); }
+
+q { padding: 2rem; }
 
 /* .testimonials-container {
     border: 2px solid var(--color-primary);
