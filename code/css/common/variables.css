@@ -3,15 +3,15 @@
 
     /* Color palette */
 
-    --color-light: #ffffff;
-    --color-dark: #080808;
+    --color-light: rgb(255, 255, 255);
+    --color-dark: rgb(8, 8, 8);
 
     --foreground: var(--color-dark);
     --background: var(--color-light);
 
-    --color-primary: #e6e6e6;
-    --color-secondary: #252970;
-    --color-tertiary: #4b4687; 
+    --color-primary: rgb(230, 230, 230);
+    --color-secondary: rgb(37, 41, 112);
+    --color-tertiary: rgb(75, 70, 135); 
 
     /* For font sizing */
 
