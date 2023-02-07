@@ -173,9 +173,11 @@ img:hover { transform: scale(1.6); }
 
 }
 
-.tooltiptext a, a:link, a:visited, a:hover, a:active { 
-    color: #000;
-}
+.tooltiptext > a { color: #000; }
+
+.tooltiptext > a:link, .tooltiptext > a:visited { color: #000;}
+
+.tooltiptext > a:hover, .tooltiptext > a:active { color: #000; }
 
 .tooltip:hover .tooltiptext {
 	
