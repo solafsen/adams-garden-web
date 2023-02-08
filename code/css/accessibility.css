@@ -38,6 +38,13 @@ aside .aside-navbar {
 
 /* Main section */
 
+.main-container {
+
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    gap: 1rem;
+
+}
 /* Declare font sizes for main section */
 
 main {
