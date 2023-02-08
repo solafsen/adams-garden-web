@@ -38,14 +38,7 @@ aside .aside-navbar {
 
 /* Main section */
 
-.main-container {
-
-    display: grid;
-    grid-template-columns: repeat(1, fr);
-    gap: 1rem;
-
-}
-/* Declare font sizes for main section */
+/* Declare font sizes for main section */ 
 
 main {
 
@@ -55,6 +48,16 @@ main {
     word-spacing: var(--word-spacing--default);
 
 }
+
+.main-container { /* Container with grid layout */
+
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    gap: 1rem;
+
+}
+
+/* Declare font sizes for main section */
 
 h1 { 
 
@@ -74,11 +77,12 @@ h1 {
 
 h2 {
 
-    font-size: var(--font-size--default);
-    line-height: var(--line-height--default);
-    letter-spacing: var(--letter-spacing--default);
-    word-spacing: var(--word-spacing--default);
-
+    font-size: var(--font-size--large);
+    line-height: var(--line-height--large);
+    letter-spacing: var(--letter-spacing--large);
+    word-spacing: var(--word-spacing--large);
+    text-align: left;
+    margin: 0;
 }
 
 .main .text { padding: 1rem; } 
@@ -87,12 +91,12 @@ h2 {
 
 /* Hyperlinks */
 
-.text .hyperlinks { text-decoration: none; color: var(--foreground); }
+.hyperlinks { text-decoration: none; color: var(--foreground); }
 
-.text .hyperlinks:focus{ color: var(--color-secondary); background-color: var(--color-primary); }
+.hyperlinks:focus { color: var(--color-secondary); background-color: var(--color-primary); }
 
 
-.text .hyperlinks:hover {
+.hyperlinks:hover {
 
     color: var(--color-tertiary); 
     background-color: var(--color-primary); 
@@ -100,11 +104,14 @@ h2 {
 
 }
 
+/* Styling - figure and figure caption */
+
 figure { 
     
     position: relative; 
     max-width: 100%; 
     margin: 0 auto;
+    margin-bottom: 4rem;
 
     font-size: var(--font-size--small);  
     letter-spacing: var(--letter-spacing--small); 
@@ -114,13 +121,16 @@ figure {
 
 }
 
-figure .validation { width: 100%; }
+figure .validation { width: 100%; } /* Images - HTML & CSS Validation*/
 
+figure .accessibility-check { width: 100%; } /* Images - Accessibility test */
+ 
 figcaption {
 
     border: 0.2rem solid var(--color-primary);
-    color: var(--foreground);
     background-color: var(--color-primary);
+    color: var(--foreground);
+    top: 0;
 
 }
 
