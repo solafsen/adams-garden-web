@@ -166,7 +166,7 @@ ul { list-style: none; }
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    gap: 1.2rem;
+    gap: 1.6rem;
     margin: 0;
     background: var(--background);
 
