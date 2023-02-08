@@ -1,0 +1,252 @@
+
+/* Header - Hero image */
+
+#hero-image {
+
+    width: 100%;
+    height: 40rem;
+
+    /* Anonymous [freepik]. (n.d.). 
+    Hand drawn poetry illustration [photo], 
+    https://www.freepik.com/free-vector/hand-drawn-poetry-illustration_22890307.htm#query=writing%20illustration&position=0&from_view=search&track=aitest */
+
+    background-image:url("../../images/accessibility/6719444.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover; 
+
+}
+
+/* Aside - navigation bar */
+
+aside .aside-navbar { 
+
+    display: grid; 
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
+    padding: 0.8rem; 
+    background-color: var(--color-primary);
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
+}
+
+.aside-navbar .aside-a { padding: 0.8rem; } 
+
+/* Main section */
+
+/* Declare font sizes for main section */
+
+main {
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
+}
+
+h1 { 
+
+    font-size: var(--font-size--large); 
+    font-weight: bold; 
+    letter-spacing: var(--letter-spacing--large); 
+    line-height: var(--line-height--large); 
+    word-spacing: var(--word-spacing-large);
+    text-align: center;
+
+} 
+
+.main .text { padding: 1rem; } 
+
+.paragraph-spacing { margin-bottom: 3.2rem; }
+
+/* Hyperlinks */
+
+.text .hyperlinks { text-decoration: none; color: var(--foreground); }
+
+.text .hyperlinks:focus{ color: var(--color-secondary); background-color: var(--color-primary); }
+
+
+.text .hyperlinks:hover {
+
+    color: var(--color-tertiary); 
+    background-color: var(--color-primary); 
+    text-decoration: underline;
+
+}
+
+/* Footer - declare font sizes */
+
+h2 {
+
+    font-size: var(--font-size--large);  
+    letter-spacing: var(--letter-spacing--large); 
+    line-height: var(--line-height--large); 
+    word-spacing: var(--word-spacing--large); 
+    text-align: left;
+
+}
+
+footer address, footer p {
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 30em) and (min-width: 23em) { /* 368px - 480px */
+
+    /* Tiny adjustment - padding */
+
+    .aside-navbar .aside-a { padding: 1rem; }
+    
+    .main .text { padding: 1rem 2rem; }
+
+}
+
+@media only screen and (max-width: 41.5em) and (min-width: 30.06em) { /* 481px - 664px */
+
+    /* Tiny adjustment - padding */
+
+    aside .aside-navbar { grid-template-columns: repeat(4, auto); } /* From 2 columns to 4 */
+
+    .aside-navbar .aside-a { padding: 1rem; }
+
+    .main .text { padding: 1rem 1.5rem; }
+
+}
+
+@media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { /* 665px - 781px */
+
+    /* Tiny adjustment - image height, padding */
+
+    #hero-image { height: 45rem; }
+
+    aside .aside-navbar { grid-template-columns: repeat(4, auto); }
+
+    .aside-navbar .aside-a { padding: 1rem; }
+
+    .main .text { padding: 1.5rem 2rem; }
+
+}
+
+@media only screen and (max-width: 57.5625em) and (min-width: 48.875em) { /* 782px - 921px */
+
+    /* Adjustment - image height, padding, font sizes and line-height */
+
+    #hero-image { height: 50rem; }
+
+    aside .aside-navbar { 
+        
+        grid-template-columns: repeat(1, auto); 
+        line-height: 3.5rem; 
+    
+    }
+
+    .aside-navbar .aside-a { padding: 1rem; }
+    
+    .main .text { padding: 2rem 6rem; }
+
+    h2 { 
+
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default);
+        line-height: var(--line-height--default);
+        word-spacing: var(--word-spacing--default);
+
+    }
+
+    footer address, footer p {
+
+        font-size: var(--font-size--small);
+        list-style: var(--line-height--small);
+        letter-spacing: var(--letter-spacing--small);
+        word-spacing: var(--word-spacing--small);
+    
+    }
+
+}
+
+@media only screen and (max-width: 64em) and (min-width: 57.625em) { /* 922px - 1024px */
+
+    /* Adjustment - image height, font sizes, padding, line-height */
+
+    #hero-image { height: 50rem; }
+
+    aside .aside-navbar { 
+
+        grid-template-columns: repeat(1, auto); /* From 4 columns to 1 */
+        justify-content: space-around;
+        line-height: 3.5rem;
+
+    }
+
+    .aside-navbar .aside-a { padding: 1rem; }
+    
+    .main .text { padding: 1rem 0rem; }
+
+    h2 {
+
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default);
+        line-height: var(--line-height--default);
+        word-spacing: var(--word-spacing--default);
+
+    }
+
+    footer address, footer p {
+
+        font-size: var(--font-size--small);
+        list-style: var(--line-height--small);
+        letter-spacing: var(--letter-spacing--small);
+        word-spacing: var(--word-spacing--small);
+    
+    }
+
+}
+
+@media only screen and (min-width: 64.0625em) { /* 1025 and up */
+
+    /* Adjusment - image height, padding, font sizes */
+
+    #hero-image { height: 60rem; }
+
+    aside .aside-navbar { 
+
+        grid-template-columns: repeat(1, auto);
+        justify-content: space-around;
+        line-height: 4.5rem;
+
+    }
+
+    .aside-navbar .aside-a { padding: 1rem; }
+    
+    .main .text { padding: 1rem 0rem; }
+
+    h2 {
+
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default);
+        line-height: var(--line-height--default);
+        word-spacing: var(--word-spacing--default);
+
+    }
+
+    footer address, footer p {
+
+        font-size: var(--font-size--small);
+        list-style: var(--line-height--small);
+        letter-spacing: var(--letter-spacing--small);
+        word-spacing: var(--word-spacing--small);
+    
+    }
+
+}
