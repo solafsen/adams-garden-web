@@ -96,6 +96,13 @@ ul { list-style: none; }
 
 }
 
+.topnav-a:focus, .topnav-a:hover { 
+    
+    color: var(--color-secondary); 
+    text-decoration: underline; 
+
+}
+
 .nav-links li .topnav-a[aria-current="page"] { 
 
     background: var(--color-primary);
@@ -162,6 +169,16 @@ ul { list-style: none; }
     word-spacing: var(--word-spacing--large); 
 }
 
+.nav-links-container {
+    
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.5s ease-in-out;
+
+}
+
+.nav-links li { border-bottom: var(--color-primary); padding: 1rem 0rem 1rem; }
+
 .nav-links {
 
     display: flex;
@@ -171,16 +188,6 @@ ul { list-style: none; }
     gap: 1.6rem;
     margin: 0;
     background: var(--background);
-
-}
-
-.nav-links li { border-bottom: var(--color-primary); padding: 1rem 0rem 1rem; }
-
-.nav-links-container {
-    
-    max-height: 0;
-    overflow-y: hidden;
-    transition: max-height 0.5s ease-in-out;
 
 }
 
