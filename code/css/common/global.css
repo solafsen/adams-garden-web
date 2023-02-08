@@ -138,6 +138,8 @@ ul { list-style: none; }
 
 }
 
+#hidden-img-light { display: hidden; }
+
 /* For screen reader - alternativ text instead of logo */
 
 .sr-only { 
@@ -686,4 +688,12 @@ address .style-links .footer-links { color:var(--color-secondary); }
     #opening-hours { grid-area: 1/ 3/ 4/ 5; }
     #contact-us { grid-area: 1/ 5/ 4/ 7;}
 
+}
+
+/* Change Adam's Garden logo in dark color scheme */
+
+@media (prefers-color-scheme: dark) {
+
+    #hidden-img-dark { display: none !important; }
+    #hidden-img-light { display: unset; }
 }
