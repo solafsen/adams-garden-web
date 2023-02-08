@@ -234,8 +234,8 @@ main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underlin
 .a-grid-and-gap {
     
     display: grid; 
-    grid-template-rows: repeat (1, auto); 
-    row-gap: 1rem;
+    grid-template-columns: repeat(1, auto);
+    gap: 1rem;
 
 }
 

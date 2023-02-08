@@ -138,7 +138,7 @@ ul { list-style: none; }
 
 }
 
-#hidden-img-light { display: hidden; }
+#hidden-img-light { display: none; }
 
 /* For screen reader - alternativ text instead of logo */
 
