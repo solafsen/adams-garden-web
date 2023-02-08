@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title> Adam's Garden </title>
-        <link rel="icon" type="image/x-icon" href="images/adams-garden-logo.ico" />
+        <link rel="icon" type="image/x-icon" href="../../images/adams-garden-logo.ico" />
         <meta name="description" content="Adam's Garden - the best restaurant in town!" /> 
 
         <!-- Fonts from Google Fonts. (https://fonts.google.com) -->
@@ -51,13 +51,13 @@
 
                         <div class="nav-logo-container"> 
 
-                            <a href="index.html" class="nav-logo"> 
+                            <a href="../../index.html" class="nav-logo"> 
 
                                 <!-- Logo from Adobe Express -->
 
                                 <span aria-hidden="true"> 
-                                <img id="hidden-img-dark" src="/images/adams-garden-logo.png" alt="Adam's Garden logo" height="104" width="110" /></span>
-                                <img id="hidden-img-light" src="/images/adams-garden-logo-1.png" alt="Adam's Garden logo" height="104" width="110" /></span>
+                                <img id="hidden-img-dark" src="../../images/adams-garden-logo.png" alt="Adam's Garden logo" height="104" width="110" /></span>
+                                <img id="hidden-img-light" src="../../images/adams-garden-logo-1.png" alt="Adam's Garden logo" height="104" width="110" /></span>
                                 <span class="sr-only"> Home </span>
 
                             </a>
@@ -86,10 +86,10 @@
 
                             <ul class="nav-links">
 
-                                <li><a href="code/html/menu.html" class="topnav-a"> Menu </a></li>
-                                <li><a href="code/html/booking.html" class="topnav-a"> Booking </a></li>
-                                <li><a href="code/html/topical.html" class="topnav-a"> Story </a></li>
-                                <li><a href="code/html/accessibility.html" class="topnav-a"> Accessibility </a></li>
+                                <li><a href="../../code/html/menu.html" class="topnav-a"> Menu </a></li>
+                                <li><a href="../../code/html/booking.html" class="topnav-a"> Booking </a></li>
+                                <li><a href="../../code/html/topical.html" class="topnav-a"> Story </a></li>
+                                <li><a href="../../code/html/accessibility.html" class="topnav-a"> Accessibility </a></li>
                                 <li><a href="#contact-us" class="topnav-a"> Contact us </a></li>
 
                             </ul>
@@ -101,7 +101,7 @@
 
                 <!-- Javascript for the open and close navigation -->
 
-                <script src="script/navbar.js"></script>
+                <script src="../../script/navbar.js"></script>
 
             </header>
 
@@ -117,40 +117,126 @@
 
                         <!-- Works like a hyperlinks that helps to navigate to other pages. -->
 
-                        <a href="code/html/menu.html" id="menu" class="aside-a"> Menu </a>
-                        <a href="code/html/booking.html" id="booking" class="aside-a"> Booking </a>
-                        <a href="code/html/topical.html" id="topical" class="aside-a"> Story </a>
-                        <a href="code/html/accessibility.html" id="accessibility" class="aside-a"> Coding </a>
+                        <a href="../../code/html/menu.html" id="menu" class="aside-a"> Menu </a>
+                        <a href="../../code/html/booking.html" id="booking" class="aside-a"> Booking </a>
+                        <a href="../../code/html/topical.html" id="topical" class="aside-a"> Story </a>
+                        <a href="../../code/html/accessibility.html" id="accessibility" class="aside-a"> Coding </a>
 
                     </nav>
             
                 </aside>
 
-                <!-- Main content with text description for this website. -->
+                <!-- Main content with text. -->
 
-                <main>
+                <main class="main-container">
+
+                    <h1 id="main" tabindex="-1" class="text"> Accessibility </h1>
                     
                     <section>
 
-                        <h1 id="main" tabindex="-1" class="text"> Welcome to Adam's Garden </h1>
+                        <h2 class="text"> Coding choices </h2>
 
                         <p class="text paragraph-spacing">
-
-                            Adam's Garden is a place for friends, family and loved ones to meet and share 
-                            good mememories and delicious food. On this website, you can 
-                            <a href="#menu" class="hyperlinks"> read our menu </a> and 
-                            <a href="#booking" class="hyperlinks"> reserve a table </a> for casual 
-                            dining or for special occasions. 
-
+                            Before we started out with the coding part, 
+                            we check through the checklist that was on 
+                            <strong>
+                                <a class="hyperlinks" href="https://www.a11yproject.com/" target="_blank">The A11Y Project.</a>
+                            </strong><span class="sr-only"> Opens a new window </span>
+                            We used tools such as 
+                            <strong>
+                                <a class="hyperlinks" href="https://color.adobe.com/nb/create/color-contrast-analyzer" target="_blank">contrast checker,</a>
+                            </strong><span class="sr-only"> Opens a new window </span>
+                            <strong>
+                                <a class="hyperlinks" href="https://hemingwayapp.com/" target="_blank">text editor</a>
+                            </strong><span class="sr-only"> Opens a new window </span> 
+                            and <strong>
+                                    <a class="hyperlinks" href="https://color.adobe.com/nb/create/color-wheel" target="_blank">colour wheel</a>
+                                </strong><span class="sr-only"> Opens a new window </span> 
+                            to check that it passed WCAG level AA. For example, we selected colours that are safe for people that have colour blindness. 
                         </p>
 
                         <p class="text paragraph-spacing">
-
-                            We also have <a href="#topical" class="hyperlinks"> a page with a short story </a> - visit our page
-                            for a fun reading. If you wish to know about our coding choices, please 
-                            <a href="#accessibility" class="hyperlinks"> check out our accessibility page. </a>
-
+                            The term average user is vague, 
+                            so we decided to practice as much accessibility as possible. 
+                            We're inexperience when it comes to make a website, 
+                            so there will be some faults that we didn't see. 
                         </p> 
+
+                        <p clas="text paragraph-spacing">
+                            We tried to be wary with the use of semantic and non-semantic elements. 
+                            Our styling sheets usually followed the pattern of our HTML files. 
+                            There is always an exception. 
+                        </p>
+
+                        <p class="text paragraph-spacing">
+                            Our website has two colour scheme, dark and light. 
+                            It works from small screen devices to large screen devices. 
+                        </p>
+
+                    </section>
+
+                        <h2 class="text"> Testing for accessibility </h2>
+
+                        <p class="text paragraph-spacing">
+                            Before we tested our website, we put our codes through 
+                            <strong>
+                                <a class="hyperlinks" href="https://validator.w3.org/" target="_blank">HTML validation</a>
+                            </strong><span class="sr-only"> Opens a new window </span> 
+                            and <strong>
+                                    <a class="hyperlinks" href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validation.</a>
+                                </strong><span class="sr-only">Opens a new window</span>
+                            The results are as followed: 
+                        </p>
+
+                        <figure>
+                            <img src="" alt="" style="width:100%">
+                            <figcaption> Fig.1 - HTML validation </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="" alt="" style="width:100%">
+                            <figcaption> Fig.2 - CSS validation </figcaption>
+                        </figure>
+
+                        <p class="text paragraph-spacing">
+                            We used 
+                            <strong>
+                                <a class="hyperlinks" href="https://wave.webaim.org/" target="_blank">
+                                    <abbr title="Web Accessibility Evaluation tool" style="text-decoration: none;">WAVE</abbr></a>
+                            </strong><span class="sr-only"> Opens a new window </span>
+                            to test for accessibility. The results are as followed: 
+                        </p>
+
+                        <figure>
+                            <img src="" alt="" style="width:100%">
+                            <figcaption> Fig.3 - Homepage </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="" alt="" style="width:100%">
+                            <figcaption> Fig.4 - Booking page </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="" alt="" style="width:100%">
+                            <figcaption> Fig.5 - Menu page </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="" alt="" style="width:100%">
+                            <figcaption> Fig.6 - Accessibility page </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="" alt="" style="width:100%">
+                            <figcaption> Fig.7 - Topical page </figcaption>
+                        </figure>
+
+                        <p class="text">
+                            To be honest with you, when we first tested our website 
+                            there were some errors. But we fixed and solved it 
+                            by google for answers. The final results are as we expected. 
+                        </p>
 
                     </section>
                     

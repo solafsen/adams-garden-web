@@ -10,9 +10,9 @@
     Hand drawn poetry illustration [photo], 
     https://www.freepik.com/free-vector/hand-drawn-poetry-illustration_22890307.htm#query=writing%20illustration&position=0&from_view=search&track=aitest */
 
-    background-image:url("../../images/accessibility/6719444.jpg");
+    background-image:url("../../images/accessibility/write-in-a-book.jpg");
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     background-size: cover; 
 
 }
@@ -60,6 +60,15 @@ h1 {
 
 } 
 
+h2 {
+
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    letter-spacing: var(--letter-spacing--default);
+    word-spacing: var(--word-spacing--default);
+
+}
+
 .main .text { padding: 1rem; } 
 
 .paragraph-spacing { margin-bottom: 3.2rem; }
@@ -81,7 +90,7 @@ h1 {
 
 /* Footer - declare font sizes */
 
-h2 {
+h3 {
 
     font-size: var(--font-size--large);  
     letter-spacing: var(--letter-spacing--large); 
@@ -155,7 +164,7 @@ footer address, footer p {
     
     .main .text { padding: 2rem 6rem; }
 
-    h2 { 
+    h3 { 
 
         font-size: var(--font-size--default);
         letter-spacing: var(--letter-spacing--default);
@@ -193,7 +202,7 @@ footer address, footer p {
     
     .main .text { padding: 1rem 0rem; }
 
-    h2 {
+    h3 {
 
         font-size: var(--font-size--default);
         letter-spacing: var(--letter-spacing--default);
@@ -231,7 +240,7 @@ footer address, footer p {
     
     .main .text { padding: 1rem 0rem; }
 
-    h2 {
+    h3 {
 
         font-size: var(--font-size--default);
         letter-spacing: var(--letter-spacing--default);
