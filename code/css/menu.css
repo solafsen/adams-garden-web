@@ -84,6 +84,8 @@ h1 {
 
 }
 
+.card > img { width: 100%; }
+
 .card:last-child { padding-bottom: 2rem; }
 
 /* Just make text more cleaner with padding and gap */
@@ -188,6 +190,8 @@ h3 {
     box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow--menu);
 
 }
+
+.card-beverages > img { width: 100%; }
 
 .beverage { padding-left: 1rem; padding-right: 1rem; }
 
