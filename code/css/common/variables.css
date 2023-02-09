@@ -3,15 +3,14 @@
 
     /* Color palette */
 
-    --color-light: rgb(255, 255, 255);
     --color-dark: rgb(8, 8, 8);
+    --color-light: rgb(255, 255, 255);
+    --color-primary: rgb(230, 230, 230);
+    --color-secondary: rgb(37, 41, 112);
+    --color-tertiary: rgb(75, 70, 135);
 
     --foreground: var(--color-dark);
     --background: var(--color-light);
-
-    --color-primary: rgb(230, 230, 230);
-    --color-secondary: rgb(37, 41, 112);
-    --color-tertiary: rgb(75, 70, 135); 
 
     /* For font sizing */
 
@@ -30,12 +29,11 @@
     --line-height--large: 3.6rem;
 
     --letter-spacing--small: 0.2rem; /* 0.12 times the font-size */
-    --word-spacing--small: 0.22rem; /* 0.16 times the font-size */
-
     --letter-spacing--default: 0.2rem;
-    --word-spacing--default: 0.3rem;
-
     --letter-spacing-l-arge: 0.3rem;
+
+    --word-spacing--small: 0.22rem; /* 0.16 times the font-size */
+    --word-spacing--default: 0.3rem;
     --word-spacing--large: 0.4rem;
 
     /* Styling - use only in some HTML */
@@ -46,11 +44,12 @@
 
     /* Booking */
 
-    --color-carousel: rgb(255, 255, 255);
     --bg-color--carousel: rgb(0, 0, 0, 0.8);
     --bg-color--form: rgb(242, 242, 242);
     --box-shadow--one: rgb(0, 0, 0, 0.12); 
     --box-shadow--to: rgb(0, 0, 0, 0.19);
+    --color-carousel: rgb(255, 255, 255);
+    
 }
 
 /* Dark color scheme - for user whose preferences color scheme is dark */
@@ -62,14 +61,13 @@
 
         --color-light: rgb(255, 249, 237);
         --color-dark: rgb(71, 69, 84);
-
-        --foreground: var(--color-light);
-        --background: var(--color-dark);
-
         --color-primary: rgb(105, 102, 118);
         --color-secondary: rgb(255, 231, 120);
         --color-tertiary: rgb(255, 244, 108); 
 
+        --foreground: var(--color-light);
+        --background: var(--color-dark);
+    
         /* Menu */
 
         --box-shadow--menu: rgb(44, 42, 56);
