@@ -24,13 +24,13 @@
 
     /* For line-height, letter- and word-spacing */
 
-    --line-height--small: 2.1rem; /* 1.5 times the font-size */
-    --line-height--default: 2.4rem; 
-    --line-height--large: 3.6rem;
-
     --letter-spacing--small: 0.2rem; /* 0.12 times the font-size */
     --letter-spacing--default: 0.2rem;
     --letter-spacing-l-arge: 0.3rem;
+
+    --line-height--small: 2.1rem; /* 1.5 times the font-size */
+    --line-height--default: 2.4rem; 
+    --line-height--large: 3.6rem;
 
     --word-spacing--small: 0.22rem; /* 0.16 times the font-size */
     --word-spacing--default: 0.3rem;
