@@ -45,21 +45,23 @@ footer { grid-area: 4/ 1/ 5/ 7; }
 header { grid-area: 1/ 1/ 2/ 7;}
 .main-content { grid-area: 2/ 1/ 4/ 7; }
 
+/* Header with a top navigation bar */
+
 /* Link - Skip to main content */
 
 a.skip {
 
     background: var(--foreground);
-    color: var(--background);  
-    overflow: hidden !important ;    
+    color: var(--background);
+    font-size: var(--font-size--default);  
     height: 3rem;
     left: 30%;
+    overflow: hidden !important ;  /* Kanskje auto */
     padding: 0.8rem;
     position: absolute;
     transform: translateY(-100%);
     transition: transform 0.5s;
-    font-size: var(--font-size--default);   
-    overflow: auto;
+
 
 }
 
@@ -68,8 +70,6 @@ a.skip {
 /* Container - to control the layout */ /* MÅ RYDDE ALFABETISK*/
 
 .container { margin: 0 auto; max-width: 100%; } 
-
-/* Header with a top navigation bar */
 
 /* Top navigation bar */
 
