@@ -2,7 +2,6 @@
 /* Header - Hero image */
 
 #hero-image {
-
     /* Anonymous [freepic.diller]. (n.d.). 
     Great landscape opens cosy dinner table [photo], 
     https://www.freepik.com/free-photo/great-landscape-opens-cosy-dinner-table_1471455.htm#query=restaurant%20ocean%20view&position=13&from_view=search&track=ais */
@@ -11,16 +10,13 @@
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover; 
-
     height: 40rem;
     width: 100%;
-
 }
 
 /* Aside - navigation bar */
 
 aside .aside-navbar { 
-
     background-color: var(--color-primary);
     display: grid; 
     font-size: var(--font-size--default);
@@ -30,7 +26,6 @@ aside .aside-navbar {
     line-height: var(--line-height--default);
     padding: 0.8rem; 
     word-spacing: var(--word-spacing--default);
-
 }
 
 .aside-navbar .aside-a { padding: 0.8rem; } 
@@ -40,23 +35,19 @@ aside .aside-navbar {
 /* Declare font sizes for main section */
 
 main {
-
     font-size: var(--font-size--default);
     letter-spacing: var(--letter-spacing--default);
     line-height: var(--line-height--default);
     word-spacing: var(--word-spacing--default);
-
 }
 
 h1 { 
-
     font-size: var(--font-size--large); 
     font-weight: bold; 
     letter-spacing: var(--letter-spacing--large); 
     line-height: var(--line-height--large);
     text-align: center;
     word-spacing: var(--word-spacing-large);
-
 } 
 
 .main .text { padding: 1rem; } 
@@ -70,48 +61,41 @@ h1 {
 .text .hyperlinks:focus{ background-color: var(--color-primary); color: var(--color-secondary); }
 
 .text .hyperlinks:hover {
-
     background-color: var(--color-primary); 
     color: var(--color-tertiary); 
     text-decoration: underline;
-
 }
 
 /* Footer - declare font sizes */
 
 h2 {
-
     font-size: var(--font-size--large);  
     letter-spacing: var(--letter-spacing--large); 
     line-height: var(--line-height--large); 
     text-align: left;
     word-spacing: var(--word-spacing--large); 
-
 }
 
 footer address, footer p {
-
     font-size: var(--font-size--default);
     letter-spacing: var(--letter-spacing--default);
     line-height: var(--line-height--default);
     word-spacing: var(--word-spacing--default);
-
 }
 
 /* Media queries */
 
 @media only screen and (max-width: 30em) and (min-width: 23em) { /* 368px - 480px */
-
+    
     /* Tiny adjustment - padding */
 
     .aside-navbar .aside-a { padding: 1rem; }
     
     .main .text { padding: 1rem 2rem; }
-
 }
 
 @media only screen and (max-width: 41.5em) and (min-width: 30.06em) { /* 481px - 664px */
-
+    
     /* Tiny adjustment - padding */
 
     aside .aside-navbar { grid-template-columns: repeat(4, auto); } /* From 2 columns to 4 */
@@ -119,11 +103,10 @@ footer address, footer p {
     .aside-navbar .aside-a { padding: 1rem; }
 
     .main .text { padding: 1rem 1.5rem; }
-
 }
 
 @media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { /* 665px - 781px */
-
+    
     /* Tiny adjustment - image height, padding */
 
     #hero-image { height: 45rem; }
@@ -133,20 +116,17 @@ footer address, footer p {
     .aside-navbar .aside-a { padding: 1rem; }
 
     .main .text { padding: 1.5rem 2rem; }
-
 }
 
 @media only screen and (max-width: 57.5625em) and (min-width: 48.875em) { /* 782px - 921px */
-
+    
     /* Adjustment - image height, padding, font sizes and line-height */
 
     #hero-image { height: 50rem; }
 
     aside .aside-navbar { 
-        
         grid-template-columns: repeat(1, auto); 
         line-height: 3.5rem; 
-    
     }
 
     .aside-navbar .aside-a { padding: 1rem; }
@@ -154,37 +134,30 @@ footer address, footer p {
     .main .text { padding: 2rem 6rem; }
 
     h2 { 
-
         font-size: var(--font-size--default);
         letter-spacing: var(--letter-spacing--default);
         line-height: var(--line-height--default);
         word-spacing: var(--word-spacing--default);
-
     }
 
     footer address, footer p {
-
         font-size: var(--font-size--small);
         letter-spacing: var(--letter-spacing--small);
         line-height: var(--line-height--small);
         word-spacing: var(--word-spacing--small);
-    
     }
-
 }
 
 @media only screen and (max-width: 64em) and (min-width: 57.625em) { /* 922px - 1024px */
-
+    
     /* Adjustment - image height, font sizes, padding, line-height */
 
     #hero-image { height: 50rem; }
 
     aside .aside-navbar { 
-
         grid-template-columns: repeat(1, auto); /* From 4 columns to 1 */
         justify-content: space-around;
         line-height: 3.5rem;
-
     }
 
     .aside-navbar .aside-a { padding: 1rem; }
@@ -192,37 +165,30 @@ footer address, footer p {
     .main .text { padding: 1rem 0rem; }
 
     h2 {
-
         font-size: var(--font-size--default);
         letter-spacing: var(--letter-spacing--default);
         line-height: var(--line-height--default);
         word-spacing: var(--word-spacing--default);
-
     }
 
     footer address, footer p {
-
         font-size: var(--font-size--small);
         letter-spacing: var(--letter-spacing--small);
         line-height: var(--line-height--small);
         word-spacing: var(--word-spacing--small);
-    
     }
-
 }
 
 @media only screen and (min-width: 64.0625em) { /* 1025 and up */
-
+    
     /* Adjusment - image height, padding, font sizes */
 
     #hero-image { height: 60rem; }
 
     aside .aside-navbar { 
-
         grid-template-columns: repeat(1, auto);
         justify-content: space-around;
         line-height: 4.5rem;
-
     }
 
     .aside-navbar .aside-a { padding: 1rem; }
@@ -230,21 +196,16 @@ footer address, footer p {
     .main .text { padding: 1rem 0rem; }
 
     h2 {
-
         font-size: var(--font-size--default);
         letter-spacing: var(--letter-spacing--default);
         line-height: var(--line-height--default);
         word-spacing: var(--word-spacing--default);
-
     }
 
     footer address, footer p {
-
         font-size: var(--font-size--small);
         letter-spacing: var(--letter-spacing--small);
         line-height: var(--line-height--small);
         word-spacing: var(--word-spacing--small);
-    
     }
-
 }

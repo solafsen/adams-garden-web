@@ -289,7 +289,6 @@ address .style-links .footer-links { color:var(--color-secondary); }
     #grid-container { row-gap: 4rem; }
 
     .footer-container { padding: 3.5rem; } 
-
 }
 
 @media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { /* 665px - 781px */
@@ -343,7 +342,6 @@ address .style-links .footer-links { color:var(--color-secondary); }
     .container { margin: 0 auto; max-width: 66.5em; }
 
     .footer-container { padding: 4rem; } 
-    
 }
 
 @media only screen and (max-width: 57.5625em) and (min-width: 48.875em) {  /* 782px - 921px */
@@ -412,7 +410,6 @@ address .style-links .footer-links { color:var(--color-secondary); }
     #opening-hours { grid-area: 1/ 3/ 4/ 5; }
 
     .footer-container { padding: 2.5rem; } 
-
 }
 
 @media only screen and (max-width: 64em) and (min-width: 57.625em) {  /* 922px - 1024px */ 
@@ -507,7 +504,6 @@ address .style-links .footer-links { color:var(--color-secondary); }
     #opening-hours { grid-area: 1/ 3/ 4/ 5; }
 
     .footer-container { padding: 3rem; }
-
 }
 
 @media only screen and (min-width: 64.0625em) {  /* 1025px and up */ 
@@ -607,7 +603,6 @@ address .style-links .footer-links { color:var(--color-secondary); }
     #contact-us { grid-area: 1/ 5/ 4/ 7;}
 
     .footer-container { padding: 2.5rem; } /* Footer */
-
 }
 
 /* Change Adam's Garden logo in dark color scheme */
