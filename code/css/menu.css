@@ -333,11 +333,15 @@ footer address, footer p {
 
     aside .aside-navbar { 
         border: 0.1em solid var(--background);
+        font-size: var(--font-size--default);
         grid-template-columns: repeat(1, auto); /* Change from 3 columns to 1 */
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
         padding: 2rem;
         position: sticky; 
         position: -webkit-sticky; /* Safari */
         top: 5rem;
+        word-spacing: var(--word-spacing--default); 
     }
 
     aside .aside-navbar .aside-a { padding: 1rem; }
@@ -412,11 +416,15 @@ footer address, footer p {
 
     aside .aside-navbar { 
         border: 0.1em solid var(--background);
+        font-size: var(--font-size--default);
         grid-template-columns: repeat(1, auto);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
         padding: 2rem;
         position: sticky;
         position: -webkit-sticky; /* Sticky navigation bar */
         top: 5rem;
+        word-spacing: var(--word-spacing--default);
     }
 
     aside .aside-navbar .aside-a { padding: 1rem; }
@@ -494,11 +502,15 @@ footer address, footer p {
 
     aside .aside-navbar { /* Sticky navbar */
         border: 0.1em solid var(--background);
+        font-size: var(--font-size--default);
         grid-template-columns: repeat(1, auto);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
         padding: 3rem;
         position: -webkit-sticky; 
         position: sticky;
         top: 5rem;
+        word-spacing: var(--word-spacing--default);
     }
 
     aside .aside-navbar .aside-a { padding: 1rem; }

@@ -335,13 +335,6 @@ address .style-links .footer-links { color:var(--color-secondary); }
 
     .nav-links li { border:none; padding: 1rem; }
 
-    .topnav-a { 
-        font-size: var(--font-size--small);
-        letter-spacing: var(--letter-spacing--small);
-        line-height: var(--line-height--small);
-        word-spacing: var(--word-spacing--small);
-    }
-
     .container { margin: 0 auto; max-width: 66.5em; }
 
     .footer-container { padding: 4rem; } 
@@ -387,13 +380,6 @@ address .style-links .footer-links { color:var(--color-secondary); }
     }
 
     .nav-links li { border:none; padding: 1.5rem; }
-
-    .topnav-a { 
-        font-size: var(--font-size--small);
-        letter-spacing: var(--letter-spacing--small);
-        line-height: var(--line-height--small);
-        word-spacing: var(--word-spacing--small);
-    }
 
     #main-content{ column-gap: 7rem; row-gap: 0rem; } 
     aside { grid-area: 1/ 1/ 4 / 4; } 
@@ -485,7 +471,7 @@ address .style-links .footer-links { color:var(--color-secondary); }
         line-height: var(--line-height--small);
         word-spacing: var(--word-spacing--small);
     }
-
+    
     #main-content { column-gap: 8.5rem; row-gap: 0rem; }
     aside { grid-area: 1/ 1/ 4 / 4; } 
     main { grid-area: 1/ 4/ 4/ 7; }
