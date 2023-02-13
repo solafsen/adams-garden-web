@@ -1,6 +1,6 @@
 
 header  {
-    background-image: url(../../images/topical/logo1.jpg);
+    background-image: url(../../images/topical/header-lp-plates.jpg);
     /*background-position: center;*/
 	background-size : 400px;
     height: 400px;
@@ -157,7 +157,7 @@ footer {
 		
 		width : 100%;
 		background-repeat: repeat;
-		background-image: url(/images/topical/logo1.jpg);
+		background-image: url(../../images/topical/header-lp-plates.jpg);
 
     }
 

@@ -70,6 +70,7 @@ h2 {
     letter-spacing: var(--letter-spacing--large);
     line-height: var(--line-height--large);
     margin: 0;
+    padding: 2rem 2rem 2rem 0rem;
     text-align: left;
     word-spacing: var(--word-spacing--large);
 }
