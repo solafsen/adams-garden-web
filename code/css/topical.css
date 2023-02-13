@@ -1,81 +1,44 @@
 
 header  {
-
-    text-decoration: none;
-
     background-image: url(../../images/topical/logo1.jpg);
-	
-	background-size : 400px;
-
-    height: 400px;
-
     /*background-position: center;*/
-	
+	background-size : 400px;
+    height: 400px;
+    text-decoration: none;
 }
 
 body {
-
-   /* padding: 25px; */
-
     font-family: 'Times New Roman', Times, serif;
-
     font-size: 120%;
-
     background-color: rgb(243, 243, 243);
-
+    /* padding: 25px; */
 }
 
  /* v - aside(where the navigation bar lies), a,b,c,d,e,m,p,q are articles and n - footer */
 
 .main_page {  
-
     display: grid;
-
-    height:100vh;
-
-    grid-template-columns: repeat(5, minmax(100px, 1fr));
-
     gap: 5px;
-
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
     grid-template-rows: repeat(6,1fr);
-
     grid-template-areas: 
     "v a a a h"
-
     "v b b b p"
-
     ". c c c m"
-
     ". d d d q"
-
     ". e e e ." 
-	
 	"n n n n n";
-	
 
+    height:100vh;
 }
 
-article {
+article { margin-top: 10px; padding:1em; }
 
-    padding:1em;
-    margin-top: 10px;
-
-}
-
-
-aside {
-
-    padding:1em;
-    margin-top: 40px;
-	
-}
-
+aside { margin-top: 40px; padding:1em; }
 aside li { visibility : visible; }
-
 li { visibility : hidden; }
 
 /* unvisited link */
-
 a:link { color: #a80600; }
 
 /* visited link */
@@ -90,47 +53,32 @@ a:hover { color: #9e5431; }
 a:active { color: #808080; }
 
 .line1 ul li {
-
-    padding: 4px;
     border-bottom: 1px solid #808080;
     list-style-type: none;
-
+    padding: 4px;
 }
 
 h1, h3 { text-align : center; }
-
 h2 { font-size :1.1em; }
  
-
 a:link { text-decoration: none; }
 
 .line1 { grid-area: v; }
-
 .line3 { grid-area: a; }
-
 .line4 { grid-area: b; }
-
 .line5 { grid-area: c; }
-
 .line6 { grid-area: d; }
  
 .line7 {
-    
     grid-area: e;
-   /* padding-bottom: 30%; 
-    margin-bottom: 10px; */
-
+    /* margin-bottom: 10px;
+    padding-bottom: 30%;  */
 }
 
-
 .line8 { grid-area: h; margin-top: 50px; }
-
 .line9 { grid-area: p; }
-
 .line10 { grid-area: m; }
-
 .line11 { grid-area: n; }
- 
 .line12 { grid-area: q; }
 
 /* Styling the picture that shows Carlos interest */
